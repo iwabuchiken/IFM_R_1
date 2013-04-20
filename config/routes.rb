@@ -1,4 +1,6 @@
 CR6R::Application.routes.draw do
+  resources :word_lists
+
   resources :words
   resources :texts
 

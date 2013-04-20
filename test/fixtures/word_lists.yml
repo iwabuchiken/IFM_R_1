@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  text_id: 1
+  word_id: 1
+  lang_id: 1
+  db_id: 1
+
+two:
+  text_id: 1
+  word_id: 1
+  lang_id: 1
+  db_id: 1

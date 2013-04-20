@@ -228,8 +228,14 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 #heroku run rake db:version
 		Current version: 20130420064433
 
-heroku run rake db:rollback STEP=2
-heroku run rake db:version
+#heroku run rake db:rollback STEP=2
+#heroku run rake db:version
+
+g p origin master && g p heroku master && heroku run rake db:migrate
+
+[B4 v-1.0 2013/04/20 16:54:10]----------------------------
+rails generate scaffold WordList text_id:integer word_id:integer lang_id:integer db_id:integer
+
 aa
 ============STORAGE============================
 [B1 v-2.0 20130331_074117]----------------------------
