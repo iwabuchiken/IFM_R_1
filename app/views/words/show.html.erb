@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>W1:</b>
+  <%= @word.w1 %>
+</p>
+
+<p>
+  <b>W2:</b>
+  <%= @word.w2 %>
+</p>
+
+<p>
+  <b>W3:</b>
+  <%= @word.w3 %>
+</p>
+
+<p>
+  <b>Text ids:</b>
+  <%= @word.text_ids %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%= @word.text_id %>
+</p>
+
+<p>
+  <b>Lang:</b>
+  <%= @word.lang_id %>
+</p>
+
+<p>
+  <b>Dbid:</b>
+  <%= @word.dbId %>
+</p>
+
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

@@ -209,7 +209,11 @@ g p origin master && g p heroku master
 
 #Merger the branch to master
 
-g p origin master && g p heroku master && heroku run rake db:migrate
+#g p origin master && g p heroku master && heroku run rake db:migrate
+
+[B2 v-1.0 2013/04/20 15:37:36]----------------------------
+rails generate scaffold Word w1:string w2:string w3:string text_ids:string text_id:integer lang_id:integer dbId:integer
+
 
 [B1 v-2.0 20130331_074117]----------------------------
 //rails generate migration AddColumnCodesToArticle

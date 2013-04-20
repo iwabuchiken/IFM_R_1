@@ -1,4 +1,6 @@
 CR6R::Application.routes.draw do
+  resources :words
+
   resources :texts
 
   root to: "texts#index"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130420062111) do
+ActiveRecord::Schema.define(:version => 20130420064433) do
 
   create_table "texts", :force => true do |t|
     t.text     "text"
@@ -25,6 +25,18 @@ ActiveRecord::Schema.define(:version => 20130420062111) do
     t.integer  "dbId"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "words", :force => true do |t|
+    t.string   "w1"
+    t.string   "w2"
+    t.string   "w3"
+    t.string   "text_ids"
+    t.integer  "text_id"
+    t.integer  "lang_id"
+    t.integer  "dbId"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
