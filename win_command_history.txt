@@ -1,0 +1,287 @@
+a
+pushd C:\WORKS\WS\WS_Android\CR6(R)
+gitk
+
+C:\WORKS\PROGRAMS\FreeMind\Freemind.exe C:\WORKS\WORKSPACES_ANDROID\FM\NewsReader3_R\NewsReader3.mm
+
+pushd C:\WORKS\WS\WS_Android\CR6(R)
+rails s --port 3001
+
+pushd C:\WORKS\WORKSPACES_APTANA\NewsReader3
+
+
+
+[Git]
+git init && g a . && gitk
+
+git log --grep=master -6
+
+[Set up 20130329_145801]----------------------------
+#bundle install
+
+rails s --port 3001
+
+gem install heroku --no-ri --no-rdoc
+
+	Fetching: heroku-api-0.3.8.gem (100%)
+	Fetching: heroku-2.35.0.gem (100%)
+	 !    The `heroku` gem has been deprecated and replaced with the Heroku Toolbelt
+	.
+	 !    Download and install from: https://toolbelt.heroku.com
+	 !    For API access, see: https://github.com/heroku/heroku.rb
+	Successfully installed heroku-api-0.3.8
+	Successfully installed heroku-2.35.0
+	2 gems installed
+
+heroku keys:add
+
+	Found existing public key: C:/Users/IwabuchiKen/.ssh/id_rsa.pub
+	Uploading SSH public key C:/Users/IwabuchiKen/.ssh/id_rsa.pub... done
+
+heroku create --stack cedar
+
+	Creating mysterious-beyond-3632... done, stack is cedar
+	http://mysterious-beyond-3632.herokuapp.com/ | git@heroku.com:mysterious-beyond
+	3632.git
+	Git remote heroku added
+
+heroku rename cosmos-cr5
+
+	Renaming mysterious-beyond-3632 to cosmos-cr5... done
+	http://cosmos-cr5.herokuapp.com/ | git@heroku.com:cosmos-cr5.git
+	Git remote heroku updated
+
+g p heroku master
+
+	To git@heroku.com:cosmos-cr5.git
+	 * [new branch]      master -> master
+
+heroku open
+
+[B1]----------------------------
+#rails generate scaffold Text text:text url:string genre_id:integer subgenre_id:integer lang_id:integer memo:text dbId:integer
+//rails generate scaffold Text line:text url:string src:string news_time:string genre:string cat:string subcat:string tag:string memo:text
+
+bundle exec rake db:migrate
+
+### BROWSE
+
+#Merger the branch to master
+
+#g p origin master
+
+g p heroku master
+
+heroku run rake db:migrate
+
+[B1 v-2.0 20130331_074117]----------------------------
+//rails generate migration AddColumnCodesToArticle
+#rails generate migration SetDefaultLongVariablesInTexts
+
+#bundle exec rake db:migrate
+
+#g p origin master
+
+#g p heroku master
+
+#heroku run rake db:migrate
+
+	Migrating to CreateTexts (20130329061717)
+	Migrating to SetDefaultLongVariablesInTexts (20130330224827)
+	==  SetDefaultLongVariablesInTexts: migrating =================================
+	-- change_column(:texts, :dbId, :integer, {:default=>0})
+	   -> 0.1558s
+	==  SetDefaultLongVariablesInTexts: migrated (0.1560s) ========================
+
+rails generate migration NullFalseDbIdInTexts
+bundle exec rake db:migrate
+
+	==  NullFalseDbIdInTexts: migrating ===========================================
+	-- change_column(:texts, :dbId, :integer, {:null=>false})
+	rake aborted!
+	An error has occurred, this and all later migrations canceled:
+	
+	SQLite3::ConstraintException: texts.dbId may not be NULL: INSERT INTO "texts" ("
+	id","text","url","genre_id","subgenre_id","lang_id","memo","dbId","created_at","
+	updated_at") VALUES (1, '精良的技术 CNCEC先后获得国家及省部级各类奖项874项，拥有
+
+$DELETE:Existing records
+#g p origin master
+#g p heroku master
+#heroku run rake db:migrate
+
+#rails generate migration SetDefaultAllVariablesInTexts
+#bundle exec rake db:migrate
+#$GIT::commit
+#g p origin master
+#g p heroku master
+#heroku run rake db:migrate
+
+$TEST
+
+#rails generate migration SetDefault0AllVariablesInTexts
+#bundle exec rake db:migrate
+#$GIT::commit
+#g p origin master
+#g p heroku master
+#heroku run rake db:migrate
+
+#rails generate migration SetDefaultNullFalseTexts
+#bundle exec rake db:migrate
+#$GIT::commit
+#g p origin master
+#g p heroku master
+#heroku run rake db:migrate
+
+[B3 v-1.0  2013/03/31 14:06:39]-------------------------------
+g p origin master
+g p heroku master
+
+[B3 v-2.0  2013/03/31 14:06:39]-------------------------------
+rails generate controller admin main sub1 sub2
+
+g p origin master
+g p heroku master
+
+[B4 v-1.0  2013/03/31 14:06:39]-------------------------------
+g p origin master
+g p heroku master
+
+[B4 v-1.1  2013/03/31 14:06:39]-------------------------------
+g p origin master
+g p heroku master
+
+[B4 v-2.0    2013/04/01 10:19:54]-------------------------------
+//rails generate migration AddColumnCodesToArticle
+#rails generate migration AddColumnCreatedAtMillToTexts created_at:integer
+
+#bundle exec rake db:migrate
+#$GIT::commit
+#g p origin master
+#g p heroku master
+#heroku run rake db:migrate
+
+[B4 v-2.0a    2013/04/01 10:19:54]-------------------------------
+g p origin master
+g p heroku master
+
+[B4 v-2.0b    2013/04/01 10:19:54]-------------------------------
+#rails generate migration ChangeColumn_CreatedAtMill_Textx_BigInt
+#$EDIT migration file
+#bundle exec rake db:migrate
+#$GIT::commit
+g p origin master
+g p heroku master
+heroku run rake db:migrate
+
+[B4 v-2.0b-e1-t1-p1-t1       2013/04/01 11:57:59]-------------------------------
+#$GIT::commit
+g p origin master
+g p heroku master
+
+[B4 v-2.0b-e1-t1-p1-t1-e1    2013/04/01 11:57:59]-------------------------------
+#$GIT::commit
+g p origin master && g p heroku master
+
+[B4 v-2.1    2013/04/01 11:57:59]-------------------------------
+#$GIT::commit
+g p origin master && g p heroku master
+
+[B5 v-1.0    2013/04/03 13:21:06]-------------------------------
+g p origin master && g p heroku master && heroku run rake db:migrate
+
+[B5 v-1.1-T1    2013/04/03 13:21:06]-------------------------------
+g p origin master && g p heroku master
+
+[B6 v-2.0    2013/04/03 13:21:06]-------------------------------
+#rails generate model WordList text_id:integer word_id:integer lang_id:integer
+#bundle exec rake db:migrate
+g p origin master && g p heroku master && heroku run rake db:migrate
+
+[B7 v-1.0	2013/04/06 10:20:25]-------------------------------
+#$GIT::commit
+#$GIT::merge
+#g p origin master && g p heroku master
+#$BROWSE::REMOTE
+
+[B7 v-1.1	2013/04/06 10:20:25]-------------------------------
+#bundle exec rake db:migrate
+#rake db:version
+
+#rake db:rollback
+	REF=> http://www.rubylife.jp/rails/model/index8.html
+	
+#rails destroy migration ChangeColumnW1InWordsUnique
+
+#g p origin master && g p heroku master && heroku run rake db:migrate
+
+[B7 v-2.1	2013/04/06 10:20:25]-------------------------------
+g p origin master && g p heroku master
+
+[B7 v-2.1	2013/04/16 12:15:45]-------------------------------
+#g p origin master && g p heroku master
+
+[B7 v-2.1	2013/04/16 12:15:45]-------------------------------
+#rails generate migration AddColumnTitleToTexts title:string
+bundle exec rake db:migrate
+
+[B8 v-1.0	2013/04/16 12:43:39]-------------------------------
+g p origin master && g p heroku master && heroku run rake db:migrate
+
+
+============STORAGE============================
+[Model: Article: 20120710_172354]-------------------------------
+# rails generate scaffold Article line:text url:string src:string news_time:string genre:string cat:string subcat:string tag:string memo:text
+
+# bundle exec rake db:migrate
+
+heroku run rake db:migrate
+
+bundle update
+
+
+[Model: Genre 20120711_002405]-------------------------------
+rails generate scaffold Genre name:string
+
+bundle exec rake db:migrate
+
+*push
+
+heroku run rake db:migrate
+
+[Add column: Article 20120711_065652]-------------------------------
+# rails generate migration AddColumnCodesToArticle
+# 
+# bundle exec rake db:migrate
+# 
+# bundle exec rake db:rollback
+# 
+# rails destroy migration AddColumnCodesToArticle
+# 
+# rails generate migration AddColumnCodesToGenre
+
+# *push
+
+# heroku run rake db:migrate
+
+[20120711_080643]-------------------------------------
+# git remote rm heroku
+# gem uninstall heroku
+
+# gem install heroku --no-ri --no-rdoc
+# heroku keys:add
+# heroku create --stack cedar
+# heroku rename cosmos-news-reader-3
+# g p heroku master
+# heroku run rake db:migrate
+
+[20120825_223801]-------------------------------------
+rails generate scaffold Category name:string genre_id:integer
+bundle exec rake db:migrate
+
+rails generate scaffold Keyword name:string category_id:integer
+bundle exec rake db:migrate
+
+heroku run rake db:migrate
+
+============EOF============
