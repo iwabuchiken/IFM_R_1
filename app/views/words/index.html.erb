@@ -1,7 +1,8 @@
 <h1>Listing words</h1>
 
-<table>
+<table border="2">
   <tr>
+  	<th>Id</th>
     <th>W1</th>
     <th>W2</th>
     <th>W3</th>
@@ -9,6 +10,7 @@
     <th>Text</th>
     <th>Lang</th>
     <th>Dbid</th>
+    <th>Created at(millsec)</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,6 +18,7 @@
 
 <% @words.each do |word| %>
   <tr>
+    <td><%= word.id %></td>
     <td><%= word.w1 %></td>
     <td><%= word.w2 %></td>
     <td><%= word.w3 %></td>
@@ -23,6 +26,7 @@
     <td><%= word.text_id %></td>
     <td><%= word.lang_id %></td>
     <td><%= word.dbId %></td>
+    <td><%= word.created_at_mill %></td>
     <td><%= link_to 'Show', word %></td>
     <td><%= link_to 'Edit', edit_word_path(word) %></td>
     <td><%= link_to 'Destroy', word, confirm: 'Are you sure?', method: :delete %></td>

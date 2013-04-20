@@ -42,6 +42,8 @@ class WordListsController < ApplicationController
   def create
     @word_list = WordList.new(params[:word_list])
 
+    @word_list.created_at_mill = (Time.now.to_f * 1000.0).to_i
+
     respond_to do |format|
       if @word_list.save
         format.html { redirect_to @word_list, notice: 'Word list was successfully created.' }

@@ -42,6 +42,8 @@ class WordsController < ApplicationController
   def create
     @word = Word.new(params[:word])
 
+    @word.created_at_mill = (Time.now.to_f * 1000.0).to_i
+    
     respond_to do |format|
       if @word.save
         format.html { redirect_to @word, notice: 'Word was successfully created.' }

@@ -1,7 +1,8 @@
 <h1>Listing texts</h1>
 
-<table>
+<table border="2">
   <tr>
+    <th>Id</th>
     <th>Text</th>
     <th>Title</th>
     <th>Word ids</th>
@@ -11,6 +12,7 @@
     <th>Lang</th>
     <th>Memo</th>
     <th>Dbid</th>
+    <th>Created at(millsec)</th>
     <th></th>
     <th></th>
     <th></th>
@@ -18,6 +20,7 @@
 
 <% @texts.each do |text| %>
   <tr>
+    <td><%= text.id %></td>
     <td><%= text.text %></td>
     <td><%= text.title %></td>
     <td><%= text.word_ids %></td>
@@ -27,6 +30,7 @@
     <td><%= text.lang_id %></td>
     <td><%= text.memo %></td>
     <td><%= text.dbId %></td>
+    <td><%= text.created_at_mill %></td>
     <td><%= link_to 'Show', text %></td>
     <td><%= link_to 'Edit', edit_text_path(text) %></td>
     <td><%= link_to 'Destroy', text, confirm: 'Are you sure?', method: :delete %></td>

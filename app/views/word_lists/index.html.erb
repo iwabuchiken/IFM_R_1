@@ -1,11 +1,13 @@
 <h1>Listing word_lists</h1>
 
-<table>
+<table border="2">
   <tr>
+  	<th>Id</th>
     <th>Text</th>
     <th>Word</th>
     <th>Lang</th>
-    <th>Db</th>
+    <th>DbId</th>
+    <th>Created at(millsec)</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,10 +15,12 @@
 
 <% @word_lists.each do |word_list| %>
   <tr>
+    <td><%= word_list.id %></td>
     <td><%= word_list.text_id %></td>
     <td><%= word_list.word_id %></td>
     <td><%= word_list.lang_id %></td>
     <td><%= word_list.db_id %></td>
+    <td><%= word_list.created_at_mill %></td>
     <td><%= link_to 'Show', word_list %></td>
     <td><%= link_to 'Edit', edit_word_list_path(word_list) %></td>
     <td><%= link_to 'Destroy', word_list, confirm: 'Are you sure?', method: :delete %></td>

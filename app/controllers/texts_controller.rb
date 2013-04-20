@@ -41,7 +41,25 @@ class TextsController < ApplicationController
   # POST /texts.json
   def create
     @text = Text.new(params[:text])
+    
+    @text.created_at_mill = (Time.now.to_f * 1000.0).to_i
+    
+        #D-9
+    if @text.title == ""
+      
+      if @text.text.length > 30
+        
+        @text.title = @text.text[0..30]
+        
+      else
+        
+        @text.title = @text.text
+        
+      end
+      
+    end#if @text.title == ""
 
+    
     respond_to do |format|
       if @text.save
         format.html { redirect_to @text, notice: 'Text was successfully created.' }
