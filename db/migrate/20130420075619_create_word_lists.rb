@@ -5,6 +5,7 @@ class CreateWordLists < ActiveRecord::Migration
       t.integer :word_id, :default => 0, :null => false
       t.integer :lang_id, :default => 0, :null => false
       t.integer :db_id, :default => 0, :null => false
+      t.integer :created_at_mill, :default => 0, :null => false
 
       t.timestamps
     end

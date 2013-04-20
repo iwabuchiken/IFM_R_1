@@ -10,6 +10,7 @@ class CreateTexts < ActiveRecord::Migration
       t.integer :lang_id, :default => 0, :null => false
       t.text :memo
       t.integer :dbId, :default => 0, :null => false
+      t.integer :created_at_mill, :default => 0, :null => false
 
       t.timestamps
     end
