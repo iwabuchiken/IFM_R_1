@@ -1,0 +1,53 @@
+<%= form_for(@text) do |f| %>
+  <% if @text.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@text.errors.count, "error") %> prohibited this text from being saved:</h2>
+
+      <ul>
+      <% @text.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :text %><br />
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :word_ids %><br />
+    <%= f.text_field :word_ids %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :genre_id %><br />
+    <%= f.number_field :genre_id %>
+  </div>
+  <div class="field">
+    <%= f.label :subgenre_id %><br />
+    <%= f.number_field :subgenre_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lang_id %><br />
+    <%= f.number_field :lang_id %>
+  </div>
+  <div class="field">
+    <%= f.label :memo %><br />
+    <%= f.text_area :memo %>
+  </div>
+  <div class="field">
+    <%= f.label :dbId %><br />
+    <%= f.number_field :dbId %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

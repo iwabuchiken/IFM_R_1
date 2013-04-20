@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Text:</b>
+  <%= @text.text %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @text.title %>
+</p>
+
+<p>
+  <b>Word ids:</b>
+  <%= @text.word_ids %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @text.url %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @text.genre_id %>
+</p>
+
+<p>
+  <b>Subgenre:</b>
+  <%= @text.subgenre_id %>
+</p>
+
+<p>
+  <b>Lang:</b>
+  <%= @text.lang_id %>
+</p>
+
+<p>
+  <b>Memo:</b>
+  <%= @text.memo %>
+</p>
+
+<p>
+  <b>Dbid:</b>
+  <%= @text.dbId %>
+</p>
+
+
+<%= link_to 'Edit', edit_text_path(@text) %> |
+<%= link_to 'Back', texts_path %>
