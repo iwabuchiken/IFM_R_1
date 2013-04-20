@@ -197,7 +197,6 @@ g p origin master && g p heroku master
 		
 		To git@heroku.com:cosmos-cr6.git
 		 * [new branch]      master -> master
-
 #heroku open
 
 [B1 2013/04/20 15:19:15]----------------------------
@@ -212,9 +211,11 @@ g p origin master && g p heroku master
 #g p origin master && g p heroku master && heroku run rake db:migrate
 
 [B2 v-1.0 2013/04/20 15:37:36]----------------------------
-rails generate scaffold Word w1:string w2:string w3:string text_ids:string text_id:integer lang_id:integer dbId:integer
+#rails generate scaffold Word w1:string w2:string w3:string text_ids:string text_id:integer lang_id:integer dbId:integer
 
 
+aa
+============STORAGE============================
 [B1 v-2.0 20130331_074117]----------------------------
 //rails generate migration AddColumnCodesToArticle
 #rails generate migration SetDefaultLongVariablesInTexts
@@ -370,7 +371,7 @@ bundle exec rake db:migrate
 g p origin master && g p heroku master && heroku run rake db:migrate
 
 
-============STORAGE============================
+===========================================================
 [Model: Article: 20120710_172354]-------------------------------
 # rails generate scaffold Article line:text url:string src:string news_time:string genre:string cat:string subcat:string tag:string memo:text
 
