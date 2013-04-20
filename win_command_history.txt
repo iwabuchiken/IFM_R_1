@@ -243,7 +243,13 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 [B5 v-2.0 2013/04/20 22:47:19]----------------------------
 #g p origin master && g p heroku master && heroku run rake db:migrate
-heroku logs
+#heroku logs
+
+#heroku run rake db:rollback STEP=3
+#heroku run rake db:version
+heroku run rake db:migrate
+
+
 
 aa
 ============STORAGE============================

@@ -20,3 +20,29 @@ word added to the text: id=6
 text_id => 1
 [C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 20:17:58 +0900/130]
 word added to the text: id=7
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=id
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=text
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=title
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=word_ids
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=url
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=genre_id
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=subgenre_id
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=lang_id
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=memo
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=dbId
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=created_at_mill
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=created_at
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-20 23:18:46 +0900/130]
+c.name=updated_at

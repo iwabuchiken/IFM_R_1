@@ -42,6 +42,13 @@ class TextsController < ApplicationController
   def create
     @text = Text.new(params[:text])
     
+    #debug
+    Text.columns.map {|c|
+      c.name
+      logout("c.name=" + c.name)
+    }
+    
+    
     @text.created_at_mill = (Time.now.to_f * 1000.0).to_i
     
         #D-9
