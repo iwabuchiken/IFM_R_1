@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  text: MyText
+  title: MyString
+  word_ids: MyString
+  url: MyString
+  genre_id: 1
+  subgenre_id: 1
+  lang_id: 1
+  memo: MyText
+  dbId: 1
+
+two:
+  text: MyText
+  title: MyString
+  word_ids: MyString
+  url: MyString
+  genre_id: 1
+  subgenre_id: 1
+  lang_id: 1
+  memo: MyText
+  dbId: 1
