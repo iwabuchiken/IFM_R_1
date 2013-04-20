@@ -46,6 +46,8 @@ class WordListsController < ApplicationController
 
     respond_to do |format|
       if @word_list.save
+        
+        logout("created_at_mill=" + @word_list.created_at_mill.to_s)
         format.html { redirect_to @word_list, notice: 'Word list was successfully created.' }
         format.json { render json: @word_list, status: :created, location: @word_list }
       else
