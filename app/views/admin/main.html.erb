@@ -1,0 +1,13 @@
+<h1>Admin#main</h1>
+<p>Find me in app/views/admin/main.html.erb</p>
+<hr />
+
+@contentArray = <%= @contentArray.class %><br />
+@contentArray.length = <%= @contentArray.length %><br />
+<hr />
+
+<% for i in 0..@contentArray.length - 1 %>
+
+	<%= @contentArray[i] %><br />
+
+<% end %>

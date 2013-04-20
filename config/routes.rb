@@ -1,4 +1,10 @@
 CR6R::Application.routes.draw do
+  get "admin/main"
+
+  get "admin/sub1"
+
+  get "admin/sub2"
+
   resources :word_lists
 
   resources :words

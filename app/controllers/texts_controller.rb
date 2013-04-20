@@ -42,7 +42,7 @@ class TextsController < ApplicationController
   def create
     @text = Text.new(params[:text])
     
-    #debug
+    #debug  => http://stackoverflow.com/questions/3479551/how-to-get-an-array-with-column-names-of-a-table
     Text.columns.map {|c|
       c.name
       logout("c.name=" + c.name)
