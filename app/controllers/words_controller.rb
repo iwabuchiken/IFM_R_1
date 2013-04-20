@@ -44,8 +44,37 @@ class WordsController < ApplicationController
 
     @word.created_at_mill = (Time.now.to_f * 1000.0).to_i
     
+    # Get text instance
+    text_id = @word.text_id
+    
+    if text_id != 0
+    
+      text = Text.find(text_id.to_i)
+      
+      logout("text_id => " + text_id.to_s)
+      
+    else
+
+      text = nil
+      
+      logout("text_id => nil")
+      
+    end
+    
     respond_to do |format|
       if @word.save
+        if text != nil
+          
+          text.words << @word
+          
+          logout("word added to the text: id=" + @word.id.to_s)
+          
+        else
+          
+          logout("text == nil")
+          
+        end
+
         format.html { redirect_to @word, notice: 'Word was successfully created.' }
         format.json { render json: @word, status: :created, location: @word }
       else
@@ -82,4 +111,26 @@ class WordsController < ApplicationController
       format.json { head :no_content }
     end
   end
+end
+
+def logout(label)
+  
+    
+    target = "doc/mylog.txt"
+    
+    if not File.exists?(target)
+      
+      FileUtils.touch(target)
+      
+    end
+    
+    # content = "abcdefg"
+    # File.open(target, "w+") do |f|
+    File.open(target, "a") do |f|
+      f.write("[" + __FILE__ + " " + Time.now.to_s + "/" + __LINE__.to_s + "]" + "\n")
+      # f.write(content)
+      f.write(label)
+      f.write("\n")
+    end
+
 end
