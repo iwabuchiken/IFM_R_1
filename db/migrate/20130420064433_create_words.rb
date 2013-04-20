@@ -5,9 +5,9 @@ class CreateWords < ActiveRecord::Migration
       t.string :w2
       t.string :w3
       t.string :text_ids
-      t.integer :text_id
-      t.integer :lang_id
-      t.integer :dbId
+      t.integer :text_id, :default => 0, :null => false
+      t.integer :lang_id, :default => 0, :null => false
+      t.integer :dbId, :default => 0, :null => false
 
       t.timestamps
     end

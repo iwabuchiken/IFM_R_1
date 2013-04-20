@@ -213,7 +213,23 @@ g p origin master && g p heroku master
 [B2 v-1.0 2013/04/20 15:37:36]----------------------------
 #rails generate scaffold Word w1:string w2:string w3:string text_ids:string text_id:integer lang_id:integer dbId:integer
 
+g p origin master && g p heroku master && heroku run rake db:migrate
 
+[B3 v-1.0 2013/04/20 16:08:17]----------------------------
+#rake db:rollback STEP=1
+#heroku run rake db:rollback STEP=1
+#heroku run rake db:migrate
+#rake db:rollback STEP=1
+#bundle exec rake db:migrate
+#bundle exec rake db:rollback STEP=1	=> Cancelled amidst the process
+#bundle exec rake db:version
+#bundle exec rake db:migrate
+#rake db:rollback STEP=2
+#heroku run rake db:version
+		Current version: 20130420064433
+
+heroku run rake db:rollback STEP=2
+heroku run rake db:version
 aa
 ============STORAGE============================
 [B1 v-2.0 20130331_074117]----------------------------

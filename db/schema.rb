@@ -18,13 +18,13 @@ ActiveRecord::Schema.define(:version => 20130420064433) do
     t.string   "title"
     t.string   "word_ids"
     t.string   "url"
-    t.integer  "genre_id"
-    t.integer  "subgenre_id"
-    t.integer  "lang_id"
+    t.integer  "genre_id",    :default => 0, :null => false
+    t.integer  "subgenre_id", :default => 0, :null => false
+    t.integer  "lang_id",     :default => 0, :null => false
     t.text     "memo"
-    t.integer  "dbId"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "dbId",        :default => 0, :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   create_table "words", :force => true do |t|
@@ -32,11 +32,11 @@ ActiveRecord::Schema.define(:version => 20130420064433) do
     t.string   "w2"
     t.string   "w3"
     t.string   "text_ids"
-    t.integer  "text_id"
-    t.integer  "lang_id"
-    t.integer  "dbId"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "text_id",    :default => 0, :null => false
+    t.integer  "lang_id",    :default => 0, :null => false
+    t.integer  "dbId",       :default => 0, :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
 end
