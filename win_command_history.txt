@@ -13,48 +13,98 @@ pushd C:\WORKS\WORKSPACES_APTANA\NewsReader3
 
 [Git]
 git init && g a . && gitk
+g a . && gitk
 
 git log --grep=master -6
 
-[Set up 20130329_145801]----------------------------
-#bundle install
+[Set up 2013/04/20 14:45:46]----------------------------
+bundle install
 
 rails s --port 3001
 
 gem install heroku --no-ri --no-rdoc
 
-	Fetching: heroku-api-0.3.8.gem (100%)
-	Fetching: heroku-2.35.0.gem (100%)
-	 !    The `heroku` gem has been deprecated and replaced with the Heroku Toolbelt
-	.
-	 !    Download and install from: https://toolbelt.heroku.com
-	 !    For API access, see: https://github.com/heroku/heroku.rb
-	Successfully installed heroku-api-0.3.8
-	Successfully installed heroku-2.35.0
-	2 gems installed
+		Fetching: heroku-2.37.2.gem (100%)
+		 !    The `heroku` gem has been deprecated and replaced with the Heroku Toolbelt
+		.
+		 !    Download and install from: https://toolbelt.heroku.com
+		 !    For API access, see: https://github.com/heroku/heroku.rb
+		Fetching: excon-0.20.1.gem (100%)
+		Successfully installed heroku-2.37.2
+		Successfully installed excon-0.20.1
+		2 gems installed
 
 heroku keys:add
 
-	Found existing public key: C:/Users/IwabuchiKen/.ssh/id_rsa.pub
-	Uploading SSH public key C:/Users/IwabuchiKen/.ssh/id_rsa.pub... done
+		Found existing public key: C:/Users/IwabuchiKen/.ssh/id_rsa.pub
+		Uploading SSH public key C:/Users/IwabuchiKen/.ssh/id_rsa.pub... done
 
 heroku create --stack cedar
 
-	Creating mysterious-beyond-3632... done, stack is cedar
-	http://mysterious-beyond-3632.herokuapp.com/ | git@heroku.com:mysterious-beyond
-	3632.git
-	Git remote heroku added
+		Creating peaceful-mountain-6452... done, stack is cedar
+		http://peaceful-mountain-6452.herokuapp.com/ | git@heroku.com:peaceful-mountain-
+		6452.git
+		Git remote heroku added
 
-heroku rename cosmos-cr5
+heroku rename cosmos-cr6
 
-	Renaming mysterious-beyond-3632 to cosmos-cr5... done
-	http://cosmos-cr5.herokuapp.com/ | git@heroku.com:cosmos-cr5.git
-	Git remote heroku updated
+		Renaming peaceful-mountain-6452 to cosmos-cr6... done
+		http://cosmos-cr6.herokuapp.com/ | git@heroku.com:cosmos-cr6.git
+		Git remote heroku updated
 
 g p heroku master
 
-	To git@heroku.com:cosmos-cr5.git
-	 * [new branch]      master -> master
+       Installing sqlite3 (1.3.7)
+       Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native ex
+		tension.
+		       /usr/local/bin/ruby extconf.rb
+		       checking for sqlite3.h... no
+		       sqlite3.h is missing. Try 'port install sqlite3 +universal'
+		       or 'yum install sqlite-devel' and check your shared library search path (
+		the
+		       location where your sqlite3 shared library is located).
+		       *** extconf.rb failed ***
+		       Could not create Makefile due to some reason, probably lack of
+		       necessary libraries and/or headers.  Check the mkmf.log file for more
+		       details.  You may need configuration options.
+		       Provided configuration options:
+		       --with-opt-dir
+		       --without-opt-dir
+		       --with-opt-include
+		       --without-opt-include=${opt-dir}/include
+		       --with-opt-lib
+		       --without-opt-lib=${opt-dir}/lib
+		       --with-make-prog
+		       --without-make-prog
+		       --srcdir=.
+		       --curdir
+		       --ruby=/usr/local/bin/ruby
+		       --with-sqlite3-dir
+		       --without-sqlite3-dir
+		       --with-sqlite3-include
+		       --without-sqlite3-include=${sqlite3-dir}/include
+		       --with-sqlite3-lib
+		       --without-sqlite3-lib=${sqlite3-dir}/lib
+		       --enable-local
+		       --disable-local
+		       Gem files will remain installed in /tmp/build_3lbfpq1qc72t3/vendor/bundle
+		/ruby/1.9.1/gems/sqlite3-1.3.7 for inspection.
+		       Results logged to /tmp/build_3lbfpq1qc72t3/vendor/bundle/ruby/1.9.1/gems/
+		sqlite3-1.3.7/ext/sqlite3/gem_make.out
+		       An error occurred while installing sqlite3 (1.3.7), and Bundler cannot co
+		ntinue.
+		       Make sure that `gem install sqlite3 -v '1.3.7'` succeeds before bundling.
+		
+		 !
+		 !     Failed to install gems via Bundler.
+		 !
+		 !     Heroku push rejected, failed to compile Ruby/rails app
+		
+		To git@heroku.com:cosmos-cr6.git
+		 ! [remote rejected] master -> master (pre-receive hook declined)
+		error: failed to push some refs to 'git@heroku.com:cosmos-cr6.git'
+
+g p origin master && g p heroku master
 
 heroku open
 
