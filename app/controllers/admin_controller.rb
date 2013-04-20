@@ -16,6 +16,7 @@ class AdminController < ApplicationController
         # # f.write("\n")
       # end
 
+      # => http://www.ruby-forum.com/topic/66733
       @contentArray = File.readlines(target)
 
     else

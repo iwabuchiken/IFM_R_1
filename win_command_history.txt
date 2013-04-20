@@ -249,8 +249,10 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 #heroku run rake db:version
 #heroku run rake db:migrate
 
-rails generate controller admin main sub1 sub2
+#rails generate controller admin main sub1 sub2
 
+heroku run rake db:rollback STEP=3
+heroku run rake db:version
 
 aa
 ============STORAGE============================

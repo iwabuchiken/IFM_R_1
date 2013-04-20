@@ -18,14 +18,14 @@ ActiveRecord::Schema.define(:version => 20130420075619) do
     t.string   "title"
     t.string   "word_ids"
     t.string   "url"
-    t.integer  "genre_id",        :default => 0, :null => false
-    t.integer  "subgenre_id",     :default => 0, :null => false
-    t.integer  "lang_id",         :default => 0, :null => false
+    t.integer  "genre_id",                     :default => 0, :null => false
+    t.integer  "subgenre_id",                  :default => 0, :null => false
+    t.integer  "lang_id",                      :default => 0, :null => false
     t.text     "memo"
-    t.integer  "dbId",            :default => 0, :null => false
-    t.integer  "created_at_mill", :default => 0, :null => false
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
+    t.integer  "dbId",                         :default => 0, :null => false
+    t.integer  "created_at_mill", :limit => 8, :default => 0, :null => false
+    t.datetime "created_at",                                  :null => false
+    t.datetime "updated_at",                                  :null => false
   end
 
   create_table "word_lists", :force => true do |t|

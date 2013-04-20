@@ -10,7 +10,11 @@ class CreateTexts < ActiveRecord::Migration
       t.integer :lang_id, :default => 0, :null => false
       t.text :memo
       t.integer :dbId, :default => 0, :null => false
-      t.integer :created_at_mill, :default => 0, :null => false
+      # t.integer :created_at_mill, :default => 0, :null => false
+      # t.bigint :created_at_mill, :default => 0, :null => false
+      
+      # => http://stackoverflow.com/questions/1066340/how-to-use-long-id-in-rails-applications
+      t.integer :created_at_mill, :limit => 8, :default => 0, :null => false
 
       t.timestamps
     end

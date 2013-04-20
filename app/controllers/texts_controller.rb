@@ -42,11 +42,11 @@ class TextsController < ApplicationController
   def create
     @text = Text.new(params[:text])
     
-    #debug  => http://stackoverflow.com/questions/3479551/how-to-get-an-array-with-column-names-of-a-table
-    Text.columns.map {|c|
-      c.name
-      logout("c.name=" + c.name)
-    }
+    # #debug  => http://stackoverflow.com/questions/3479551/how-to-get-an-array-with-column-names-of-a-table
+    # Text.columns.map {|c|
+      # c.name
+      # logout("c.name=" + c.name)
+    # }
     
     
     @text.created_at_mill = (Time.now.to_f * 1000.0).to_i
