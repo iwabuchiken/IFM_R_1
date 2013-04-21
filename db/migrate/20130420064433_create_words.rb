@@ -8,7 +8,9 @@ class CreateWords < ActiveRecord::Migration
       t.integer :text_id, :default => 0, :null => false
       t.integer :lang_id, :default => 0, :null => false
       t.integer :dbId, :default => 0, :null => false
-      t.integer :created_at_mill, :default => 0, :null => false
+      # t.integer :created_at_mill, :default => 0, :null => false
+      t.integer :created_at_mill, :limit => 8, :default => 0, :null => false
+      t.integer :updated_at_mill, :limit => 8, :default => 0, :null => false
 
       t.timestamps
     end

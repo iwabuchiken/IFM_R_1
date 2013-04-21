@@ -15,6 +15,7 @@ class CreateTexts < ActiveRecord::Migration
       
       # => http://stackoverflow.com/questions/1066340/how-to-use-long-id-in-rails-applications
       t.integer :created_at_mill, :limit => 8, :default => 0, :null => false
+      t.integer :updated_at_mill, :limit => 8, :default => 0, :null => false
 
       t.timestamps
     end

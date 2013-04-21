@@ -251,8 +251,16 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 #rails generate controller admin main sub1 sub2
 
-heroku run rake db:rollback STEP=3
-heroku run rake db:version
+#heroku run rake db:rollback STEP=3
+#heroku run rake db:version
+
+#g p origin master && g p heroku master && heroku run rake db:migrate
+
+[B5 v-2.0-T1 2013/04/21 08:31:14]----------------------------
+#heroku run rake db:rollback STEP=3 && heroku run rake db:version
+
+#bundle exec rake db:rollback STEP=3 && bundle exec rake db:version
+bundle exec rake db:migrate
 
 aa
 ============STORAGE============================
