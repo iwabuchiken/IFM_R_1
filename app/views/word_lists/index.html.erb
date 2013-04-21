@@ -8,6 +8,7 @@
     <th>Lang</th>
     <th>DbId</th>
     <th>Created at(millsec)</th>
+    <th>Updated at(millsec)</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,6 +22,7 @@
     <td><%= word_list.lang_id %></td>
     <td><%= word_list.db_id %></td>
     <td><%= word_list.created_at_mill %></td>
+    <td><%= word_list.updated_at_mill %></td>
     <td><%= link_to 'Show', word_list %></td>
     <td><%= link_to 'Edit', edit_word_list_path(word_list) %></td>
     <td><%= link_to 'Destroy', word_list, confirm: 'Are you sure?', method: :delete %></td>

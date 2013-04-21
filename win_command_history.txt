@@ -260,7 +260,13 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 #heroku run rake db:rollback STEP=3 && heroku run rake db:version
 
 #bundle exec rake db:rollback STEP=3 && bundle exec rake db:version
-bundle exec rake db:migrate
+#bundle exec rake db:migrate
+#g p origin master && g p heroku master && heroku run rake db:migrate
+
+[B6 v-1.0 2013/04/21 11:00:47]----------------------------
+g p origin master && g p heroku master
+
+
 
 aa
 ============STORAGE============================
