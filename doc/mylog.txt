@@ -54,3 +54,7 @@ word added to the text: id=1
 text_id => 1
 [C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-21 09:50:03 +0900/130]
 word added to the text: id=2
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-21 10:11:11 +0900/130]
+text_id => 1
+[C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb 2013-04-21 10:11:11 +0900/130]
+word added to the text: id=3
