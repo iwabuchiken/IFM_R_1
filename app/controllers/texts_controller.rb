@@ -25,8 +25,8 @@ class TextsController < ApplicationController
               Text.find(
                     :all,
                     :conditions => [
-                              "updated_at_mill > ?", since.to_i])
-                              # "created_at_mill > ?", since.to_i])
+                              # "updated_at_mill > ?", since.to_i])
+                              "created_at_mill > ?", since.to_i])
                               # "created_at_mill > ?", since.to_i + (9*60*60)])
                               # "created_at > ?",
                               # Time.at(since.to_i / 1000).utc])
