@@ -1,3 +1,6 @@
+require_dependency 'basic'
+include Basic
+
 class WordListsController < ApplicationController
   # GET /word_lists
   # GET /word_lists.json

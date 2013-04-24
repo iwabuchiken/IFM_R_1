@@ -3,8 +3,11 @@ class Text < ActiveRecord::Base
   has_many :word_lists
   has_many :words, through: :word_lists
 
+  # before_save :add_created_at_millsec, add_updated_at_millsec
   before_save :add_created_at_millsec
-  before_update :update_created_at_millsec
+  before_save :add_updated_at_millsec
+  before_update :add_updated_at_millsec
+  # before_update :update_created_at_millsec
   
   
   protected
@@ -19,7 +22,8 @@ class Text < ActiveRecord::Base
     
   end#def add_created_at_millsec
   
-  def update_created_at_millsec
+  def add_updated_at_millsec
+  # def update_created_at_millsec
     
     mill_sec = (Time.now.to_f * 1000.0).to_i
     

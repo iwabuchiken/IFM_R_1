@@ -1,8 +1,72 @@
+# => http://stackoverflow.com/questions/1698225/where-to-put-common-code-found-in-multiple-models ## "answered Nov 8 '09 at 23:29" 
+require_dependency 'basic'
+include Basic
+
 class TextsController < ApplicationController
+  
+  # include Basic
+  
   # GET /texts
   # GET /texts.json
   def index
-    @texts = Text.all
+    
+    since = params[:since]
+    
+        if since == nil
+
+      logout("since == nil")
+      @texts = Text.all
+      
+    else
+      
+        if since.numeric?
+      
+          @texts = 
+              Text.find(
+                    :all,
+                    :conditions => [
+                              "updated_at_mill > ?", since.to_i])
+                              # "created_at_mill > ?", since.to_i])
+                              # "created_at_mill > ?", since.to_i + (9*60*60)])
+                              # "created_at > ?",
+                              # Time.at(since.to_i / 1000).utc])
+                              # Time.at(since.to_i / 1000).utc + (9*60*60)])
+
+                              # REF=> http://www.treeder.com/2011/06/converting-ruby-time-to-milliseconds.html
+                              # Time.at(since.to_i / 1000).utc + (9*60*60 + 1)])
+
+                              
+                    # :conditions => ["created_at > ?", Time.at(since.to_i / 1000)])
+          
+          # logout(Time.at(since.to_i / 1000) + "/utc=" + Time.at(since.to_i / 1000).utc)
+          # logout(Time.at(since.to_i / 1000).to_s + "/utc=" + Time.at(since.to_i / 1000).utc.to_s)
+          logout((Time.at(since.to_i / 1000) + (9*60*60 + 1)).to_s\
+                  + "/utc="\
+                  + (Time.at(since.to_i / 1000).utc + (9*60*60 + 1)).to_s\
+                  + "/since=" + since.to_i.to_s
+                  )
+          
+          # logout((Time.at(since.to_i / 1000) + (9*60*60)).to_s\
+                  # + "/utc="\
+                  # + (Time.at(since.to_i / 1000).utc + (9*60*60)).to_s)
+          
+          # @texts.paginate
+          
+        else
+          logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
+          
+          @texts =
+              Text.all
+          
+        end
+
+      # @texts = Text.find(:all, :conditions => ["created_at > ?", Time.at(since.to_i / 1000).utc])
+      
+    end    
+
+    
+    
+    # @texts = Text.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -105,4 +169,13 @@ class TextsController < ApplicationController
       format.json { head :no_content }
     end
   end
-end
+  
+end#class TextsController < ApplicationController
+
+#REF=> http://stackoverflow.com/questions/5661466/test-if-string-is-a-number-in-ruby-on-rails
+class String
+  def numeric?
+    return true if self =~ /^\d+$/
+    true if Float(self) rescue false
+  end
+end  
