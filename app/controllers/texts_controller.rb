@@ -12,7 +12,7 @@ class TextsController < ApplicationController
     
     since = params[:since]
     
-        if since == nil
+    if since == nil
 
       logout("since == nil")
       @texts = Text.all
@@ -58,11 +58,11 @@ class TextsController < ApplicationController
           @texts =
               Text.all
           
-        end
+        end#if since.numeric?
 
       # @texts = Text.find(:all, :conditions => ["created_at > ?", Time.at(since.to_i / 1000).utc])
       
-    end    
+    end#if since == nil    
 
     
     
