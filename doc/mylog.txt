@@ -80,3 +80,19 @@ since == nil
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 09:37:42 +0900/17]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:32:39 +0900/17]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:32:45 +0900/17]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:33:13 +0900/17]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:33:28 +0900/17]
+text_id => 1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:33:29 +0900/17]
+word added to the text: id=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:33:32 +0900/17]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:33:44 +0900/17]
+2013-04-24 22:33:30 +0900/utc=2013-04-24 13:33:30 UTC/since=1366778009087
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-24 13:35:35 +0900/17]
+2013-04-24 22:33:30 +0900/utc=2013-04-24 13:33:30 UTC/since=1366778009335
