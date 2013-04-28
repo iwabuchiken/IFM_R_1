@@ -5,6 +5,66 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  
+  <% if @current_controller != nil && @current_controller = "words" %>
+  <!-- Include js: words.js -->
+  <%#= javascript_include_tag "words" %>
+  
+	  <script type="text/javascript">
+	  
+		  $(document).ready(function() {
+		    // $('#choose').hover(
+		    $('#word_w1').hover(
+		    	
+		    	function() {
+		            // alert("Hover!");
+		            this.focus();
+		            this.select();
+		            //alert("<%= @current_controller %>");
+		        },
+		        
+		        function() {
+		        	// alert("Done");
+		        }
+		        
+		    );//$('#choose').hover(function() {
+
+		    $('#word_w2').hover(
+		    	
+		    	function() {
+		            // alert("Hover!");
+		            this.focus();
+		            this.select();
+		            //alert("<%= @current_controller %>");
+		        },
+		        
+		        function() {
+		        	// alert("Done");
+		        }
+		        
+		    );//$('#choose').hover(function() {
+
+		    $('#word_w3').hover(
+		    	
+		    	function() {
+		            // alert("Hover!");
+		            this.focus();
+		            this.select();
+		            //alert("<%= @current_controller %>");
+		        },
+		        
+		        function() {
+		        	// alert("Done");
+		        }
+		        
+		    );//$('#choose').hover(function() {
+
+		    
+		  });//$(document).ready(function() {
+		  	
+	  </script>  
+  <% end %>
+  
 </head>
 <body>
 

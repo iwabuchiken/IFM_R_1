@@ -84,6 +84,10 @@ class WordsController < ApplicationController
   def new
     @word = Word.new
 
+    # REF http://stackoverflow.com/questions/3757491/can-i-get-the-name-of-the-current-controller-in-the-view answered Sep 21 '10 at 5:27
+    #debug
+    @current_controller = params[:controller]
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @word }

@@ -13,7 +13,10 @@
 
   <div class="field">
     <%= f.label :w1 %><br />
-    <%= f.text_field :w1 %>
+    <div id="choose">
+	    <%= f.text_field :w1 %>
+	    <%#= f.text_field :w1, {onmouseover => "alert(hi)"} %>
+    </div>
   </div>
   <div class="field">
     <%= f.label :w2 %><br />

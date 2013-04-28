@@ -1,0 +1,17 @@
+$(document).ready(function() {
+    // $('#choose').hover(
+	$('#word_w1').hover(
+		
+		function() {
+	        // alert("Hover!");
+	        this.focus();
+	        this.select();
+	        //alert("<%= @current_controller %>");
+	    },
+	    
+	    function() {
+	    	// alert("Done");
+	    }
+	    
+	);//$('#choose').hover(function() {
+});//$(document).ready(function() {
