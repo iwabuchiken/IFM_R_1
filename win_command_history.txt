@@ -272,6 +272,11 @@ g p origin master && g p heroku master
 g p origin master && g p heroku master
 heroku run rake db:rollback STEP=3 && heroku run rake db:version && heroku run rake db:migrate
 
+[B8 ADD-1 v-1.0 2013/04/28 12:30:38]----------------------------
+g p origin master && g p heroku master
+
+
+
 aa
 ============STORAGE============================
 [B1 v-2.0 20130331_074117]----------------------------

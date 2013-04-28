@@ -1,4 +1,5 @@
-<h1>Listing texts</h1>
+<h1><a name="top">Texts</a></h1>(<%= link_to 'New Text', new_text_path %>)
+	<a href="#bottom" style="margin: 0px 25px;">(To bottom)</a>
 
 <table border="2">
   <tr>
@@ -14,13 +15,12 @@
     <th>Dbid</th>
     <th>Created at(millsec)</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @texts.each do |text| %>
   <tr>
-    <td><%= text.id %></td>
+    
+    <td><%= link_to text.id, text %></td>
     <td><%= text.text %></td>
     <td><%= text.title %></td>
     <td><%= text.word_ids %></td>
@@ -31,13 +31,13 @@
     <td><%= text.memo %></td>
     <td><%= text.dbId %></td>
     <td><%= text.created_at_mill %></td>
-    <td><%= link_to 'Show', text %></td>
-    <td><%= link_to 'Edit', edit_text_path(text) %></td>
     <td><%= link_to 'Destroy', text, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
+<a name="bottom"></a>
+<%= link_to 'New Text', new_text_path %><a href="#top" style="margin: 0px 25px;">(To top)</a>
 <br />
 
-<%= link_to 'New Text', new_text_path %>
+
