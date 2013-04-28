@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Id:</b>
+  <%= @text.id %>
+</p>
+
+<p>
   <b>Text:</b>
   <%= @text.text %>
 </p>
@@ -47,4 +52,5 @@
 
 
 <%= link_to 'Edit', edit_text_path(@text) %> |
-<%= link_to 'Back', texts_path %>
+<%= link_to 'Back', texts_path %> |
+<%= link_to 'New Text', new_text_path %>

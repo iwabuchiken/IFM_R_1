@@ -1,13 +1,19 @@
 <h1><a name="top">Texts</a></h1>(<%= link_to 'New Text', new_text_path %>)
 	<a href="#bottom" style="margin: 0px 25px;">(To bottom)</a>
 
+<!--
+	REF 'Anchor' http://heo.jp/tag/href/namelink.html
+-->
+
 <table border="2">
   <tr>
     <th>Id</th>
     <th>Text</th>
     <th>Title</th>
     <th>Word ids</th>
+    <!-- <th style="width: 10px;">Url</th> -->
     <th>Url</th>
+    <!-- <th class="url">Url</th> -->
     <th>Genre</th>
     <th>Subgenre</th>
     <th>Lang</th>
@@ -21,10 +27,11 @@
   <tr>
     
     <td><%= link_to text.id, text %></td>
-    <td><%= text.text %></td>
+    <td class="text"><%= text.text %></td>
+    <!-- <td><%#= text.text %></td> -->
     <td><%= text.title %></td>
     <td><%= text.word_ids %></td>
-    <td><%= text.url %></td>
+    <td class="url"><%= text.url %></td>
     <td><%= text.genre_id %></td>
     <td><%= text.subgenre_id %></td>
     <td><%= text.lang_id %></td>
@@ -37,6 +44,9 @@
 </table>
 
 <a name="bottom"></a>
+<!--
+	REF http://www.tohoho-web.com/css/prop/margin.htm
+-->
 <%= link_to 'New Text', new_text_path %><a href="#top" style="margin: 0px 25px;">(To top)</a>
 <br />
 

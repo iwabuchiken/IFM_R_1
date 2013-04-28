@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Id:</b>
+  <%= @word.id %>
+</p>
+
+<p>
   <b>W1:</b>
   <%= @word.w1 %>
 </p>
@@ -37,4 +42,5 @@
 
 
 <%= link_to 'Edit', edit_word_path(@word) %> |
-<%= link_to 'Back', words_path %>
+<%= link_to 'Back', words_path %> |
+<%= link_to 'New Word', new_word_path %>
