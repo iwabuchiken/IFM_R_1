@@ -430,3 +430,21 @@ params[:text_id]=a
 label=a
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:00:29 +0900]
 false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:09:03 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:09:17 +0900]
+label=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:09:17 +0900]
+params[:text_id]=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:09:17 +0900]
+label=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:09:17 +0900]
+true
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:09:23 +0900]
+text_id => 2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:09:23 +0900]
+word added to the text: id=20
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:10:52 +0900]
+params[:text_id] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:11:11 +0900]
+params[:text_id] => nil

@@ -93,8 +93,18 @@ class WordsController < ApplicationController
     end
 
     #debug
-    logout("params[:text_id]=" + params[:text_id])
-    logout(is_numeric?(params[:text_id]))
+    if params[:text_id] != nil
+      
+      logout("params[:text_id]=" + params[:text_id])
+      logout(is_numeric?(params[:text_id]))
+        
+    else
+      
+      logout("params[:text_id] => nil")
+      
+    end
+    
+    
 
     # REF http://stackoverflow.com/questions/3757491/can-i-get-the-name-of-the-current-controller-in-the-view answered Sep 21 '10 at 5:27
     #debug
