@@ -14,7 +14,7 @@ module Basic
     # content = "abcdefg"
     # File.open(target, "w+") do |f|
     File.open(target, "a") do |f|
-      f.write("[" + __FILE__ + " " + Time.now.to_s + "/" + __LINE__.to_s + "]" + "\n")
+      f.write("[" + __FILE__ + " "  + "/" + __LINE__.to_s + " " + Time.now.to_s + "]" + "\n")
       # f.write(content)
       f.write(label)
       f.write("\n")
@@ -22,6 +22,14 @@ module Basic
 
   end#def logout(label)
 
+  def is_numeric?(label)
+    logout("label=" + label)
+    
+    return true if label =~ /^\d+$/
+    
+    true if Float(label) rescue false
+  end#def is_numeric?(label)
+    
   class String
     def numeric?
       return true if self =~ /^\d+$/

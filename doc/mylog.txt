@@ -370,3 +370,63 @@ since == nil
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 09:31:10 +0900/17]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:34:10 +0900/17]
+false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:35:45 +0900/17]
+params[:text_id]=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:35:45 +0900/17]
+false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:36:43 +0900/17]
+params[:text_id]=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:36:43 +0900/17]
+false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:41:53 +0900/17]
+params[:text_id]=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:41:53 +0900/17]
+false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:44:16 +0900/17]
+params[:text_id]=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:44:16 +0900/17]
+false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:46:39 +0900/17]
+params[:text_id]=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:46:39 +0900/17]
+false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:47:43 +0900/17]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:47:50 +0900/17]
+params[:text_id]=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb 2013-04-29 10:47:50 +0900/17]
+false
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:57:32 +0900]
+label=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:57:32 +0900]
+params[:text_id]=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:57:32 +0900]
+label=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:57:32 +0900]
+true
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:58:11 +0900]
+label=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:58:11 +0900]
+params[:text_id]=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:58:11 +0900]
+label=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /172013-04-29 10:58:11 +0900]
+true
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 10:59:53 +0900]
+label=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 10:59:53 +0900]
+params[:text_id]=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 10:59:53 +0900]
+label=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 10:59:53 +0900]
+true
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:00:29 +0900]
+label=a
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:00:29 +0900]
+params[:text_id]=a
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:00:29 +0900]
+label=a
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 11:00:29 +0900]
+false

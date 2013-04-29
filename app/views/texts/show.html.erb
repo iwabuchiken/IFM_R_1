@@ -54,4 +54,7 @@
 <%= link_to 'Edit', edit_text_path(@text) %> |
 <%= link_to 'Back', texts_path %> |
 <%= link_to 'New Text', new_text_path %> |
+<!--
+	REF parameter http://yoshifumisato.jeez.jp/wordpress/post/rails/723
+-->
 <%= link_to 'New Word', :controller =>"words",:action =>"new", :text_id => @text.id %>
