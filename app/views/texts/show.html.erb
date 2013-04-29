@@ -53,4 +53,5 @@
 
 <%= link_to 'Edit', edit_text_path(@text) %> |
 <%= link_to 'Back', texts_path %> |
-<%= link_to 'New Text', new_text_path %>
+<%= link_to 'New Text', new_text_path %> |
+<%= link_to 'New Word', :controller =>"words",:action =>"new", :text_id => @text.id %>

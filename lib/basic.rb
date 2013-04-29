@@ -20,7 +20,13 @@ module Basic
       f.write("\n")
     end
 
-  end
+  end#def logout(label)
 
-  
+  class String
+    def numeric?
+      return true if self =~ /^\d+$/
+      true if Float(self) rescue false
+    end
+  end#class String
+
 end
