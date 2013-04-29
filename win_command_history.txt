@@ -292,7 +292,9 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 #bundle exec rake db:rollback STEP=1 && bundle exec rake db:migrate
 
-heroku run rake db:rollback STEP=1 && heroku run rake db:migrate
+#heroku run rake db:rollback STEP=1 && heroku run rake db:migrate
+
+g co master && g merge B11_viewport && g p origin master && g p heroku master
 
 
 
