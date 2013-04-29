@@ -296,7 +296,9 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 #g co master && g merge B11_viewport && g p origin master && g p heroku master
 
-g p origin master && g p heroku master
+#g p origin master && g p heroku master
+
+g co master && g merge B12_lang-name-list_in_texts#new,edit && g p origin master && g p heroku master
 
 aa
 ============STORAGE============================

@@ -37,7 +37,23 @@
   </div>
   <div class="field">
     <%= f.label :lang_id %><br />
-    <%= f.number_field :lang_id %>
+    <!-- <%#= f.number_field :lang_id %> -->
+    
+    <% if Lang.all.size > 0 %>
+    	<!-- <%#= select(
+    				"keyword",
+    				"category_id",
+    				Category.all.collect {|g| [g.name, g.id]}) %> -->
+    	<%= select(
+    				"text",
+    				"lang_id",
+    				Lang.all.collect {|lang| [lang.name, lang.id]}) %>
+    <% else %>
+    
+    	<b>No data</b>
+    	
+    <% end %>
+    
   </div>
   <div class="field">
     <%= f.label :memo %><br />
