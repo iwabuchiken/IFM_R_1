@@ -1,4 +1,6 @@
 CR6R::Application.routes.draw do
+  resources :langs
+
   get "admin/main"
 
   get "admin/sub1"

@@ -160,6 +160,7 @@ class WordsController < ApplicationController
         end
 
         format.html { redirect_to @word, notice: 'Word was successfully created.' }
+        # format.html { redirect_to @word, notice: 'Word was successfully created.' }
         format.json { render json: @word, status: :created, location: @word }
       else
         format.html { render action: "new" }

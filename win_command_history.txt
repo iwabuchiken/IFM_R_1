@@ -275,6 +275,17 @@ heroku run rake db:rollback STEP=3 && heroku run rake db:version && heroku run r
 [B8 ADD-1 v-1.0 2013/04/28 12:30:38]----------------------------
 g p origin master && g p heroku master
 
+g co master
+g merge B9_CHANGE-1_New-Text_to-the-top
+
+[B10_NEW_MODEL_lang v-1.0 2013/04/29 11:41:06]----------------------------
+//rails generate scaffold Lang line:text url:string src:string news_time:string genre:string cat:string subcat:string tag:string memo:text
+#rails generate scaffold Lang name:string created_at_mill:integer updated_at_mill:integer
+
+#bundle exec rake db:migrate
+
+g co master
+g merger B10_NEW_MODEL_lang
 
 
 aa

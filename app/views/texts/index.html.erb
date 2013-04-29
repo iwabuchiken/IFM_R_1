@@ -34,7 +34,13 @@
     <td class="url"><%= text.url %></td>
     <td><%= text.genre_id %></td>
     <td><%= text.subgenre_id %></td>
-    <td><%= text.lang_id %></td>
+    <% if not text.lang == nil %>
+    	<td><%= text.lang.name %></td>
+	<% else %>
+		<td><%= text.lang_id %>(text.lang => nil)</td>
+    <% end %>
+    <!-- <td><%#= text.lang %></td> -->
+    <!-- <td><%#= text.lang_id %></td> -->
     <td><%= text.memo %></td>
     <td><%= text.dbId %></td>
     <td><%= text.created_at_mill %></td>

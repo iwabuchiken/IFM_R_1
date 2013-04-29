@@ -2,6 +2,8 @@ class Text < ActiveRecord::Base
   
   has_many :word_lists
   has_many :words, through: :word_lists
+  # has_one   :lang
+  belongs_to  :lang
 
   # before_save :add_created_at_millsec, add_updated_at_millsec
   before_save :add_created_at_millsec
