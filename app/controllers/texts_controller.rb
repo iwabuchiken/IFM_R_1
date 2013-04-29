@@ -19,7 +19,8 @@ class TextsController < ApplicationController
       
     else
       
-        if since.numeric?
+        if is_numeric?(since)
+        # if since.numeric?
       
           @texts = 
               Text.find(

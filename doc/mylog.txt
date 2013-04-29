@@ -516,3 +516,7 @@ since == nil
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 14:00:15 +0900]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 18:45:45 +0900]
+label=1367211591476
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 18:45:45 +0900]
+2013-04-29 22:59:52 +0900/utc=2013-04-29 13:59:52 UTC/since=1367211591476

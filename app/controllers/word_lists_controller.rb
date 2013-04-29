@@ -16,7 +16,8 @@ class WordListsController < ApplicationController
       
     else
       
-        if since.numeric?
+        if is_numeric?(since)
+        # if since.numeric?
       
           @word_lists = 
               WordList.find(
