@@ -284,8 +284,16 @@ g merge B9_CHANGE-1_New-Text_to-the-top
 
 #bundle exec rake db:migrate
 
-g co master
-g merger B10_NEW_MODEL_lang
+#g co master
+#g merge B10_NEW_MODEL_lang
+g p origin master && g p heroku master && heroku run rake db:migrate
+
+#g co master && g merge B10_NEW_MODEL_lang && g p origin master && g p heroku master
+
+#bundle exec rake db:rollback STEP=1 && bundle exec rake db:migrate
+
+heroku run rake db:rollback STEP=1 && heroku run rake db:migrate
+
 
 
 aa
