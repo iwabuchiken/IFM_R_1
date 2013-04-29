@@ -8,11 +8,24 @@
   
   
   
-  <% if params[:controller] != nil && params[:controller] = "texts" %>
+  	<% if params[:controller] != nil %>
+  	
+  		<!-- params[:controller] => <%= params[:controller] %> -->
+  	
+  	<% end %>
+  	
+  	<% if params[:controller] != nil && params[:controller] == "texts" %>
+  	<%# if params[:controller] != nil && params[:controller] = "texts" %>
   
-  	<%= render :partial => "layouts/app_texts" %>
-
-  <% end %>
+  		<%= render :partial => "layouts/app_texts" %>
+  		
+	<% elsif params[:controller] != nil && params[:controller] == "langs" %>
+	<%# elsif params[:controller] != nil && params[:controller] = "langs" %>
+	
+		<!-- params[:controller] => <%= params[:controller] %>! -->
+		<%= render :partial => "layouts/app_langs" %>
+	
+  	<% end %>
   
   <% if @current_controller != nil && @current_controller = "words" %>
   <!-- Include js: words.js -->
