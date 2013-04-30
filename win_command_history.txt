@@ -300,6 +300,12 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 g co master && g merge B12_lang-name-list_in_texts#new,edit && g p origin master && g p heroku master
 
+[B14_color-word_texts-show v-1.1 2013/04/30 10:32:38]----------------------------
+g co master && g merge B14_color-word_texts-show && g p origin master && g p heroku master
+
+
+
+
 aa
 ============STORAGE============================
 [B1 v-2.0 20130331_074117]----------------------------

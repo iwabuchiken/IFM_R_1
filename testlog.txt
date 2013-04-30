@@ -1,0 +1,52 @@
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:09:33 +0900]
+a=In the above outline, expression is a Ruby expression 
+            The ruby code here marker is where the code to executed 
+            the expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:09:33 +0900]
+Span added=In <span>the</span> above outline, expression is a Ruby expression 
+            The ruby code here marker is where <span>the</span> code to executed 
+            <span>the</span> expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:10:47 +0900]
+a=In the above outline, expression is a Ruby expression 
+              The ruby code here marker is where the code to executed 
+              the expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:10:47 +0900]
+Span added=In <span>the</span> above outline, expression is a Ruby expression 
+              The ruby code here marker is where <span>the</span> code to executed 
+              <span>the</span> expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:11:17 +0900]
+
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:11:17 +0900]
+a=In the above outline, expression is a Ruby expression 
+              The ruby code here marker is where the code to executed 
+              the expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:11:17 +0900]
+Span added=In <span>the</span> above outline, expression is a Ruby expression 
+              The ruby code here marker is where <span>the</span> code to executed 
+              <span>the</span> expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:11:29 +0900]
+====================================
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:11:29 +0900]
+a=In the above outline, expression is a Ruby expression 
+              The ruby code here marker is where the code to executed 
+              the expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:11:29 +0900]
+Span added=In <span>the</span> above outline, expression is a Ruby expression 
+              The ruby code here marker is where <span>the</span> code to executed 
+              <span>the</span> expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:12:33 +0900]
+====================================
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:12:33 +0900]
+a=In the above outline, expression is a Ruby expression 
+              The ruby code here marker is where the code to executed 
+              the expression evaluates to false.
+[test_B14_v_1-0_1.rb /18 2013-04-30 14:12:33 +0900]
+Span added=In <span style='color: blue;'>the</span> above outline, expression is a Ruby expression 
+              The ruby code here marker is where <span style='color: blue;'>the</span> code to executed 
+              <span style='color: blue;'>the</span> expression evaluates to false.
+[test_B14_v_1-0_1.rb /20 2013-04-30 14:19:27 +0900]
+====================================
+[test_B14_v_1-0_1.rb /20 2013-04-30 14:19:27 +0900]
+a=闻》4月27日报道】题：中国军机展开前所未有的威吓飞行 据多名政府高官26日透露，就在中国8艘海监船23日侵入尖阁诸岛（即我钓鱼岛及其附属岛屿——本网注）周边日本领海的同时，中国的战斗机等军用飞机在尖阁诸岛周边飞行超过40架次。 军用飞机多数是战斗机，中国投入了新型苏-27和苏-30。这些战斗机趁航空自卫队战斗机飞行员疲惫的时候蜂拥而至。政府高官称这是“前所未有的威吓”。 政府方面认为中国军机的威吓飞行是为了配合海监船侵入领海。 中国军机从上空对海上保安厅的防范态势和海上自卫队护卫舰、P-3C巡逻机的部署进行侦察，估计向海监船进行了通报。 23日上午7时23分至8时25分左右，8艘海监船相继进入尖阁周边海域。其中一艘逼近鱼钓岛（即我钓鱼岛——本网注）西北约一公里处。当日下午7时半左右，8艘海监船离开了日本领海。 在海监船侵入领海之际，中国的战斗机等军用飞机也开始朝尖阁周边飞去。这些飞机交替着逼近尖阁周边上空，每次逼近时航空自卫队那霸基地的F-15等战斗机就紧急出动。飞来的中国军机总共在40架次以上。 
+[test_B14_v_1-0_1.rb /20 2013-04-30 14:19:27 +0900]
+Span added=闻》4月27日报道】题：<span style='color: blue;'>中国</span>军机展开前所未有的威吓飞行 据多名政府高官26日透露，就在<span style='color: blue;'>中国</span>8艘海监船23日侵入尖阁诸岛（即我钓鱼岛及其附属岛屿——本网注）周边日本领海的同时，<span style='color: blue;'>中国</span>的战斗机等军用飞机在尖阁诸岛周边飞行超过40架次。 军用飞机多数是战斗机，<span style='color: blue;'>中国</span>投入了新型苏-27和苏-30。这些战斗机趁航空自卫队战斗机飞行员疲惫的时候蜂拥而至。政府高官称这是“前所未有的威吓”。 政府方面认为<span style='color: blue;'>中国</span>军机的威吓飞行是为了配合海监船侵入领海。 <span style='color: blue;'>中国</span>军机从上空对海上保安厅的防范态势和海上自卫队护卫舰、P-3C巡逻机的部署进行侦察，估计向海监船进行了通报。 23日上午7时23分至8时25分左右，8艘海监船相继进入尖阁周边海域。其中一艘逼近鱼钓岛（即我钓鱼岛——本网注）西北约一公里处。当日下午7时半左右，8艘海监船离开了日本领海。 在海监船侵入领海之际，<span style='color: blue;'>中国</span>的战斗机等军用飞机也开始朝尖阁周边飞去。这些飞机交替着逼近尖阁周边上空，每次逼近时航空自卫队那霸基地的F-15等战斗机就紧急出动。飞来的<span style='color: blue;'>中国</span>军机总共在40架次以上。 

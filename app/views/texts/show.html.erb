@@ -7,7 +7,9 @@
 
 <p>
   <b>Text:</b>
-  <%= @text.text %>
+  <!-- REF raw http://stackoverflow.com/questions/4251284/raw-vs-html-safe-vs-h-to-unescape-html asked Nov 22 '10 at 23:27 -->
+  <%= raw @text.text %>
+  <%#= @text.text %>
 </p>
 
 <p>

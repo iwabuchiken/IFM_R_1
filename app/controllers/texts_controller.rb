@@ -20,6 +20,9 @@ class TextsController < ApplicationController
 
       logout("since == nil")
       @texts = Text.all
+      
+      # => REF sort_by! http://ref.xaio.jp/ruby/classes/array/sort
+      # => REF {...} http://stackoverflow.com/questions/5739158/rails-ruby-how-to-sort-an-array answered Apr 21 '11 at 3:36
       @texts.sort_by!{|word| word[default_sort_key]}
       # @texts.sort_by!{|word| word[:created_at]}
       
@@ -34,6 +37,7 @@ class TextsController < ApplicationController
                     :conditions => [
                               # "updated_at_mill > ?", since.to_i])
                               "created_at_mill > ?", since.to_i],
+                    # => REF http://rubyrails.blog27.fc2.com/blog-entry-13.html
                     :order => default_sort_key.to_s
                     # :order => "created_at"
                     )
@@ -92,6 +96,14 @@ class TextsController < ApplicationController
   # GET /texts/1.json
   def show
     @text = Text.find(params[:id])
+
+    #B14
+    if @text != nil
+      
+      @text.text = _show__1_colorize_words(@text)
+      
+    end#if @text != nil
+    
 
     respond_to do |format|
       format.html # show.html.erb
@@ -183,6 +195,115 @@ class TextsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # private
+  def _show__1_colorize_words(text)
+    
+    text_id = text.id
+    
+    # => REF http://d.hatena.ne.jp/nakakoh/20080510/1210390013
+    words = Word.find_all_by_text_id(text_id)
+    # words = Word.find_by_text_id(text_id)
+    
+    if words != nil
+    
+      msg = "text.id=" + text_id.to_s + "/" + "Num of words=" + words.length.to_s
+      # msg = "text.id=" + text_id.to_s + "/" + "Num of words=" + words.count
+      
+    else
+      
+      msg = "text.id=" + text_id.to_s + "/" + "words => nil"
+      
+    end
+    
+    logout(msg)
+    
+    ##########################
+    #
+    #
+    #
+    ##########################
+    new_text = ""
+    tag1 = "<span style='color: blue;'>"
+    tag2 = "</span>"
+    
+    for i in 0..(words.length - 1)
+#       
+      word = words[i]
+#       
+
+      text.text = _add_span(text.text, word.w1, tag1, tag2)
+      # reg = Regexp.compile(word.w1)
+# #       
+# # => REF http://www.rubylife.jp/ini/string_class/index7.html
+      # if reg =~ text.text
+# #       # Start tag
+        # text.text.insert((reg =~ text.text), tag1)
+#         
+        # #debug
+        # logout("text=" + text.text)
+#         
+        # # End tag
+        # text.text.insert((reg =~ text.text) + word.w1.size, tag2)
+        # # text.text.insert((reg =~ text.text) + reg.to_s.size, tag2)
+#         
+        # #debug
+        # logout("reg.to_s=" + reg.to_s)
+#         
+        # # text.text.insert((reg =~ text.text) + tag1.size + reg.to_s.size, tag2)
+#         
+        # #debug
+        # logout("text=" + text.text)
+# 
+        # # text.text.insert((reg =~ text.text) + tag1.size + word.size, tag2)
+# #    
+        # logout("match: " + word.w1)
+      # else
+# #         
+      # end#if reg =~ text.text
+#       
+#       
+#       
+    end#for i in 0..(words.length - 1)
+    
+    # text.text.insert(5, tag1)
+    # text.text.insert(5 + tag1.size + 5, tag2)
+#     
+    return text.text
+    
+  end#def _show__1_colorize_words(@text)
+  
+  def _add_span(text, keyword, start_tag, end_tag)
+
+    # => REF /#{}/ http://stackoverflow.com/questions/2648054/ruby-recursive-regex answered Apr 15 '10 at 18:48
+    r       = /#{keyword}/
+    marker  = 0
+    t1      = start_tag
+    t2      = end_tag
+    counter = 0
+  
+    # => REF =~ http://www.rubylife.jp/regexp/ini/index4.html
+    while r =~ text[marker..(text.size - 1)] do
+    # while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+      #debug
+      logout("r=" + r.source)
+      
+      point = (r =~ text[marker..(text.size - 1)])
+      
+      text.insert(marker + point, t1)
+      text.insert(marker + point + t1.size + r.source.size, t2)
+  
+      marker += point + t1.size + r.source.size + t2.size
+      
+      counter += 1
+  
+      
+    end#while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+    
+    return text
+    
+  end#def _add_span(text, keyword, start_tag, end_tag)
+
   
 end#class TextsController < ApplicationController
 
