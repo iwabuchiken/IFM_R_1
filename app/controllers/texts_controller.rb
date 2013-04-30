@@ -372,10 +372,25 @@ class TextsController < ApplicationController
     
     text_id = text.id
     
+    text = Text.find(text_id)
+    
+    if text == nil
+      
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            "text => nil"
+      
+      logout(msg)
+
+      return text
+      
+    end
     
     
     # => REF http://d.hatena.ne.jp/nakakoh/20080510/1210390013
-    words = Word.find_all_by_text_id(text_id)
+    # words = Word.find_all_by_text_id(text_id)
+    
+    words = text.words
+    
     # words = Word.find_by_text_id(text_id)
     
     if words != nil

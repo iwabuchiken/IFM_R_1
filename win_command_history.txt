@@ -303,6 +303,10 @@ g co master && g merge B12_lang-name-list_in_texts#new,edit && g p origin master
 [B14_color-word_texts-show v-1.1 2013/04/30 10:32:38]----------------------------
 g co master && g merge B14_color-word_texts-show && g p origin master && g p heroku master
 
+[B15_create-word-list_using-database v-1.0-i1 2013/04/30 10:32:38]----------------------------
+g co master && g merge B15_create-word-list_using-database
+g p origin master && g p heroku master
+
 
 
 
