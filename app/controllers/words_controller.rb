@@ -7,12 +7,20 @@ class WordsController < ApplicationController
   def index
     # @words = Word.all
 
+    default_sort_key = :id
+
     since = params[:since]
     
     if since == nil
 
       logout("since == nil")
       @words = Word.all
+      
+      #debug
+      @words.sort_by!{|word| word[default_sort_key]}
+      # @words.sort_by{|word| word[:created_at]}
+      # @words.sort_by{|word| word[:w1]}
+      # @words.sort_by!{|word| word[:w1]}
       
     else
       
@@ -24,7 +32,10 @@ class WordsController < ApplicationController
                     :all,
                     :conditions => [
                               # "updated_at_mill > ?", since.to_i])
-                              "created_at_mill > ?", since.to_i])
+                              "created_at_mill > ?", since.to_i],
+                    :order => default_sort_key.to_s
+                    # :order => "created_at"
+                     )
                               # "created_at_mill > ?", since.to_i + (9*60*60)])
                               # "created_at > ?",
                               # Time.at(since.to_i / 1000).utc])
@@ -51,10 +62,18 @@ class WordsController < ApplicationController
           # @texts.paginate
           
         else
-          logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
+          logout("since -> " + since)
+          # if since.to_i
+            # logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
+          # else
+            # logout("since -> " + since)
+          # end
           
           @words =
               Word.all
+              
+          @words.sort_by!{|word| word[default_sort_key]}
+          
           
         end#if since.numeric?
 

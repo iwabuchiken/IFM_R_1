@@ -2,8 +2,50 @@ class LangsController < ApplicationController
   # GET /langs
   # GET /langs.json
   def index
-    @langs = Lang.all
+    
+    default_sort_key = :id
+    
+    since = params[:since]
+    
+    if since == nil
 
+      logout("since == nil")
+      
+      @langs = Lang.all
+      @langs.sort_by!{|lang| lang[default_sort_key]}
+      # @langs.sort_by!{|lang| lang[:created_at]}
+
+    else
+      
+        if is_numeric?(since)
+
+          @langs = 
+              Lang.find(
+                    :all,
+                    :conditions => [
+                              # "updated_at_mill > ?", since.to_i])
+                              "created_at_mill > ?", since.to_i],
+                    :order => default_sort_key.to_s
+                    )
+          logout((Time.at(since.to_i / 1000) + (9*60*60 + 1)).to_s\
+                  + "/utc="\
+                  + (Time.at(since.to_i / 1000).utc + (9*60*60 + 1)).to_s\
+                  + "/since=" + since.to_i.to_s
+                  )
+
+        else
+          logout("since -> " + since)
+          
+          # logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
+          
+          @langs =
+              Text.all
+          @langs.sort_by!{|lang| lang[default_sort_key]}
+          
+        end#if since.numeric?
+
+    end#if since == nil
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @langs }

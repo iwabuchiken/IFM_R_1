@@ -10,12 +10,18 @@ class TextsController < ApplicationController
   # GET /texts.json
   def index
     
+    #debug
+    # default_sort_key = :title
+    default_sort_key = :id
+    
     since = params[:since]
     
     if since == nil
 
       logout("since == nil")
       @texts = Text.all
+      @texts.sort_by!{|word| word[default_sort_key]}
+      # @texts.sort_by!{|word| word[:created_at]}
       
     else
       
@@ -27,7 +33,10 @@ class TextsController < ApplicationController
                     :all,
                     :conditions => [
                               # "updated_at_mill > ?", since.to_i])
-                              "created_at_mill > ?", since.to_i])
+                              "created_at_mill > ?", since.to_i],
+                    :order => default_sort_key.to_s
+                    # :order => "created_at"
+                    )
                               # "created_at_mill > ?", since.to_i + (9*60*60)])
                               # "created_at > ?",
                               # Time.at(since.to_i / 1000).utc])
@@ -54,10 +63,14 @@ class TextsController < ApplicationController
           # @texts.paginate
           
         else
-          logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
+          logout("since -> " + since)
+          
+          # logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
           
           @texts =
               Text.all
+          @texts.sort_by!{|word| word[default_sort_key]}
+          # @texts.sort_by!{|word| word[:created_at]}
           
         end#if since.numeric?
 

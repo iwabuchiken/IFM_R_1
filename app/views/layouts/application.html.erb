@@ -32,16 +32,19 @@
 	
   	<% end %>
   
-  <% if @current_controller != nil && @current_controller = "words" %>
+  <%# if @current_controller != nil && @current_controller = "words" %>
+  <% if params[:controller] != nil && params[:controller] = "words" \%>
+  		<% or params[:controller] != nil && params[:controller] = "langs" %>
   <!-- Include js: words.js -->
   <%#= javascript_include_tag "words" %>
-  
-  <!-- REF http://stackoverflow.com/questions/15335780/rails-get-hoverover-popup-in-form -->
-	  <script type="text/javascript">
+
+
+	<%#= render :partial => "layouts/app_common" %>
+		  <script type="text/javascript">
 	  
 		  $(document).ready(function() {
 		    // $('#choose').hover(
-		    $('#word_w1').hover(
+		    $('.focus').hover(
 		    	
 		    	function() {
 		            // alert("Hover!");
@@ -56,40 +59,12 @@
 		        
 		    );//$('#choose').hover(function() {
 
-		    $('#word_w2').hover(
-		    	
-		    	function() {
-		            // alert("Hover!");
-		            this.focus();
-		            this.select();
-		            //alert("<%= @current_controller %>");
-		        },
-		        
-		        function() {
-		        	// alert("Done");
-		        }
-		        
-		    );//$('#choose').hover(function() {
-
-		    $('#word_w3').hover(
-		    	
-		    	function() {
-		            // alert("Hover!");
-		            this.focus();
-		            this.select();
-		            //alert("<%= @current_controller %>");
-		        },
-		        
-		        function() {
-		        	// alert("Done");
-		        }
-		        
-		    );//$('#choose').hover(function() {
-
-		    
 		  });//$(document).ready(function() {
 		  	
-	  </script>  
+	  </script>
+  
+  <!-- REF http://stackoverflow.com/questions/15335780/rails-get-hoverover-popup-in-form -->
+  
   <% end %>
   
 </head>

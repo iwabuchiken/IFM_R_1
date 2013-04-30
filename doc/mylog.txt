@@ -520,3 +520,105 @@ since == nil
 label=1367211591476
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-29 18:45:45 +0900]
 2013-04-29 22:59:52 +0900/utc=2013-04-29 13:59:52 UTC/since=1367211591476
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:02:28 +0900]
+label=1367211591476
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:02:28 +0900]
+2013-04-29 22:59:52 +0900/utc=2013-04-29 13:59:52 UTC/since=1367211591476
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:05:06 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:44:27 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:46:26 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:47:00 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:47:03 +0900]
+params[:text_id] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:51:22 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:51:37 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:52:49 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:53:23 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:53:39 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:53:55 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:54:40 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:55:02 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:57:05 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:57:25 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:59:42 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:59:53 +0900]
+label=1367159397469
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 09:59:53 +0900]
+2013-04-29 08:29:58 +0900/utc=2013-04-28 23:29:58 UTC/since=1367159397469
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:00:03 +0900]
+label=aaaa
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:01:14 +0900]
+label=aaaa
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:02:00 +0900]
+label=aaaa
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:02:00 +0900]
+since -> aaaa
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:07:46 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:07:56 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:07:58 +0900]
+params[:text_id] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:07 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:17 +0900]
+label=1367211535207
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:17 +0900]
+2013-04-29 22:58:56 +0900/utc=2013-04-29 13:58:56 UTC/since=1367211535207
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:21 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:30 +0900]
+label=1364679219410
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:30 +0900]
+2013-03-31 15:33:40 +0900/utc=2013-03-31 06:33:40 UTC/since=1364679219410
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:32 +0900]
+label=1367211613407
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:32 +0900]
+2013-04-29 23:00:14 +0900/utc=2013-04-29 14:00:14 UTC/since=1367211613407
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:08:42 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:09:09 +0900]
+label=1367211591476
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:09:09 +0900]
+2013-04-29 22:59:52 +0900/utc=2013-04-29 13:59:52 UTC/since=1367211591476
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:09:20 +0900]
+label=
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:09:20 +0900]
+since -> 
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:10:56 +0900]
+label=
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:10:56 +0900]
+since -> 
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:11:27 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:11:53 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:12:01 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:12:58 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:13:05 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:13:28 +0900]
+label=1367211146601
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:13:28 +0900]
+2013-04-29 22:52:27 +0900/utc=2013-04-29 13:52:27 UTC/since=1367211146601
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:18:03 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 10:18:07 +0900]
+since == nil

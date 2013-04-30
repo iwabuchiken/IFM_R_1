@@ -14,17 +14,18 @@
   <div class="field">
     <%= f.label :w1 %><br />
     <div id="choose">
-	    <%= f.text_field :w1 %>
+	    <%= f.text_field :w1, :class => "focus" %>
+	    <%#= f.text_field :w1, :class => "focus", :onmouseover => "this.focus(); this.select();" %>
 	    <%#= f.text_field :w1, {onmouseover => "alert(hi)"} %>
     </div>
   </div>
   <div class="field">
     <%= f.label :w2 %><br />
-    <%= f.text_field :w2 %>
+    <%= f.text_field :w2, :class => "focus" %>
   </div>
   <div class="field">
     <%= f.label :w3 %><br />
-    <%= f.text_field :w3 %>
+    <%= f.text_field :w3, :class => "focus" %>
   </div>
   <div class="field">
     <%= f.label :text_ids %><br />
@@ -32,11 +33,11 @@
   </div>
   <div class="field">
     <%= f.label :text_id %><br />
-    <%= f.number_field :text_id %>
+    <%= f.number_field :text_id, :class => "focus" %>
   </div>
   <div class="field">
     <%= f.label :lang_id %><br />
-    <%= f.number_field :lang_id %>
+    <%= f.number_field :lang_id, :class => "focus" %>
   </div>
   <div class="field">
     <%= f.label :dbId %><br />
