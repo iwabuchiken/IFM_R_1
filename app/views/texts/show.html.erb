@@ -60,3 +60,8 @@
 	REF parameter http://yoshifumisato.jeez.jp/wordpress/post/rails/723
 -->
 <%= link_to 'New Word', :controller =>"words",:action =>"new", :text_id => @text.id %>
+<hr />
+<%= link_to 'Build word list',
+			:controller =>"texts",
+			:action =>"build_word_list",
+			:text_id => @text.id %>

@@ -196,10 +196,183 @@ class TextsController < ApplicationController
     end
   end
 
-  # private
+  def build_word_list
+    #=======================================
+    #
+    # Prep: Data
+    #
+    #=======================================
+    text_id = params[:text_id]
+    
+    @text = Text.find_by_id(text_id)
+    
+    diff_words = _build_word_list__1_build_list(text_id)
+    
+    selected_words = _build_word_list__2_select_words(text_id, diff_words)
+    
+    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+        "selected_words.length=" + selected_words.length.to_s
+
+    logout(msg)
+
+    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+        "selected_words[0].w1=" + selected_words[0].w1
+
+    logout(msg)
+    
+    #=======================================
+    #
+    # Register new words
+    #
+    #=======================================
+    if selected_words.length > 0
+      
+      word_ids = []
+      
+      selected_words.each {|word|
+        
+        word_ids << word.id
+      }
+      
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            "word_ids.length.to_s=" + word_ids.length.to_s
+
+      logout(msg)
+      
+      res = _build_word_list__3_register_words(text_id, word_ids, @text.lang_id)
+      
+    else
+      
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+      "selected_words.length > 0="
+
+      logout(msg)
+
+      
+    end#if selected_words.length > 0
+    
+    respond_to do |format|
+      format.html { redirect_to @text, notice: 'Back from building word list' }
+      format.json { head :no_content }
+    end#respond_to do |format|
+    
+  end#def build_word_list
+
+  private #==================================================
+  def _build_word_list__1_build_list(text_id)
+    #===========================
+    #
+    # Prepare: Data
+    #
+    #===========================
+    text = Text.find_by_id(text_id)
+    
+    all_words = Word.find(:all)
+    
+    this_words = Word.find_all_by_text_id(text_id)
+    
+    diff_words = all_words - this_words
+    
+    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              "diff_words.length=" + diff_words.length.to_s
+    logout(msg)
+    
+    return diff_words
+    
+
+  end#def _build_word_list__1_build_list
+
+  def _build_word_list__2_select_words(text_id, diff_words)
+    
+    text = Text.find_by_id(text_id)
+    
+    selected_words = []
+    
+    for i in (0..(diff_words.length - 1))
+      
+      kw = diff_words[i].w1
+      
+      reg = /#{kw}/
+      
+      if reg =~ text.text
+        
+        selected_words << diff_words[i]
+        
+      end#if reg =~ text.text
+      
+    # for i in (0..(diff_words.length))
+      
+      # if _build_word_list__2_build_list(text_id)
+        # word_list = WordList.new()
+#         
+        # word_list.text_id = text.id
+        # word_list.word_id = diff_words[i].id
+        # word_list.lang_id = text.lang_id
+#         
+        # if word_list.save
+#           
+          # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              # "word_list saved: text=" + text.id.to_s +
+              # "/" + "word=" + diff_words[i].w1
+#   
+          # logout(msg)
+#           
+        # else
+#   
+          # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              # "word_list couldn't be saved: text=" + text.id.to_s +
+              # "/" + "word=" + diff_words[i].w1
+#   
+          # logout(msg)
+#   
+        # end#if word_list.save
+#       
+      # end#if _build_word_list__2_build_list(text_id)
+      
+    end#for i in (0..(diff_words.length))
+    
+    return selected_words
+    
+  end#def _build_word_list__2_select_words(text_id, diff_words)
+
+  def _build_word_list__3_register_words(text_id, word_ids, lang_id)
+    
+    for i in (0..word_ids.length - 1)
+
+        word_list = WordList.new()
+        
+        word_list.text_id = text_id
+        word_list.word_id = word_ids[i]
+        word_list.lang_id = lang_id
+        
+        if word_list.save
+          
+          msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              "word_list saved: text=" + text_id.to_s +
+              "/" + "word=" + word_ids[i].to_s
+  
+          logout(msg)
+          
+        else
+  
+          msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              "word_list couldn't be saved: text=" + text_id.to_s +
+              "/" + "word=" + word_ids[i].to_s
+  
+          logout(msg)
+  
+        end#if word_list.save
+    
+      
+    end#for i in (0..word_ids.length - 1)
+    
+  end#def _build_word_list__3_register_words(text_id, word_ids, lang_id)
+  
   def _show__1_colorize_words(text)
     
     text_id = text.id
+    
+    
     
     # => REF http://d.hatena.ne.jp/nakakoh/20080510/1210390013
     words = Word.find_all_by_text_id(text_id)

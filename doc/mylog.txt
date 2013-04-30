@@ -1358,3 +1358,519 @@ r=艘
 r=架
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 14:35:36 +0900]
 r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 14:59:55 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:07 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:21:50 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:22:21 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:28:25 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:40:51 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:01 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:38 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:41:43 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:22 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:225) diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:43:26 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:44:11 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:47:17 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:51:52 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:01 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:229) diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:19 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:22 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:229) diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:22 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:248) word_list saved: text=2/word=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:52:22 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:248) word_list saved: text=2/word=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:33 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:44 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:53:55 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:229) diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:249) word_list saved: text=2/word=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:249) word_list saved: text=2/word=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:16 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 15:55:45 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:01 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:05 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:236) diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:18 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:236) diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:236) diff_words.length=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:209) selected_words.length=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+text.id=2/Num of words=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:10:31 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:11:05 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:11:52 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:11:52 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:11:52 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:04 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:15 +0900]
+text.id=6/Num of words=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:18 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:28 +0900]
+text.id=6/Num of words=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:31 +0900]
+label=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:31 +0900]
+params[:text_id]=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:31 +0900]
+label=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:12:31 +0900]
+true
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:13:02 +0900]
+text_id => 6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:13:02 +0900]
+word added to the text: id=29
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:13:05 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:13:31 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:13:58 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:01 +0900]
+text.id=6/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:01 +0900]
+r=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:06 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:09 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:09 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:09 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:236) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:209) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:15 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:15 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:14:15 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:14 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:18 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:18 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:18 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:20 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:241) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:20 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:209) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:20 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:214) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:20 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:20 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:15:20 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:57:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:270) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:57:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:213) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:57:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:218) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:03 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:270) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:03 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:213) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:03 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:218) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:11 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:270) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:11 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:213) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:11 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:218) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:11 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:237) word_ids.length.to_s=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:11 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:11 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 16:58:11 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:10 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:16 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:57 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:57 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:57 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:59 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:276) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:59 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:213) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:59 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:218) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:06:59 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:237) word_ids.length.to_s=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:07:23 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:276) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:07:23 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:213) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:07:23 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:218) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:07:23 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:237) word_ids.length.to_s=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:07:52 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:02 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:07 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:07 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:07 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:38 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:43 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:46 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:276) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:213) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:218) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:08:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:237) word_ids.length.to_s=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:13 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:17 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:276) diff_words.length=6
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:213) selected_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:218) selected_words[0].w1=学生
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:237) word_ids.length.to_s=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:350) word_list saved: text=1/word=29
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+text.id=1/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+r=监测
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:19 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-04-30 17:09:23 +0900]
+since == nil
