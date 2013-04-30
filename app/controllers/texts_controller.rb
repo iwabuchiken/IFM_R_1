@@ -210,15 +210,25 @@ class TextsController < ApplicationController
     
     selected_words = _build_word_list__2_select_words(text_id, diff_words)
     
-    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
-        "selected_words.length=" + selected_words.length.to_s
-
-    logout(msg)
-
-    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
-        "selected_words[0].w1=" + selected_words[0].w1
-
-    logout(msg)
+    if selected_words.length > 0
+    
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+          "selected_words.length=" + selected_words.length.to_s
+  
+      logout(msg)
+  
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+          "selected_words[0].w1=" + selected_words[0].w1
+  
+      logout(msg)
+      
+    else
+      
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+          "selected_words.length =< 0"
+  
+      logout(msg)
+    end
     
     #=======================================
     #
@@ -271,6 +281,7 @@ class TextsController < ApplicationController
     
     this_words = Word.find_all_by_text_id(text_id)
     
+    # => REF subtract http://favstar.fm/users/hassyX/status/11376406955
     diff_words = all_words - this_words
     
     msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
