@@ -2540,3 +2540,19 @@ created_at_mill=1367390933216
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 15:49:09 +0900]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:17:21 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:18:10 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:18:48 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:19:00 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:19:40 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:19:49 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:20:06 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:20:31 +0900]
+since == nil
