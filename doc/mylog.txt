@@ -2360,3 +2360,23 @@ since == nil
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:00:59 +0900]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:03:55 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:45:05 +0900]
+params[:text_id] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:45:13 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:45:16 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:54:38 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:56:57 +0900]
+text.id=6/Num of words=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:56:57 +0900]
+r=高峰
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:56:57 +0900]
+r=感染
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 14:59:44 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 15:00:14 +0900]
+since == nil

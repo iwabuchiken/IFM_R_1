@@ -1,11 +1,27 @@
 class Word < ActiveRecord::Base
   
+  #####################################
+  #
+  # Validations
+  #
+  #####################################
   validates :w1, uniqueness: true
   
-  has_many :word_lists
-  has_many :texts, through: :word_lists
+  #####################################
+  #
+  # Relations
+  #
+  #####################################
+  has_many    :word_lists
+  has_many    :texts, through: :word_lists
+  belongs_to  :lang
 
 
+  #####################################
+  #
+  # Before operations
+  #
+  #####################################
   before_save :add_created_at_millsec
   before_save :add_updated_at_millsec
 
@@ -13,6 +29,11 @@ class Word < ActiveRecord::Base
   # before_update :update_created_at_millsec
   
   
+  #####################################
+  #
+  # Methods
+  #
+  #####################################  
   protected
   def add_created_at_millsec
     
