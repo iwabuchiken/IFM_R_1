@@ -1,4 +1,5 @@
-<h1><a name="top">Texts</a>
+<!-- <h1><a name="top">Texts</a> -->
+<h1>Texts
 		<% if @texts != nil %>
 
 			<!-- REF font-weight http://www.htmlforums.com/html-xhtml/t-how-do-you-make-a-table-header-td-not-bold-102767.html -->
@@ -8,7 +9,7 @@
 			
 		<% end %>
 </h1>
-(<%= link_to 'New Text', new_text_path %>)
+(<%= link_to 'New Text', new_text_path, :class => 'link' %>)
 <a href="#bottom" style="margin: 0px 25px;" class="link">(To bottom)</a>
 
 <!--
@@ -54,7 +55,7 @@
     <td><%= text.memo %></td>
     <td><%= text.dbId %></td>
     <td><%= text.created_at_mill %></td>
-    <td><%= link_to 'Destroy', text, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Destroy', text, confirm: 'Are you sure?', method: :delete, :class => 'link' %></td>
   </tr>
 <% end %>
 </table>
@@ -63,8 +64,8 @@
 <!--
 	REF http://www.tohoho-web.com/css/prop/margin.htm
 -->
-<%= link_to 'New Text', new_text_path %>
-<a href="#top" style="margin: 0px 25px;">(To top)</a>
+<%= link_to 'New Text', new_text_path, :class => 'link' %>
+<a href="#top" style="margin: 0px 25px;", class="link">(To top)</a>
 <br />
 
 
