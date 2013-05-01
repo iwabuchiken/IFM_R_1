@@ -24,7 +24,7 @@ class WordList < ActiveRecord::Base
   # Validations
   #
   #####################################
-  # validates_uniqueness_of :text_id, :scope => :word_id
+  validates_uniqueness_of :text_id, :scope => :word_id
   
   #####################################
   #
