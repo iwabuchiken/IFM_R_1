@@ -307,6 +307,9 @@ g co master && g merge B14_color-word_texts-show && g p origin master && g p her
 g co master && g merge B15_create-word-list_using-database
 g p origin master && g p heroku master
 
+[B13_CHANGE-3_wordlist_validate-unique__etc v-1.0 2013/05/01 13:22:10]----------------------------
+g co master && g merge B13_CHANGE-3_wordlist_validate-unique__etc
+g p origin master && g p heroku master
 
 
 
