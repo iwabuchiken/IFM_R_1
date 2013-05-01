@@ -2556,3 +2556,41 @@ since == nil
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:20:31 +0900]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:42:01 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:42:21 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:42:45 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:43:09 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:43:13 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:43:33 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:44:43 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:44:50 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:47:08 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:48:02 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:48:54 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:49:25 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:49:34 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:52:36 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:54:21 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:54:27 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:54:31 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:54:44 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-01 16:55:42 +0900]
+since == nil

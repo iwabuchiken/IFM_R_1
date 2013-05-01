@@ -2,6 +2,8 @@
 	
 	/* REF underline http://www.openspc2.org/HTML/tag/u/faq/001/*/
 	text-decoration:underline;
-	/*color: blue;*/
+	color: blue;
+	/*backgroun-color: yellow;*/
+	/*background-color: #00ff00;*/
 	
 }

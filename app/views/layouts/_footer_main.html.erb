@@ -1,8 +1,12 @@
 <hr />
-<%= link_to_unless_current 'Texts', texts_path %>&nbsp;|&nbsp;
-<%= link_to_unless_current 'Words', words_path %>&nbsp;|&nbsp;
-<%= link_to_unless_current 'Word list', word_lists_path %>&nbsp;|&nbsp;
-<%= link_to_unless_current 'Langs', langs_path %>&nbsp;|&nbsp;
-<%= link_to_unless_current 'Admin', :controller => "admin", :action => "main" %>&nbsp;|&nbsp;
+<%= link_to_unless_current 'Texts', texts_path, :class => 'link' %>&nbsp;|&nbsp;
+<%= link_to_unless_current 'Words', words_path, :class => 'link' %>&nbsp;|&nbsp;
+<%= link_to_unless_current 'Word list', word_lists_path, :class => 'link' %>&nbsp;|&nbsp;
+
+<%= link_to_unless_current 'Langs',
+				langs_path, :class => 'link' %>&nbsp;|&nbsp;
+
+<%= link_to_unless_current 'Admin',
+				:controller => "admin", :action => "main", :class => 'link' %>&nbsp;|&nbsp;
 
 <hr />
