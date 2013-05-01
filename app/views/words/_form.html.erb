@@ -37,7 +37,32 @@
   </div>
   <div class="field">
     <%= f.label :lang_id %><br />
-    <%= f.number_field :lang_id, :class => "focus" %>
+    <%#= f.number_field :lang_id, :class => "focus" %>
+    
+    <% if Lang.all.size > 0 %>
+    	<!-- <%#= select(
+    				"keyword",
+    				"category_id",
+    				Category.all.collect {|g| [g.name, g.id]}) %> -->
+    	<% if @word.lang_id != nil %>
+    	
+    		<% selectd_lang_id = @word.lang_id %>
+    		
+		<% end %>
+		
+    	<%= select(
+    				"word",
+    				"lang_id",
+    				Lang.all.collect {|lang| [lang.name, lang.id]},
+    				:selected => selectd_lang_id
+    				) %>
+    <% else %>
+    
+    	<b>No data</b>
+    	
+    <% end %>
+
+    
   </div>
   <div class="field">
     <%= f.label :dbId %><br />
