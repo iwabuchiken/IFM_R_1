@@ -1,5 +1,19 @@
-<h1><a name="top">Listing word_lists</a></h1>
+<h1><a name="top">Listing word_lists</a>
+
+		<% if @word_lists != nil %>
+			
+			<span style="font-weight: normal; font-size: smaller">
+				
+				(<%= @word_lists.size %>)
+				
+			</span>
+			
+		<% end %>
+	
+</h1>
+
 (<%= link_to 'New Word list', new_word_list_path %>)
+
 <a href="#bottom" style="margin: 0px 25px;">(To bottom)</a>
 
 <table border="2">

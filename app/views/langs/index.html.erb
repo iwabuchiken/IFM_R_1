@@ -1,4 +1,16 @@
-<h1>Listing langs</h1>
+<h1>Listing langs
+
+		<% if @langs != nil %>
+			
+			<span style="font-weight: normal; font-size: smaller">
+				
+				(<%= @langs.size %>)
+				
+			</span>
+			
+		<% end %>
+
+</h1>
 
 <table>
   <tr>

@@ -1,4 +1,13 @@
-<h1><a name="top">Texts</a></h1>
+<h1><a name="top">Texts</a>
+		<% if @texts != nil %>
+
+			<!-- REF font-weight http://www.htmlforums.com/html-xhtml/t-how-do-you-make-a-table-header-td-not-bold-102767.html -->
+			<span style="font-weight: normal; font-size: smaller">
+				(<%= @texts.size %>)
+			</span>
+			
+		<% end %>
+</h1>
 (<%= link_to 'New Text', new_text_path %>)
 <a href="#bottom" style="margin: 0px 25px;">(To bottom)</a>
 

@@ -26,13 +26,27 @@
 </p>
 
 <p>
-  <b>Text:</b>
-  <%= @word.text_id %>
+  <!-- <b>Text:</b> -->
+  <b><%= link_to 'Text:', texts_path %></b>
+  <!-- <%#= @word.text_id %> / <%#= @word.text.title %> -->
+  <%= @word.text_id %> /
+  		<%# text = Text.find(@word.text_id) %>
+  		<% if @text != nil %>
+  			<%#= @text.title %>
+  			<%= link_to @text.title, @text %>
+  		<% end %>
 </p>
 
 <p>
-  <b>Lang:</b>
-  <%= @word.lang_id %>
+  <!-- <b>Lang:</b> -->
+  <b><%= link_to 'Lang:', langs_path %></b>
+  <%= @word.lang_id %> /
+  <% if @word.lang != nil %>
+  
+  	<%#= @word.lang.name %>
+  	<%= link_to @word.lang.name, @word.lang %>
+  
+  <% end %>
 </p>
 
 <p>
