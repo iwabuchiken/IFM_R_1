@@ -59,7 +59,11 @@
 <!--
 	REF parameter http://yoshifumisato.jeez.jp/wordpress/post/rails/723
 -->
-<%= link_to 'New Word', :controller =>"words",:action =>"new", :text_id => @text.id %>
+<%= link_to 'New Word',
+			:controller =>"words",:action =>"new",
+			:text_id => @text.id, :lang_id => @text.lang_id
+			 %>
+
 <hr />
 <%= link_to 'Build word list',
 			:controller =>"texts",

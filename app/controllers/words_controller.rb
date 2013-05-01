@@ -114,6 +114,13 @@ class WordsController < ApplicationController
       
     end
 
+    if params[:lang_id] && is_numeric?(params[:lang_id])
+    # if params[:lang_id] && params[:lang_id].numeric?
+      
+      @word.lang_id = params[:lang_id].to_i
+      
+    end
+
     #debug
     if params[:text_id] != nil
       
