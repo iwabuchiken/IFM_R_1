@@ -5,14 +5,16 @@ class Word < ActiveRecord::Base
   # Validations
   #
   #####################################
-  validates :w1, uniqueness: true
+  # validates :w1, uniqueness: true
+  validates_uniqueness_of :w1, :scope => :lang_id
   
   #####################################
   #
   # Relations
   #
   #####################################
-  has_many    :word_lists
+  # has_many    :word_lists
+  has_many    :word_lists, :dependent => :destroy
   has_many    :texts, through: :word_lists
   belongs_to  :lang
 

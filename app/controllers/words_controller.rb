@@ -93,7 +93,16 @@ class WordsController < ApplicationController
   def show
     @word = Word.find(params[:id])
 
-    @text = Text.find(@word.text_id)
+    if @word != nil && @word.text_id > 0
+      
+      @text = Text.find(@word.text_id)
+      
+    else
+      
+      @text = nil
+      
+    end
+    # @text = Text.find(@word.text_id)
 
     respond_to do |format|
       format.html # show.html.erb

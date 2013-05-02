@@ -277,7 +277,16 @@ class TextsController < ApplicationController
     #===========================
     text = Text.find_by_id(text_id)
     
-    all_words = Word.find(:all)
+    if text != nil
+      
+      all_words = Word.find_all_by_lang_id(text.lang_id)
+      
+    else
+      
+      all_words = Word.find(:all)
+      
+    end
+    # all_words = Word.find(:all)
     
     this_words = Word.find_all_by_text_id(text_id)
     
