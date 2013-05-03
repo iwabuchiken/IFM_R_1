@@ -41,6 +41,10 @@ class WordsController < ApplicationController
       
       default_sort_key = :w3
       
+    elsif param_sort != nil and param_sort == "text_id"
+      
+      default_sort_key = :text_id
+      
     end#if param_sort != nil and param_sort == "lang"
     
     # Since =================================
