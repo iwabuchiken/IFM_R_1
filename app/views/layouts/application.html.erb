@@ -32,6 +32,14 @@
 		<!-- params[:controller] => <%= params[:controller] %>! -->
 		<%= render :partial => "layouts/app_langs" %>
 	
+	<% elsif params[:controller] != nil && params[:controller] == "admin" %>
+	<%# elsif params[:controller] != nil && params[:controller] = "langs" %>
+	
+		<!-- params[:controller] => <%= params[:controller] %>! -->
+		<%#= render :partial => "layouts/app_langs" %>
+		
+		<%= javascript_include_tag "/javascript/admin" %>
+	
   	<% end %>
   
   <%# if @current_controller != nil && @current_controller = "words" %>

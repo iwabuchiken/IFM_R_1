@@ -2798,3 +2798,15 @@ text == nil
 text.id=8/Num of words=1
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-02 18:14:19 +0900]
 r=je
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 08:55:25 +0900]
+text.id=8/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 08:55:25 +0900]
+r=je
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 08:55:29 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 08:58:32 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 08:58:57 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 11:10:34 +0900]
+params[:text_id] => nil

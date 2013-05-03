@@ -319,6 +319,10 @@ g p origin master && g p heroku master
 g co master && g merge B16_NEW_tag-value_link
 g p origin master && g p heroku master
 
+[B17_FIX-1_use_lang-id__Build-word-list v-1.0 2013/05/02 18:21:05]----------------------------
+g co master && g merge B17_FIX-1_use_lang-id__Build-word-list
+g p origin master && g p heroku master
+
 
 
 aa

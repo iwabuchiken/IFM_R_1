@@ -27,7 +27,10 @@
     <th>Created at(millsec)</th>
     <th>Updated at(millsec)</th>
     <th></th>
+    <th></th>
   </tr>
+
+<% count = 1 %>
 
 <% @word_lists.each do |word_list| %>
   <tr>
@@ -39,6 +42,15 @@
     <td><%= word_list.created_at_mill %></td>
     <td><%= word_list.updated_at_mill %></td>
     <td><%= link_to 'Destroy', word_list, confirm: 'Are you sure?', method: :delete %></td>
+    
+    <td>
+    	<% if count % 10 == 0 %>
+    		<a href="#bottom">(To bottom)</a> |
+    		<a href="#top">(To top)</a>
+    	<% end %>
+    	<% count += 1 %>
+    	
+    </td>
   </tr>
 <% end %>
 </table>

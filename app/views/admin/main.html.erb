@@ -11,11 +11,34 @@
 @contentArray.length = <%= @contentArray.length %><br />
 <hr />
 
-<% for i in 0..@contentArray.length - 1 %>
+<!-- <div id="admin_show_log">Show log</div><br /> -->
+<input type="button" value="Show log"   id="show_button" /> |
+<!--
+	REF disabled http://html.eweb-design.com/0903_btn.html
+-->
+<input type="button" value="Hide log"   id="hide_button" disabled/>
+<!-- <input type="button" value="Hide log"   id="hide_button" style="disabled: true"/> -->
 
-	<%= @contentArray[i] %><br />
+<!-- <input type="button" value="Show log" onclick="showMessage('msg');" /> -->
+<!-- <input type="button" value="Show log"   id="show_button" onclick="showMessage('msg');" /> -->
 
-<% end %>
+<p>CLICK here</p>
+
+<!-- <div id="logs"> -->
+	
+<!-- REF display http://stackoverflow.com/questions/4474327/how-to-make-a-div-hidden-by-default-made-by-a-content-tag-for -->
+<div id="logs" style="display: none;">
+<!-- <div id="logs" style="visibility: hidden"> -->
+<!-- <div id="logs" style="background-color: blue;"> -->
+<!-- <div style="visibility: hidden"> -->
+
+	<% for i in 0..@contentArray.length - 1 %>
+	
+		<%= @contentArray[i] %><br />
+	
+	<% end %>
+	
+</div>
 
 <hr />
 <a href="#top" style="margin: 0px 25px;">(To top)</a>
