@@ -3638,3 +3638,5 @@ params[:text_id] => nil
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 18:12:57 +0900]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 18:25:45 +0900]
+since == nil

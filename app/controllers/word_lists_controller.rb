@@ -6,13 +6,17 @@ class WordListsController < ApplicationController
   # GET /word_lists.json
   def index
     # @word_lists = WordList.all
-
+    
+    default_sort_key = :id
+    
     since = params[:since]
     
     if since == nil
 
       logout("since == nil")
       @word_lists = WordList.all
+      
+      @word_lists.sort_by!{|word_list| word_list[default_sort_key]}
       
     else
       
@@ -24,7 +28,9 @@ class WordListsController < ApplicationController
                       :all,
                       :conditions => [
                                 # "updated_at_mill > ?", since.to_i])
-                                "created_at_mill > ?", since.to_i])
+                                "created_at_mill > ?", since.to_i],
+                      :order => default_sort_key.to_s
+                      )
                               # "created_at_mill > ?", since.to_i + (9*60*60)])
                               # "created_at > ?",
                               # Time.at(since.to_i / 1000).utc])
@@ -55,6 +61,8 @@ class WordListsController < ApplicationController
           
           @word_lists =
               WordList.all
+          
+          @word_lists.sort_by!{|word_list| word_list[default_sort_key]}
           
         end#if since.numeric?
 
