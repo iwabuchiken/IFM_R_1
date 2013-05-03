@@ -19,10 +19,14 @@
 
 <table border="2">
   <tr>
-  	<th>Id</th>
-    <th>Text</th>
-    <th>Word</th>
-    <th>Lang</th>
+  	<th><%= link_to 'Id',
+  			:controller => "word_lists", :action => "index", :sort => "id" %></th>
+  	<th><%= link_to 'Text',
+  			:controller => "word_lists", :action => "index", :sort => "text_id" %></th>
+    <th><%= link_to 'Word',
+    		:controller => "word_lists", :action => "index", :sort => "word_id" %></th>
+    <th><%= link_to 'Lang',
+    		:controller => "word_lists", :action => "index", :sort => "lang_id" %></th>
     <th>DbId</th>
     <th>Created at(millsec)</th>
     <th>Updated at(millsec)</th>

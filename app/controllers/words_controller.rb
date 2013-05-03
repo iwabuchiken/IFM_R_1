@@ -9,6 +9,41 @@ class WordsController < ApplicationController
 
     default_sort_key = :id
 
+    # Sort =================================
+    param_sort = params[:sort]
+    
+    if param_sort != nil and param_sort == "lang"
+    # if param_sort != nil
+      
+      # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+          # "param_sort=" + param_sort +
+          # "/" + "param_sort.to_sym.class.to_s=" + param_sort.to_sym.class.to_s
+#   
+      # logout(msg)
+
+      
+      # default_sort_key = param_sort.to_sym
+      default_sort_key = :lang_id
+      
+    elsif param_sort != nil and param_sort == "id"
+      
+      default_sort_key = :id
+      
+    elsif param_sort != nil and param_sort == "w1"
+      
+      default_sort_key = :w1
+      
+    elsif param_sort != nil and param_sort == "w2"
+      
+      default_sort_key = :w2
+      
+    elsif param_sort != nil and param_sort == "w3"
+      
+      default_sort_key = :w3
+      
+    end#if param_sort != nil and param_sort == "lang"
+    
+    # Since =================================
     since = params[:since]
     
     if since == nil
