@@ -29,8 +29,19 @@
   </div>
   
   <div class="field">
-    <%= f.label :text_ids %><br />
-    <%= f.text_field :text_ids %>
+    
+    <%#= f.label_tag(:text_ids, :value => @word.text_ids.join(" ")) %>
+    <%#= f.label(:text_ids, :value => @word.text_ids.join(" ")) %>
+    <%#= f.label :text_ids, :value => @word.text_ids.join(" ") %>
+    
+    <!-- <%#= f.label :text_ids %><br /> -->
+    <%= f.label :text_ids %>: 
+    <%= f.label :text_ids, @word.text_ids.join(" ") %><br />
+    
+    <%#= f.text_field :text_ids %>
+    <%#= f.text_field :text_ids, :value => "abc" %>
+    <%#= f.text_field :text_ids, :value => @text_ids %>
+    
   </div>
   
   <div class="field">

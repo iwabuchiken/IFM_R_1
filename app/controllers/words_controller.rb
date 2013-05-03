@@ -157,6 +157,9 @@ class WordsController < ApplicationController
   # GET /words/1/edit
   def edit
     @word = Word.find(params[:id])
+    
+    @text_ids = @word.text_ids.join(" ")
+    
   end
 
   # POST /words
@@ -211,6 +214,43 @@ class WordsController < ApplicationController
   # PUT /words/1.json
   def update
     @word = Word.find(params[:id])
+#     
+#     
+    # #debug
+    # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            # "params[:id]=" + params[:id]
+            # # "params[:text_ids]=" + params[:text_ids]  # => nil
+            # # "Updating word ..." + "(@word.text_ids=" + @word.text_ids + ")"
+# 
+    # logout(msg)
+# 
+    # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            # "params.length=" + params.length.to_s
+            # # "params[:text_ids]=" + params[:text_ids]
+            # # "Updating word ..." + "(@word.text_ids=" + @word.text_ids + ")"
+# 
+    # logout(msg)
+# 
+    # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " +
+            # "params.class.to_s=" + params.class.to_s 
+            # # "params.join(\" // \")=" + params.join(" // ")
+            # # "params[:text_ids]=" + params[:text_ids]
+            # # "Updating word ..." + "(@word.text_ids=" + @word.text_ids + ")"
+# 
+    # logout(msg)
+# 
+    # msg = ""
+#     
+    # params.each do |k, v|
+#       
+      # msg += "k=" + k + "/"
+#       
+    # end#params.each do |k, v|
+# 
+    # logout(msg)
+# 
+    # # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " +
+            # # "Updating word ..." + "(@word.text_ids=" + @word.text_ids + ")" # => nil
 
     respond_to do |format|
       if @word.update_attributes(params[:word])
