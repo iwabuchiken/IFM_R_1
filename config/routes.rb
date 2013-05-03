@@ -2,8 +2,10 @@ CR6R::Application.routes.draw do
   resources :langs
 
   get "admin/main"
+  post "admin/main"
 
   get "admin/sub1"
+  post "admin/sub1"
 
   get "admin/sub2"
   

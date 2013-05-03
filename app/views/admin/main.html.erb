@@ -1,3 +1,5 @@
+<p id="notice"><%= notice %></p>
+
 <h1>
 	<a name="top">Admin#main</a>
 </h1>
@@ -11,16 +13,14 @@
 @contentArray.length = <%= @contentArray.length %><br />
 <hr />
 
+	<%= render :partial => "main_menu" %>
+
 <!-- <div id="admin_show_log">Show log</div><br /> -->
 <input type="button" value="Show log"   id="show_button" /> |
 <!--
 	REF disabled http://html.eweb-design.com/0903_btn.html
 -->
-<input type="button" value="Hide log"   id="hide_button" disabled/>
-<!-- <input type="button" value="Hide log"   id="hide_button" style="disabled: true"/> -->
-
-<!-- <input type="button" value="Show log" onclick="showMessage('msg');" /> -->
-<!-- <input type="button" value="Show log"   id="show_button" onclick="showMessage('msg');" /> -->
+<input type="button" value="Hide log"   class="hide_button" disabled/>
 
 <p>CLICK here</p>
 
@@ -28,15 +28,14 @@
 	
 <!-- REF display http://stackoverflow.com/questions/4474327/how-to-make-a-div-hidden-by-default-made-by-a-content-tag-for -->
 <div id="logs" style="display: none;">
-<!-- <div id="logs" style="visibility: hidden"> -->
-<!-- <div id="logs" style="background-color: blue;"> -->
-<!-- <div style="visibility: hidden"> -->
 
 	<% for i in 0..@contentArray.length - 1 %>
 	
 		<%= @contentArray[i] %><br />
 	
 	<% end %>
+	
+	<input type="button" value="Hide log"   class="hide_button" disabled/>
 	
 </div>
 

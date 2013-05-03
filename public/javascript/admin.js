@@ -4,18 +4,6 @@ function showMessage(msg) {
    // alert(msg);
 };
 
-// $('#show_button').click(function({
-
-// $(function(){
-// 
-	// $("#show_button").click(function({
-// 		
-		// alert("msg");
-		// // $(this).css("background-color", "blue")
-	// }));
-// 	
-// });
-// 
 $(document).ready(function(){
   $("p").click(function(){
     // $(this).hide();
@@ -26,34 +14,20 @@ $(document).ready(function(){
   });
   
   $("#show_button").click(function(){
-    // $(this).hide();
-    // $(this).css("background-color", "blue");
-    // alert($(this).text);
-    
-    // REF attr()	http://stackoverflow.com/questions/487056/retrieve-button-value-with-jquery answered Jan 28 '09 at 10:12
-    // alert($(this).attr("value"));
-    
-    // REF $()[0] http://stackoverflow.com/questions/4069982/document-getelementbyid-vs-jquery edited Sep 28 '11 at 20:29
-    // REF http://blog.mwsoft.jp/article/36582155.html
-    // $("logs")[0].css("background-color", "blue");
-    // $("logs").css("background-color", "blue");
-    // $("#logs").css("background-color", "blue");
+
     $("#logs").show();
-    
-    // $(this).attr("value") = "Log shown";
-    // $(this).attr("value", "Log shown");
-    
+
     // REF disabled http://stackoverflow.com/questions/5580616/jquery-change-button-text
     $(this).attr("disabled", true);
     
     // REF disabled http://d.hatena.ne.jp/ogakky/20110711/1310349297
-    $("#hide_button").removeAttr("disabled");
+    $(".hide_button").removeAttr("disabled");
     
     
     // $("#logs").css("visibility", "visible");
   });
   
-  $("#hide_button").click(function(){
+  $(".hide_button").click(function(){
 
     // alert($(this).attr("value"));
 
@@ -66,6 +40,14 @@ $(document).ready(function(){
     
   });
   
+  $("#item_refactor_table_word_lists").click(function(){
+
+    // alert($(this).css("value"));
+    // alert($(this).attr("value"));
+
+    
+  });
   
+  // 
   
 });

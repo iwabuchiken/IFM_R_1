@@ -2810,3 +2810,167 @@ since == nil
 since == nil
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 11:10:34 +0900]
 params[:text_id] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 14:34:23 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:02:20 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:02:28 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:02:49 +0900]
+created_at_mill=1367560968886
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:02:52 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:06 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+text.id=2/Num of words=10
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:10 +0900]
+r=护卫
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:296) diff_words.length=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:227) selected_words.length =< 0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:256) selected_words.length > 0=
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+text.id=2/Num of words=10
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=透露
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=艘
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=架
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:14 +0900]
+r=护卫
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:03:50 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:05:01 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:08:54 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:09:07 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:09:19 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:11:17 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:11:17 +0900]
+No word object for id=27
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:13:00 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:13:00 +0900]
+No word object for id=27
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:13:00 +0900]
+No word object for id=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:13:00 +0900]
+for operation => Done: (Destoryed:0)
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:13:34 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:15:48 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:15:48 +0900]
+No word object for id=27
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:15:48 +0900]
+word_list object destroyed => id=27
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:15:48 +0900]
+No word object for id=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:15:48 +0900]
+word_list object destroyed => id=64
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:15:48 +0900]
+for operation => Done: (Destoryed:0)
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:16:37 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:21:58 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:21:59 +0900]
+for operation => Done: (Destoryed:0)
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:23:40 +0900]
+created_at_mill=1367562220604
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:23:44 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:24:03 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:24:03 +0900]
+No word object for id=2
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:24:04 +0900]
+word_list object destroyed => id=65
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:24:44 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:24:51 +0900]
+created_at_mill=1367562291127
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:24:57 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:25:04 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:25:37 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:26:16 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:26:16 +0900]
+word_list.word_id <= 0: id=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:26:16 +0900]
+for operation => Done: (Destoryed:0)
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:26:25 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:27:09 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:27:09 +0900]
+word_list.word_id <= 0: id=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:27:09 +0900]
+word_list object destroyed => id=66
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:27:09 +0900]
+for operation => Done: (Destoryed:0)
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:27:15 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:28:11 +0900]
+created_at_mill=1367562491672
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:28:22 +0900]
+created_at_mill=1367562502923
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:28:25 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:15 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:15 +0900]
+No word object for id=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:15 +0900]
+word_list object destroyed => id=67
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:15 +0900]
+No word object for id=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:15 +0900]
+word_list object destroyed => id=68
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:15 +0900]
+for operation => Done: (Destoryed:2)
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:30 +0900]
+Starting... sub1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-03 15:29:30 +0900]
+for operation => Done: (Destoryed:0)
