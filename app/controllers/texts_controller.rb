@@ -14,6 +14,36 @@ class TextsController < ApplicationController
     # default_sort_key = :title
     default_sort_key = :id
     
+    # Sort
+    param_sort = params[:sort]
+    
+    if param_sort != nil and param_sort == "lang"
+    # if param_sort != nil
+      
+      # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+          # "param_sort=" + param_sort +
+          # "/" + "param_sort.to_sym.class.to_s=" + param_sort.to_sym.class.to_s
+#   
+      # logout(msg)
+
+      
+      # default_sort_key = param_sort.to_sym
+      default_sort_key = :lang_id
+      
+    elsif param_sort != nil and param_sort == "id"
+      
+      default_sort_key = :id
+      
+    elsif param_sort != nil and param_sort == "text"
+      
+      default_sort_key = :text
+      
+    elsif param_sort != nil and param_sort == "title"
+      
+      default_sort_key = :title
+      
+    end#if param_sort != nil and param_sort == "lang"
+    
     since = params[:since]
     
     if since == nil
@@ -23,7 +53,14 @@ class TextsController < ApplicationController
       
       # => REF sort_by! http://ref.xaio.jp/ruby/classes/array/sort
       # => REF {...} http://stackoverflow.com/questions/5739158/rails-ruby-how-to-sort-an-array answered Apr 21 '11 at 3:36
+      
+      # => REF {|word| - ...} http://www.ruby-forum.com/topic/148948 Posted by Rob Biedenharn (Guest) on 2008-04-09 00:34
+      # @texts.sort_by!{|word| - word[default_sort_key]}
+      # @texts.sort_by!{|word| word[default_sort_key]}.reverse  # => Doesn't descend
+      
       @texts.sort_by!{|word| word[default_sort_key]}
+      # @texts.reverse          # => Doesn't descend
+      
       # @texts.sort_by!{|word| word[:created_at]}
       
     else
@@ -38,7 +75,8 @@ class TextsController < ApplicationController
                               # "updated_at_mill > ?", since.to_i])
                               "created_at_mill > ?", since.to_i],
                     # => REF http://rubyrails.blog27.fc2.com/blog-entry-13.html
-                    :order => default_sort_key.to_s
+                    :order => default_sort_key.to_s + " DESC "
+                    # :order => default_sort_key.to_s + " DESC "
                     # :order => "created_at"
                     )
                               # "created_at_mill > ?", since.to_i + (9*60*60)])
