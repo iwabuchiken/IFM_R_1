@@ -10,64 +10,65 @@ class TextsController < ApplicationController
   # GET /texts.json
   def index
     
-    #=====================================
-    #
-    # Params
-    #
-    #=====================================
-    # lang_id  ======================================
-    lang_id = _index_param_lang_id()
-    
-    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
-              "lang_id.to_s=" + lang_id.to_s
+      #=====================================
+      #
+      # Params
+      #
+      #=====================================
+      # lang_id  ======================================
+      lang_id = _index_param_lang_id()
       
-    logout(msg)
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                "lang_id.to_s=" + lang_id.to_s
+        
+      logout(msg)
+        
       
-    
-    # Sort ======================================
-    #debug
-    # default_sort_key = :title
-    # default_sort_key = :id
-    param_sort = params[:sort]
-    
-    default_sort_key = _index_param_sort(param_sort)
-    
-    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
-              "default_sort_key.to_s=" + default_sort_key.to_s
+      # Sort ======================================
+      #debug
+      # default_sort_key = :title
+      # default_sort_key = :id
+      param_sort = params[:sort]
       
-    logout(msg)
-
-    # Since ======================================
-    since = params[:since]
-    
-    
-    #=====================================
-    #
-    # Build list: since
-    #
-    #=====================================
-    @texts = _index_GetTexts_FilterSince(param_sort, default_sort_key, since)
-
-    #=====================================
-    #
-    # Filtering: lang_id
-    #
-    #=====================================
-    if lang_id != -1
-
-      @texts.select!{|item| item.lang_id == lang_id}
-      # @texts.sort!{|item| item.lang_id == lang_id} # => undefined method `>' for true:TrueClass
+      default_sort_key = _index_param_sort(param_sort)
       
-    end
-    
-
-    # @texts = Text.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @texts }
-    end
-  end
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                "default_sort_key.to_s=" + default_sort_key.to_s
+        
+      logout(msg)
+  
+      # Since ======================================
+      since = params[:since]
+      
+      
+      #=====================================
+      #
+      # Build list: since
+      #
+      #=====================================
+      @texts = _index_GetTexts_FilterSince(param_sort, default_sort_key, since)
+  
+      #=====================================
+      #
+      # Filtering: lang_id
+      #
+      #=====================================
+      if lang_id != -1
+  
+          @texts.select!{|item| item.lang_id == lang_id}
+          # @texts.sort!{|item| item.lang_id == lang_id} # => undefined method `>' for true:TrueClass
+        
+      end
+      
+  
+      # @texts = Text.all
+  
+      respond_to do |format|
+          format.html # index.html.erb
+          format.json { render json: @texts }
+      end
+      
+  end#def index
 
   # GET /texts/1
   # GET /texts/1.json
