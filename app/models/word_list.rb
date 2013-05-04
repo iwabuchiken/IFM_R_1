@@ -7,6 +7,7 @@ class WordList < ActiveRecord::Base
   #####################################
   belongs_to :text
   belongs_to :word
+  belongs_to  :lang
 
   #####################################
   #

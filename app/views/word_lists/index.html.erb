@@ -25,8 +25,42 @@
   			:controller => "word_lists", :action => "index", :sort => "text_id" %></th>
     <th><%= link_to 'Word',
     		:controller => "word_lists", :action => "index", :sort => "word_id" %></th>
-    <th><%= link_to 'Lang',
-    		:controller => "word_lists", :action => "index", :sort => "lang_id" %></th>
+    <th>
+    	<%= link_to 'Lang',
+    		:controller => "word_lists", :action => "index", :sort => "lang_id" %>
+    	<br />
+    	<form action="/word_lists" method="get">
+    	
+		    <% if Lang.all.size > 0 %>
+		    	<!-- <%#= select(
+		    				"keyword",
+		    				"category_id",
+		    				Category.all.collect {|g| [g.name, g.id]}) %> -->
+		    	
+		    	<!-- REF include_blank http://railsdoc.com/references/select -->
+		    	<!-- REF selected http://stackoverflow.com/questions/623458/rails-select-helper-default-selected-value-how answered Mar 10 '09 at 6:06 -->
+		    	<%= select(
+		    				"word_list",
+		    				"lang_id",
+		    				Lang.all.collect {|lang| [lang.name, lang.id]},
+		    				:include_blank => true,
+		    				:selected => (
+		    						params[:word_list] && params[:word_list][:lang_id] != "" ?
+		    							params[:word_list] && params[:word_list][:lang_id] : false)
+		    				) %>
+		    <% else %>
+		    
+		    	<b>No data</b>
+		    	
+		    <% end %>
+		    
+		    <input type="submit" value="Filter"
+						id="filter_lang"
+						name="filter_lang" />
+		</form>
+    
+    </th>
+    
     <th>DbId</th>
     <th>Created at(millsec)</th>
     <th>Updated at(millsec)</th>
@@ -40,8 +74,17 @@
   <tr>
     <td><%= link_to word_list.id, word_list %></td>
     <td><%= word_list.text_id %></td>
+    
     <td><%= word_list.word_id %></td>
-    <td><%= word_list.lang_id %></td>
+    
+    <td>
+        <% if not word_list.lang == nil %>
+	    	<%= word_list.lang.name %>
+		<% else %>
+			<%= word_list.lang_id %>(text.lang => nil)
+	    <% end %>
+    </td>
+
     <td><%= word_list.db_id %></td>
     <td><%= word_list.created_at_mill %></td>
     <td><%= word_list.updated_at_mill %></td>

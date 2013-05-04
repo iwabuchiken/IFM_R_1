@@ -1,10 +1,20 @@
 class Text < ActiveRecord::Base
   
+  #####################################
+  #
+  # Relations
+  #
+  #####################################
   has_many :word_lists
   has_many :words, through: :word_lists
   # has_one   :lang
   belongs_to  :lang
 
+  #####################################
+  #
+  # Before operations
+  #
+  #####################################
   # before_save :add_created_at_millsec, add_updated_at_millsec
   before_save :add_created_at_millsec
   before_save :add_updated_at_millsec
@@ -12,6 +22,11 @@ class Text < ActiveRecord::Base
   # before_update :update_created_at_millsec
   
   
+  #####################################
+  #
+  # Methods
+  #
+  #####################################
   protected
   def add_created_at_millsec
     
