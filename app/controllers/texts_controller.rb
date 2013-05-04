@@ -10,118 +10,57 @@ class TextsController < ApplicationController
   # GET /texts.json
   def index
     
+    #=====================================
+    #
+    # Params
+    #
+    #=====================================
+    # lang_id  ======================================
+    lang_id = _index_param_lang_id()
+    
+    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              "lang_id.to_s=" + lang_id.to_s
+      
+    logout(msg)
+      
+    
+    # Sort ======================================
     #debug
     # default_sort_key = :title
-    default_sort_key = :id
-    
-    # Sort
+    # default_sort_key = :id
     param_sort = params[:sort]
     
-    if param_sort != nil and param_sort == "lang"
-    # if param_sort != nil
-      
-      # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
-          # "param_sort=" + param_sort +
-          # "/" + "param_sort.to_sym.class.to_s=" + param_sort.to_sym.class.to_s
-#   
-      # logout(msg)
-
-      
-      # default_sort_key = param_sort.to_sym
-      default_sort_key = :lang_id
-      
-    elsif param_sort != nil and param_sort == "id"
-      
-      default_sort_key = :id
-      
-    elsif param_sort != nil and param_sort == "text"
-      
-      default_sort_key = :text
-      
-    elsif param_sort != nil and param_sort == "title"
-      
-      default_sort_key = :title
-      
-    end#if param_sort != nil and param_sort == "lang"
+    default_sort_key = _index_param_sort(param_sort)
     
+    msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              "default_sort_key.to_s=" + default_sort_key.to_s
+      
+    logout(msg)
+
+    # Since ======================================
     since = params[:since]
     
-    if since == nil
-
-      logout("since == nil")
-      @texts = Text.all
-      
-      # => REF sort_by! http://ref.xaio.jp/ruby/classes/array/sort
-      # => REF {...} http://stackoverflow.com/questions/5739158/rails-ruby-how-to-sort-an-array answered Apr 21 '11 at 3:36
-      
-      # => REF {|word| - ...} http://www.ruby-forum.com/topic/148948 Posted by Rob Biedenharn (Guest) on 2008-04-09 00:34
-      # @texts.sort_by!{|word| - word[default_sort_key]}
-      # @texts.sort_by!{|word| word[default_sort_key]}.reverse  # => Doesn't descend
-      
-      @texts.sort_by!{|word| word[default_sort_key]}
-      # @texts.reverse          # => Doesn't descend
-      
-      # @texts.sort_by!{|word| word[:created_at]}
-      
-    else
-      
-        if is_numeric?(since)
-        # if since.numeric?
-      
-          @texts = 
-              Text.find(
-                    :all,
-                    :conditions => [
-                              # "updated_at_mill > ?", since.to_i])
-                              "created_at_mill > ?", since.to_i],
-                    # => REF http://rubyrails.blog27.fc2.com/blog-entry-13.html
-                    :order => default_sort_key.to_s + " DESC "
-                    # :order => default_sort_key.to_s + " DESC "
-                    # :order => "created_at"
-                    )
-                              # "created_at_mill > ?", since.to_i + (9*60*60)])
-                              # "created_at > ?",
-                              # Time.at(since.to_i / 1000).utc])
-                              # Time.at(since.to_i / 1000).utc + (9*60*60)])
-
-                              # REF=> http://www.treeder.com/2011/06/converting-ruby-time-to-milliseconds.html
-                              # Time.at(since.to_i / 1000).utc + (9*60*60 + 1)])
-
-                              
-                    # :conditions => ["created_at > ?", Time.at(since.to_i / 1000)])
-          
-          # logout(Time.at(since.to_i / 1000) + "/utc=" + Time.at(since.to_i / 1000).utc)
-          # logout(Time.at(since.to_i / 1000).to_s + "/utc=" + Time.at(since.to_i / 1000).utc.to_s)
-          logout((Time.at(since.to_i / 1000) + (9*60*60 + 1)).to_s\
-                  + "/utc="\
-                  + (Time.at(since.to_i / 1000).utc + (9*60*60 + 1)).to_s\
-                  + "/since=" + since.to_i.to_s
-                  )
-          
-          # logout((Time.at(since.to_i / 1000) + (9*60*60)).to_s\
-                  # + "/utc="\
-                  # + (Time.at(since.to_i / 1000).utc + (9*60*60)).to_s)
-          
-          # @texts.paginate
-          
-        else
-          logout("since -> " + since)
-          
-          # logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
-          
-          @texts =
-              Text.all
-          @texts.sort_by!{|word| word[default_sort_key]}
-          # @texts.sort_by!{|word| word[:created_at]}
-          
-        end#if since.numeric?
-
-      # @texts = Text.find(:all, :conditions => ["created_at > ?", Time.at(since.to_i / 1000).utc])
-      
-    end#if since == nil    
-
     
+    #=====================================
+    #
+    # Build list: since
+    #
+    #=====================================
+    @texts = _index_GetTexts_FilterSince(param_sort, default_sort_key, since)
+
+    #=====================================
+    #
+    # Filtering: lang_id
+    #
+    #=====================================
+    if lang_id != -1
+
+      @texts.select!{|item| item.lang_id == lang_id}
+      # @texts.sort!{|item| item.lang_id == lang_id} # => undefined method `>' for true:TrueClass
+      
+    end
     
+
     # @texts = Text.all
 
     respond_to do |format|
@@ -132,6 +71,227 @@ class TextsController < ApplicationController
 
   # GET /texts/1
   # GET /texts/1.json
+
+  def _index_GetTexts_FilterSince(param_sort, default_sort_key, since)
+    
+      if since == nil
+
+        logout("since == nil")
+        texts = Text.all
+        
+        # => REF sort_by! http://ref.xaio.jp/ruby/classes/array/sort
+        # => REF {...} http://stackoverflow.com/questions/5739158/rails-ruby-how-to-sort-an-array answered Apr 21 '11 at 3:36
+        
+        # => REF {|word| - ...} http://www.ruby-forum.com/topic/148948 Posted by Rob Biedenharn (Guest) on 2008-04-09 00:34
+        # @texts.sort_by!{|word| - word[default_sort_key]}
+        # @texts.sort_by!{|word| word[default_sort_key]}.reverse  # => Doesn't descend
+        
+        return texts.sort_by!{|word| word[default_sort_key]}
+        
+        # @texts.sort!{|t1, t2| t1.lang_id <=> t2.lang_id}
+        
+        # @texts.reverse          # => Doesn't descend
+        
+        # @texts.sort_by!{|word| word[:created_at]}
+        
+      else
+        
+          if is_numeric?(since)
+          # if since.numeric?
+        
+              texts = 
+                  Text.find(
+                        :all,
+                        :conditions => [
+                                  # "updated_at_mill > ?", since.to_i])
+                                  "created_at_mill > ?", since.to_i],
+                        # => REF http://rubyrails.blog27.fc2.com/blog-entry-13.html
+                        :order => default_sort_key.to_s + " DESC "
+                        # :order => default_sort_key.to_s + " DESC "
+                        # :order => "created_at"
+                        )
+                                  # "created_at_mill > ?", since.to_i + (9*60*60)])
+                                  # "created_at > ?",
+                                  # Time.at(since.to_i / 1000).utc])
+                                  # Time.at(since.to_i / 1000).utc + (9*60*60)])
+    
+                                  # REF=> http://www.treeder.com/2011/06/converting-ruby-time-to-milliseconds.html
+                                  # Time.at(since.to_i / 1000).utc + (9*60*60 + 1)])
+    
+                                  
+                        # :conditions => ["created_at > ?", Time.at(since.to_i / 1000)])
+              
+              # logout(Time.at(since.to_i / 1000) + "/utc=" + Time.at(since.to_i / 1000).utc)
+              # logout(Time.at(since.to_i / 1000).to_s + "/utc=" + Time.at(since.to_i / 1000).utc.to_s)
+              logout((Time.at(since.to_i / 1000) + (9*60*60 + 1)).to_s\
+                      + "/utc="\
+                      + (Time.at(since.to_i / 1000).utc + (9*60*60 + 1)).to_s\
+                      + "/since=" + since.to_i.to_s
+                      )
+              
+              # logout((Time.at(since.to_i / 1000) + (9*60*60)).to_s\
+                      # + "/utc="\
+                      # + (Time.at(since.to_i / 1000).utc + (9*60*60)).to_s)
+              
+              # @texts.paginate
+              
+              return texts
+            
+          else
+              logout("since -> " + since)
+              
+              # logout("since -> " + since + "(" + Time.at(since.to_i / 1000) + ")")
+              
+              texts =
+                  Text.all
+              
+              return texts.sort_by!{|word| word[default_sort_key]}
+              # @texts.sort_by!{|word| word[:created_at]}
+            
+          end#if since.numeric?
+  
+        # @texts = Text.find(:all, :conditions => ["created_at > ?", Time.at(since.to_i / 1000).utc])
+        
+      end#if since == nil 
+  end#def _index_GetTexts_FilterSince(param_sort, default_sort_key)
+
+  def _index_param_sort(param_sort)
+      if param_sort != nil and param_sort == "lang"
+      # if param_sort != nil
+        
+        # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            # "param_sort=" + param_sort +
+            # "/" + "param_sort.to_sym.class.to_s=" + param_sort.to_sym.class.to_s
+  #   
+        # logout(msg)
+  
+        # => REF to_sym http://chulip.org/entry/20090627/1246117665
+        # default_sort_key = param_sort.to_sym
+        # default_sort_key = :lang_id
+        return :lang_id
+        
+      elsif param_sort != nil and param_sort == "id"
+        
+        # default_sort_key = :id
+        return :id
+        
+      elsif param_sort != nil and param_sort == "text"
+        
+        return :text
+        # default_sort_key = :text
+        
+      elsif param_sort != nil and param_sort == "title"
+        
+        return :title
+        # default_sort_key = :title
+        
+      else
+        
+        return :id
+        
+      end#if param_sort != nil and param_sort == "lang"
+      
+  end#def _index_param_sort
+  
+  def _index_param_lang_id
+    
+    if params[:text] == nil
+
+        msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              "params[:text] => nil"
+      
+        logout(msg)
+      
+        return -1
+    
+    elsif params[:text] != nil && params[:text] == ""
+
+        msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+              "params[:text] => \"\""
+      
+        logout(msg)
+      
+        return -1
+      
+    else
+      
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            "params[:text] => " + params[:text].class.to_s +
+            "/" + "params[:text][:lang_id].class=" + params[:text][:lang_id].class.to_s
+    
+      logout(msg)
+      
+      if params[:text][:lang_id] != nil &&
+            params[:text][:lang_id] != ""
+        
+          msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                "params[:text] => " + params[:text].class.to_s +
+                "/" + "params[:text][:lang_id]=" + params[:text][:lang_id]
+        
+          logout(msg)
+        
+      elsif params[:text][:lang_id] != nil &&
+            params[:text][:lang_id] == ""
+        
+          msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                "params[:text] => " + params[:text].class.to_s +
+                "/" + "params[:text][:lang_id] => \"\""
+        
+          logout(msg)
+        
+      else
+
+          msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                "params[:text] => " + params[:text].class.to_s +
+                "/" + "params[:text][:lang_id] => nil"
+        
+          logout(msg)
+        
+      end
+        
+      lang_id = params[:text][:lang_id]
+      
+    end
+    
+    if lang_id != nil && lang_id != ""
+      
+      return lang_id.to_i
+      
+    else
+      
+      return -1
+      
+    end
+    
+    # if lang_id != nil
+#       
+      # if lang_id == ""
+#         
+        # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            # "lang_id => \"\""
+#     
+        # logout(msg)
+# 
+      # else
+#         
+        # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            # "lang_id=" + lang_id
+#     
+        # logout(msg)
+#       
+      # end
+#       
+    # else
+#       
+        # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            # "lang_id => nil"
+#     
+        # logout(msg)
+#       
+    # end#if lang_id != nil 
+    
+  end#def _index_param_lang_id
+
   def show
     @text = Text.find(params[:id])
 

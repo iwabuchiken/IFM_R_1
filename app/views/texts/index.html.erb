@@ -31,7 +31,40 @@
     <th>Genre</th>
     <th>Subgenre</th>
     
-    <th><%= link_to 'Lang', :controller => "texts", :action => "index", :sort => "lang" %></th>
+    <th>
+    	<%= link_to 'Lang', :controller => "texts", :action => "index", :sort => "lang" %>
+    	<br />
+    	<!-- <form action="/texts" method="post"> -->
+    	<form action="/texts" method="get">
+    	
+		    <% if Lang.all.size > 0 %>
+		    	<!-- <%#= select(
+		    				"keyword",
+		    				"category_id",
+		    				Category.all.collect {|g| [g.name, g.id]}) %> -->
+		    	
+		    	<!-- REF include_blank http://railsdoc.com/references/select -->
+		    	<%= select(
+		    				"text",
+		    				"lang_id",
+		    				Lang.all.collect {|lang| [lang.name, lang.id]},
+		    				:include_blank => true,
+		    				:selected => (
+		    						params[:text] && params[:text][:lang_id] != "" ?
+		    							params[:text] && params[:text][:lang_id] : false)
+		    				) %>
+		    <% else %>
+		    
+		    	<b>No data</b>
+		    	
+		    <% end %>
+		    
+		    <input type="submit" value="Filter"
+						id="filter_lang"
+						name="filter_lang" />
+		</form>
+    	
+    </th>
     
     <th>Memo</th>
     <th>Dbid</th>
