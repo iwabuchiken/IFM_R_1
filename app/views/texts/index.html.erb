@@ -17,86 +17,12 @@
 -->
 
 <table border="2">
-  <tr>
-    <!-- <th>Id</th> -->
-    <th><%= link_to 'Id', :controller => "texts", :action => "index", :sort => "id" %></th>
-    <!-- <th>Text</th> -->
-    <th><%= link_to 'Text', :controller => "texts", :action => "index", :sort => "text" %></th>
-    <!-- <th>Title</th> -->
-    <th><%= link_to 'Title', :controller => "texts", :action => "index", :sort => "title" %></th>
-    <th>Word ids</th>
-    <!-- <th style="width: 10px;">Url</th> -->
-    <th>Url</th>
-    <!-- <th class="url">Url</th> -->
-    <th>Genre</th>
-    <th>Subgenre</th>
-    
-    <th>
-    	<%= link_to 'Lang', :controller => "texts", :action => "index", :sort => "lang" %>
-    	<br />
-    	<!-- <form action="/texts" method="post"> -->
-    	<form action="/texts" method="get">
-    	
-		    <% if Lang.all.size > 0 %>
-		    	<!-- <%#= select(
-		    				"keyword",
-		    				"category_id",
-		    				Category.all.collect {|g| [g.name, g.id]}) %> -->
-		    	
-		    	<!-- REF include_blank http://railsdoc.com/references/select -->
-		    	<!-- REF selected http://stackoverflow.com/questions/623458/rails-select-helper-default-selected-value-how answered Mar 10 '09 at 6:06 -->
-		    	<%= select(
-		    				"text",
-		    				"lang_id",
-		    				Lang.all.collect {|lang| [lang.name, lang.id]},
-		    				:include_blank => true,
-		    				:selected => (
-		    						params[:text] && params[:text][:lang_id] != "" ?
-		    							params[:text] && params[:text][:lang_id] : false)
-		    				) %>
-		    <% else %>
-		    
-		    	<b>No data</b>
-		    	
-		    <% end %>
-		    
-		    <input type="submit" value="Filter"
-						id="filter_lang"
-						name="filter_lang" />
-		</form>
-    	
-    </th>
-    
-    <th>Memo</th>
-    <th>Dbid</th>
-    <th>Created at(millsec)</th>
-    <th></th>
-  </tr>
 
-<% @texts.each do |text| %>
-  <tr>
-    
-    <td><%= link_to text.id, text %></td>
-    <td class="text"><%= text.text %></td>
-    <!-- <td><%#= text.text %></td> -->
-    <td><%= text.title %></td>
-    <td><%= text.word_ids %></td>
-    <td class="url"><%= text.url %></td>
-    <td><%= text.genre_id %></td>
-    <td><%= text.subgenre_id %></td>
-    <% if not text.lang == nil %>
-    	<td><%= text.lang.name %></td>
-	<% else %>
-		<td><%= text.lang_id %>(text.lang => nil)</td>
-    <% end %>
-    <!-- <td><%#= text.lang %></td> -->
-    <!-- <td><%#= text.lang_id %></td> -->
-    <td><%= text.memo %></td>
-    <td><%= text.dbId %></td>
-    <td><%= text.created_at_mill %></td>
-    <td><%= link_to 'Destroy', text, confirm: 'Are you sure?', method: :delete, :class => 'link' %></td>
-  </tr>
-<% end %>
+	<%= render :partial => "index_table_header" %>
+
+	<%= render :partial => "index_table_entries" %>
+
+	
 </table>
 
 <a name="bottom"></a>

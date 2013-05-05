@@ -19,10 +19,23 @@
     <%= f.label :title %><br />
     <%= f.text_field :title, :class => "focus" %>
   </div>
-  <div class="field">
-    <%= f.label :word_ids %><br />
-    <%= f.text_field :word_ids %>
-  </div>
+  
+  <!-- <div class="field"> -->
+    <%#= f.label :word_ids %><br />
+    <%#= f.text_field :word_ids %>
+  <!-- </div> -->
+	<div class="field">
+		<% if @text.word_ids != nil && @text.word_ids.size > 0 %>
+		
+		    <%= f.label :word_ids %>: 
+		    <%= f.label :word_ids, @text.word_ids.join(" ") %><br />
+		    
+		<% else %>
+		<% end %>
+    
+    
+	</div>
+
   <div class="field">
     <%= f.label :url %><br />
     <%= f.text_field :url, :class => "focus" %>

@@ -1,0 +1,28 @@
+<% @texts.each do |text| %>
+  <tr>
+    
+    <td><%= link_to text.id, text %></td>
+    <td class="text"><%= text.text %></td>
+    <!-- <td><%#= text.text %></td> -->
+    <td><%= text.title %></td>
+    <td><%= text.word_ids %></td>
+    <td class="url"><%= text.url %></td>
+    <td><%= text.genre_id %></td>
+    <td><%= text.subgenre_id %></td>
+
+	<td>
+	    <% if not text.lang == nil %>
+	    	<%= text.lang.name %>
+		<% else %>
+			<%= text.lang_id %>(text.lang => nil)
+	    <% end %>
+	</td>
+	
+    <!-- <td><%#= text.lang %></td> -->
+    <!-- <td><%#= text.lang_id %></td> -->
+    <td><%= text.memo %></td>
+    <td><%= text.dbId %></td>
+    <td><%= text.created_at_mill %></td>
+    <td><%= link_to 'Destroy', text, confirm: 'Are you sure?', method: :delete, :class => 'link' %></td>
+  </tr>
+<% end %>

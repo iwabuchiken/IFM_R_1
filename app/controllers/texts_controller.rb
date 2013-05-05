@@ -370,8 +370,48 @@ class TextsController < ApplicationController
   # PUT /texts/1
   # PUT /texts/1.json
   def update
-    @text = Text.find(params[:id])
+      @text = Text.find(params[:id])
 
+      #debug
+      if @text.word_lists != nil
+        
+          msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                    "@text.word_lists.size.to_s=" + @text.word_lists.size.to_s
+                  
+      else
+        
+          msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            "@text.word_list.id.to_s=" + @text.word_list.id.to_s
+
+      end#if @text.word_list != nil
+        
+      logout(msg)
+      
+      #params[:text]
+      msg = ""
+      
+      if params[:text] != nil
+        
+        params[:text].each {|k, v|
+            
+            # msg += "k=" + k + "/" + "v=" + v.to_s + " "
+            msg += "k=" + k + "/" + "v=" + v + " "
+        }
+        
+      else
+        
+        msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            "params[:text] => nil"
+        
+      end
+      
+      # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+        
+
+      logout(msg)
+      
+
+    
     respond_to do |format|
       if @text.update_attributes(params[:text])
         format.html { redirect_to @text, notice: 'Text was successfully updated.' }
