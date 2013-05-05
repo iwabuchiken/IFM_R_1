@@ -685,8 +685,17 @@ class TextsController < ApplicationController
         tag2 = "</span>"
         word = words[i]
   #       
-  
-        text.text = _add_span2(text.text, word, tag1, tag2)
+        if text.lang_id == 2 || # => German
+            text.lang_id == 3 || # => French
+            text.lang_id == 4 # => English
+            
+            text.text = _add_span2_GeFrEn(text.text, word, tag1, tag2)
+            
+        else
+          
+          text.text = _add_span2(text.text, word, tag1, tag2)
+          
+        end
         # text.text = _add_span(text.text, word.w1, tag1, tag2)
    
     end#for i in 0..(words.length - 1)
@@ -698,6 +707,108 @@ class TextsController < ApplicationController
     
   end#def _show__1_colorize_words(@text)
   
+  def _add_span2(text, word, start_tag, end_tag)
+
+    # => REF /#{}/ http://stackoverflow.com/questions/2648054/ruby-recursive-regex answered Apr 15 '10 at 18:48
+    r       = /#{word.w1}/
+    marker  = 0
+    t1      = start_tag
+    t2      = end_tag
+    counter = 0
+  
+    # => REF =~ http://www.rubylife.jp/regexp/ini/index4.html
+    while r =~ text[marker..(text.size - 1)] do
+    # while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+      #debug
+      logout("r=" + r.source)
+      
+      point = (r =~ text[marker..(text.size - 1)])
+      
+      text.insert(marker + point, t1)
+      text.insert(marker + point + t1.size + r.source.size, t2)
+  
+      marker += point + t1.size + r.source.size + t2.size
+      
+      counter += 1
+  
+      
+    end#while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+    
+    return text
+    
+  end#def _add_span(text, keyword, start_tag, end_tag)
+  
+  def _add_span2_GeFrEn(text, word, start_tag, end_tag)
+
+      # => REF /#{}/ http://stackoverflow.com/questions/2648054/ruby-recursive-regex answered Apr 15 '10 at 18:48
+      r       = /#{word.w1}/
+      marker  = 0
+      t1      = start_tag
+      t2      = end_tag
+      counter = 0
+      
+      new_text = []
+      
+      text_split = text.split(" ")
+      
+      for i in (0..(text_split.length - 1))
+          
+          point = (r =~ text_split[i])
+          # point = (r =~ text[marker..(text.size - 1)])
+          
+          if  point
+          # if r =~ text_split[i]
+              #debug
+              msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                "text_split[i]=" + text_split[i] +
+                "/" + "point=" + point.to_s
+        
+              logout(msg)
+              
+              text_split[i].insert(point, t1)
+              
+              #debug
+              msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+                "text_split[i]=" + text_split[i]
+        
+              logout(msg)
+              
+              text_split[i].insert(point + t1.size + r.source.size, t2)
+              
+              new_text << text_split[i]
+              # new_text << t1 + text_split[i] + t2
+              
+          else
+              
+              new_text << text_split[i]
+            
+          end#if r =~ text_split[i]
+        
+          # # => REF =~ http://www.rubylife.jp/regexp/ini/index4.html
+          # while r =~ text_split[i][marker..(text_split[i].size - 1)] do
+          # # while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+            # #debug
+            # logout("r=" + r.source)
+#             
+            # point = (r =~ text[marker..(text.size - 1)])
+#             
+            # text.insert(marker + point, t1)
+            # text.insert(marker + point + t1.size + r.source.size, t2)
+#         
+            # marker += point + t1.size + r.source.size + t2.size
+#             
+            # counter += 1
+#         
+#             
+          # end#while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+#       
+      end#for i in (0..(text_split.length - 1))
+      
+      return new_text.join(" ")
+      # return text
+    
+  end#def _add_span(text, keyword, start_tag, end_tag)
+
   def _add_span2(text, word, start_tag, end_tag)
 
     # => REF /#{}/ http://stackoverflow.com/questions/2648054/ruby-recursive-regex answered Apr 15 '10 at 18:48

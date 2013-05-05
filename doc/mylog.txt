@@ -5386,3 +5386,119 @@ r=展开前
 r=护卫
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:06:51 +0900]
 r=前所未有
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:40 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:219) params[:text] => ActiveSupport::HashWithIndifferentAccess/params[:text][:lang_id].class=String
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:228) params[:text] => ActiveSupport::HashWithIndifferentAccess/params[:text][:lang_id]=4
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=4
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:45 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:54:51 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:55:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:378) @text.word_lists.size.to_s=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:55:26 +0900]
+k=text/v=Ein Engel - : ein im Himmlischen Zerstreuter, / der um dich ist seitdem du hier erschienst; / kaum jemals trauriger, kaum je erfreuter, / doch immer strahlender in deinem Dienst: aaaaajebbbbbb k=title/v=Ein Engel - : ein im Himmlische k=url/v= k=genre_id/v=0 k=subgenre_id/v=0 k=lang_id/v=4 k=memo/v= k=dbId/v=0 
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 12:55:27 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:01:35 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:22 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:22 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:22 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:22 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:27 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:219) params[:text] => ActiveSupport::HashWithIndifferentAccess/params[:text][:lang_id].class=String
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:27 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:228) params[:text] => ActiveSupport::HashWithIndifferentAccess/params[:text][:lang_id]=4
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:27 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=4
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:27 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:27 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:31 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:03:31 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:761) text_split[i]=Ein
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:04:34 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:04:34 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:761) text_split[i]=Ein/point=99
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:26 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=jemals/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>jemals
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=je/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>je
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=aaaaajebbbbbb/point=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=aaaaa<span style='color: blue;' onClick='alert("je//");'>jebbbbbb
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:53 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=jemals/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>jemals
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=je/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>je
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=aaaaajebbbbbb/point=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:05:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=aaaaa<span style='color: blue;' onClick='alert("je//");'>jebbbbbb
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:35 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:35 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=jemals/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:35 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>jemals
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:35 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=je/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:35 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>je
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:35 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=aaaaajebbbbbb/point=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:35 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=aaaaa<span style='color: blue;' onClick='alert("je//");'>jebbbbbb
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:535) diff_words.length=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:466) selected_words.length =< 0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:495) selected_words.length > 0=
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+text.id=7/Num of words=1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=jemals/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>jemals
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=je/point=0
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=<span style='color: blue;' onClick='alert("je//");'>je
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=aaaaajebbbbbb/point=5
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=aaaaa<span style='color: blue;' onClick='alert("je//");'>jebbbbbb
