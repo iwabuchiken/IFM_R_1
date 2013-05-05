@@ -671,46 +671,24 @@ class TextsController < ApplicationController
     #
     ##########################
     new_text = ""
-    tag1 = "<span style='color: blue;'>"
-    tag2 = "</span>"
+    # tag1 = "<span style='color: blue;'>"
+    # tag1 = "<span style='color: blue;'>"
+    # tag2 = "</span>"
     
     for i in 0..(words.length - 1)
-#       
-      word = words[i]
-#       
-
-      text.text = _add_span(text.text, word.w1, tag1, tag2)
-      # reg = Regexp.compile(word.w1)
-# #       
-# # => REF http://www.rubylife.jp/ini/string_class/index7.html
-      # if reg =~ text.text
-# #       # Start tag
-        # text.text.insert((reg =~ text.text), tag1)
-#         
-        # #debug
-        # logout("text=" + text.text)
-#         
-        # # End tag
-        # text.text.insert((reg =~ text.text) + word.w1.size, tag2)
-        # # text.text.insert((reg =~ text.text) + reg.to_s.size, tag2)
-#         
-        # #debug
-        # logout("reg.to_s=" + reg.to_s)
-#         
-        # # text.text.insert((reg =~ text.text) + tag1.size + reg.to_s.size, tag2)
-#         
-        # #debug
-        # logout("text=" + text.text)
-# 
-        # # text.text.insert((reg =~ text.text) + tag1.size + word.size, tag2)
-# #    
-        # logout("match: " + word.w1)
-      # else
-# #         
-      # end#if reg =~ text.text
-#       
-#       
-#       
+        tag1 = "<span style='color: blue;' onClick='alert(\"#{words[i].w1}/#{words[i].w2}/#{words[i].w3}\");'>"
+        # tag1 = "<span style='color: blue;' onClick='alert(\"hi\");'>" # => Works
+        # tag1 = "<span style='color: blue;' onmouseover='alert(\"hi\");'>" # => Works
+        # tag1 = "<span style='color: blue; onmouseover='alert('hi');'>"
+        # tag1 = "<span style='color: blue; onClick='alert('hi');'>"
+        # tag1 = "<span style='color: blue; onclick='alert('hi');'>"
+        tag2 = "</span>"
+        word = words[i]
+  #       
+  
+        text.text = _add_span2(text.text, word, tag1, tag2)
+        # text.text = _add_span(text.text, word.w1, tag1, tag2)
+   
     end#for i in 0..(words.length - 1)
     
     # text.text.insert(5, tag1)
@@ -720,6 +698,37 @@ class TextsController < ApplicationController
     
   end#def _show__1_colorize_words(@text)
   
+  def _add_span2(text, word, start_tag, end_tag)
+
+    # => REF /#{}/ http://stackoverflow.com/questions/2648054/ruby-recursive-regex answered Apr 15 '10 at 18:48
+    r       = /#{word.w1}/
+    marker  = 0
+    t1      = start_tag
+    t2      = end_tag
+    counter = 0
+  
+    # => REF =~ http://www.rubylife.jp/regexp/ini/index4.html
+    while r =~ text[marker..(text.size - 1)] do
+    # while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+      #debug
+      logout("r=" + r.source)
+      
+      point = (r =~ text[marker..(text.size - 1)])
+      
+      text.insert(marker + point, t1)
+      text.insert(marker + point + t1.size + r.source.size, t2)
+  
+      marker += point + t1.size + r.source.size + t2.size
+      
+      counter += 1
+  
+      
+    end#while r =~ text[marker..(text.size - 1)] && counter < maxnum do
+    
+    return text
+    
+  end#def _add_span(text, keyword, start_tag, end_tag)
+
   def _add_span(text, keyword, start_tag, end_tag)
 
     # => REF /#{}/ http://stackoverflow.com/questions/2648054/ruby-recursive-regex answered Apr 15 '10 at 18:48
@@ -749,7 +758,7 @@ class TextsController < ApplicationController
     
     return text
     
-  end#def _add_span(text, keyword, start_tag, end_tag)
+  end#def _add_span2(text, keyword, start_tag, end_tag)
 
   
 end#class TextsController < ApplicationController
