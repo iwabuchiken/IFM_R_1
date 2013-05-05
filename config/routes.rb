@@ -1,4 +1,6 @@
 CR6R::Application.routes.draw do
+  resources :links
+
   resources :langs
 
   get "admin/main"

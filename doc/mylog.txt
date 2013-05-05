@@ -5502,3 +5502,101 @@ text.id=7/Num of words=1
 (C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=aaaaajebbbbbb/point=5
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:10:42 +0900]
 (C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=aaaaa<span style='color: blue;' onClick='alert("je//");'>jebbbbbb
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:09 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:09 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:09 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:09 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+text.id=1/Num of words=8
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。属于/point=102
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("属于//shu3yu2");'>属于</span>/point=16
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于//shu3yu2");'>属于</span>
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>/point=16
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>/point=16
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=省疾控中心流行病学监测结果表明，目前我省的流感病例主要为甲型H1N1和H3N2两种，其中H1N1占9成以上。该中心流行病防治科副科长刘富强博士表示，与近期大家特别关注的H7N9禽流感不同的是，H1N1、H3N2都有相应的流感疫苗，可防可治。/point=9
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=省疾控中心流行病学<span style='color: blue;' onClick='alert("监测//jian1ce4");'>监测结果表明，目前我省的流感病例主要为甲型H1N1和H3N2两种，其中H1N1占9成以上。该中心流行病防治科副科长刘富强博士表示，与近期大家特别关注的H7N9禽流感不同的是，H1N1、H3N2都有相应的流感疫苗，可防可治。
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span/point=30
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感<span style='color: blue;' onClick='alert("高峰/peak/gaofeng");'>高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span/point=112
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:15 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体<span style='color: blue;' onClick='alert("感染//gan3ran3");'>感染。<span
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:40 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:45 +0900]
+text.id=6/Num of words=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。/point=30
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感<span style='color: blue;' onClick='alert("高峰/peak/gaofeng");'>高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。/point=112
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体<span style='color: blue;' onClick='alert("感染//gan3ran3");'>感染。
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体<span/point=88
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:13:45 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，<span style='color: blue;' onClick='alert("学生//xue2sheng1");'>学生一般喜欢闭门窗，屋内空气不流通，容易发生群体<span
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:23 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:23 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:23 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:23 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+text.id=1/Num of words=8
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。属于/point=102
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("属于//shu3yu2");'>属于</span>/point=16
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于//shu3yu2");'>属于</span>
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>/point=16
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>/point=16
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("<span style='color: blue;' onClick='alert("属于//shu3yu2");'>属于//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>//shu3yu2");'>属于</span>
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=省疾控中心流行病学监测结果表明，目前我省的流感病例主要为甲型H1N1和H3N2两种，其中H1N1占9成以上。该中心流行病防治科副科长刘富强博士表示，与近期大家特别关注的H7N9禽流感不同的是，H1N1、H3N2都有相应的流感疫苗，可防可治。/point=9
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=省疾控中心流行病学<span style='color: blue;' onClick='alert("监测//jian1ce4");'>监测结果表明，目前我省的流感病例主要为甲型H1N1和H3N2两种，其中H1N1占9成以上。该中心流行病防治科副科长刘富强博士表示，与近期大家特别关注的H7N9禽流感不同的是，H1N1、H3N2都有相应的流感疫苗，可防可治。
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span/point=30
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=为何甲流发病较去年同期增加明显？专家解释，每年冬春之交是流感<span style='color: blue;' onClick='alert("高峰/peak/gaofeng");'>高峰时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span/point=112
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 13:14:28 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体<span style='color: blue;' onClick='alert("感染//gan3ran3");'>感染。<span
