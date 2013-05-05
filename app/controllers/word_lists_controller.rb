@@ -142,17 +142,25 @@ class WordListsController < ApplicationController
           if is_numeric?(since)
           # if since.numeric?
         
-              word_lists = 
-                  WordList.find(
-                        :all,
-                        :conditions => [
-                                  # "updated_at_mill > ?", since.to_i])
-                                  "created_at_mill > ?", since.to_i],
-                        # => REF http://rubyrails.blog27.fc2.com/blog-entry-13.html
-                        :order => default_sort_key.to_s + " DESC "
+              word_lists = WordList.all()
+              
+              word_lists.select!{|item| item.created_at_mill > since.to_i}
+              # word_lists = word_lists.select!{|item| item.created_at_mill > since.to_i}
+              
+              word_lists.sort_by!{|word| word[default_sort_key]}
+              
+                  # WordList.find(
+                        # :all,
+                  # # WordList.all(
+# 
+                        # :conditions => [
+                                  # # "updated_at_mill > ?", since.to_i])
+                                  # "created_at_mill > ?", since.to_i],
+                        # # => REF http://rubyrails.blog27.fc2.com/blog-entry-13.html
                         # :order => default_sort_key.to_s + " DESC "
-                        # :order => "created_at"
-                        )
+                        # # :order => default_sort_key.to_s + " DESC "
+                        # # :order => "created_at"
+                        # )
                                   # "created_at_mill > ?", since.to_i + (9*60*60)])
                                   # "created_at > ?",
                                   # Time.at(since.to_i / 1000).utc])

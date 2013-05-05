@@ -5630,3 +5630,143 @@ text.id=1/Num of words=8
 (C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:762) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体感染。<span/point=112
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 18:52:13 +0900]
 (C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:771) text_split[i]=onClick='alert("高峰/peak/gaofeng");'>高峰</span>时期，今年3月份，天气忽冷忽热，加上小雨不断，流感局部集体疫情主要在少数中小学校发生，学生一般喜欢闭门窗，屋内空气不流通，容易发生群体<span style='color: blue;' onClick='alert("感染//gan3ran3");'>感染。<span
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:14:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:14:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:14:52 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:14:52 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:15:01 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:219) params[:text] => ActiveSupport::HashWithIndifferentAccess/params[:text][:lang_id].class=String
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:15:01 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:228) params[:text] => ActiveSupport::HashWithIndifferentAccess/params[:text][:lang_id]=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:15:01 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=3
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:15:01 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 21:15:01 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:08:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:240) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:08:53 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:08:53 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:09:05 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:240) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:09:05 +0900]
+label=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:44 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:44 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:44 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:44 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:55 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:201) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:55 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:21) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:55 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/texts_controller.rb:35) default_sort_key.to_s=id
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:55 +0900]
+label=1367205328282
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:10:55 +0900]
+2013-04-29 21:15:29 +0900/utc=2013-04-29 12:15:29 UTC/since=1367205328282
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:12:12 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:240) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:12:12 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:12:12 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:12:20 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:240) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:12:20 +0900]
+label=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:13:25 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:242) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:13:25 +0900]
+label=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:15:11 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:242) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:15:11 +0900]
+label=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:15:31 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:242) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:15:31 +0900]
+label=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:15:31 +0900]
+2013-05-01 22:12:49 +0900/utc=2013-05-01 13:12:49 UTC/since=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:15:31 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:245) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:26 +0900]
+label=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:26 +0900]
+2013-05-01 22:12:49 +0900/utc=2013-05-01 13:12:49 UTC/since=1367381568208
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:26 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:34 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:245) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:34 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:34 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:245) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:40 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:40 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:56 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:245) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:56 +0900]
+label=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:56 +0900]
+2013-05-04 01:47:25 +0900/utc=2013-05-03 16:47:25 UTC/since=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:16:56 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:17:38 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:246) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:17:38 +0900]
+label=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:17:38 +0900]
+2013-05-04 01:47:25 +0900/utc=2013-05-03 16:47:25 UTC/since=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:17:38 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:08 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:248) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:08 +0900]
+label=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:08 +0900]
+2013-05-04 01:47:25 +0900/utc=2013-05-03 16:47:25 UTC/since=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:08 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:21 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:248) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:21 +0900]
+label=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:21 +0900]
+2013-05-04 01:47:25 +0900/utc=2013-05-03 16:47:25 UTC/since=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:21 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:46 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:248) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:46 +0900]
+label=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:46 +0900]
+2013-05-04 01:47:25 +0900/utc=2013-05-03 16:47:25 UTC/since=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:46 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:59 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:248) params[:word_list] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:59 +0900]
+label=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:59 +0900]
+2013-05-04 01:47:25 +0900/utc=2013-05-03 16:47:25 UTC/since=1367567244932
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-05 22:18:59 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/word_lists_controller.rb:31) lang_id=-1
