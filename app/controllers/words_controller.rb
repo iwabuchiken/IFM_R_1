@@ -1,4 +1,5 @@
 require 'socket'
+# require 'request' # => cannot load such file -- request
 require_dependency 'basic'
 include Basic
 
@@ -45,7 +46,14 @@ class WordsController < ApplicationController
           # @texts.sort!{|item| item.lang_id == lang_id} # => undefined method `>' for true:TrueClass
         
       end
-
+      
+      #=====================================
+      #
+      # Langs => To count the number of entries
+      #
+      #=====================================
+      @langs = Lang.all()
+      
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @words }
@@ -283,15 +291,23 @@ class WordsController < ApplicationController
           @text = nil
         
       end
+      
+      
+      
       # @text = Text.find(@word.text_id)
       
       # => B13-CHANGE-5
       
       
-      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
-            "Socket.gethostname=" + Socket.gethostname
-          
-      logout(msg)
+      # msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " 
+            # # "Socket.gethostname=" + Socket.gethostname +
+            # # "/" + "requset.protocol=" + requset.protocol
+#             
+      # ENV.each { |key, value|
+          # msg += "#{key} - #{value} <br/> "
+      # }
+#       
+      # logout(msg)
   
       respond_to do |format|
           format.html # show.html.erb

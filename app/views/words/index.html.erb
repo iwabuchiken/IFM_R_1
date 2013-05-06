@@ -1,35 +1,13 @@
-<h1>
-	Words
-	<!-- <a name="top">Words</a> -->
-
-		<% if @words != nil %>
-			
-			<span style="font-weight: normal; font-size: smaller">
-				
-				(<%= @words.size %>)
-				
-			</span> (
-			
-			<span style="font-weight: normal; font-size: smaller">
-				
-				Chinese: <%= @words.select{|word| word.lang_id == 3}.size%> / 
-				German: <%= @words.select{|word| word.lang_id == 4}.size%> / 
-				French: <%= @words.select{|word| word.lang_id == 5}.size%> / 
-				
-			</span>)
-			
-		<% end %>
-	
-</h1>
+<%= render :partial => "index_h1" %>
 
 (<%= link_to 'New Word', new_word_path %>)
 	<a href="#bottom" style="margin: 0px 25px;">(To bottom)</a>
 
 <table border="2">
 
-	<%= render :partial => "index_table_header" %>
+	<%= render :partial => "words/table/index_table_header" %>
 
-	<%= render :partial => "index_table_entries" %>
+	<%= render :partial => "words/table/index_table_entries" %>
 	
 </table>
 
