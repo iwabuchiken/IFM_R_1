@@ -1,3 +1,4 @@
+require 'socket'
 require_dependency 'basic'
 include Basic
 
@@ -271,23 +272,31 @@ class WordsController < ApplicationController
   # GET /words/1
   # GET /words/1.json
   def show
-    @word = Word.find(params[:id])
-
-    if @word != nil && @word.text_id > 0
+      @word = Word.find(params[:id])
+  
+      if @word != nil && @word.text_id > 0
+        
+          @text = Text.find(@word.text_id)
+        
+      else
+        
+          @text = nil
+        
+      end
+      # @text = Text.find(@word.text_id)
       
-      @text = Text.find(@word.text_id)
+      # => B13-CHANGE-5
       
-    else
       
-      @text = nil
-      
-    end
-    # @text = Text.find(@word.text_id)
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @word }
-    end
+      msg = "(" + __FILE__ + ":" + __LINE__.to_s + ") " + 
+            "Socket.gethostname=" + Socket.gethostname
+          
+      logout(msg)
+  
+      respond_to do |format|
+          format.html # show.html.erb
+          format.json { render json: @word }
+      end
   end
 
   # GET /words/new

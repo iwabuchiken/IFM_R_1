@@ -5964,3 +5964,17 @@ since == nil
 (C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb:19) lang_id.to_s=-1
 [C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 11:49:24 +0900]
 since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 11:59:48 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb:177) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 11:59:48 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb:20) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 11:59:48 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 12:01:32 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb:177) params[:text] => nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 12:01:32 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb:20) lang_id.to_s=-1
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 12:01:32 +0900]
+since == nil
+[C:/WORKS/WS/WS_Android/CR6(R)/lib/basic.rb /17 2013-05-06 12:01:58 +0900]
+(C:/WORKS/WS/WS_Android/CR6(R)/app/controllers/words_controller.rb:291) Socket.gethostname=PC_IK
