@@ -6,7 +6,10 @@
     <!-- <td><%#= text.text %></td> -->
     <td><%= text.title %></td>
     <td><%= text.word_ids %></td>
-    <td class="url"><%= text.url %></td>
+    <td class="url">
+    	<%#= text.url %>
+    	<%= link_to text.url, text.url, :target => "_blank" %>
+    </td>
     <td><%= text.genre_id %></td>
     <td><%= text.subgenre_id %></td>
 

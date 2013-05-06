@@ -24,7 +24,9 @@
 
 <p>
   <b>Url:</b>
-  <%= @text.url %>
+  <%#= @text.url %>
+  <%= link_to @text.url, @text.url, :target => "_blank" %>
+  
 </p>
 
 <p>
