@@ -4,8 +4,12 @@ gitk
 
 C:\WORKS\PROGRAMS\FreeMind\Freemind.exe C:\WORKS\WORKSPACES_ANDROID\FM\NewsReader3_R\NewsReader3.mm
 
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && rails s --port 3001
+
 pushd C:\WORKS\WS\WS_Android\IFM_R_1
 rails s --port 3001
+
+
 
 pushd C:\WORKS\WORKSPACES_APTANA\NewsReader3
 
@@ -17,22 +21,12 @@ g a . && gitk
 
 git log --grep=master -6
 
-[Set up 2013/04/20 14:45:46]----------------------------
+[Set up 2013/05/17 12:23:23]----------------------------
 #bundle install
 
 rails s --port 3001
 
 gem install heroku --no-ri --no-rdoc
-
-		Fetching: heroku-2.37.2.gem (100%)
-		 !    The `heroku` gem has been deprecated and replaced with the Heroku Toolbelt
-		.
-		 !    Download and install from: https://toolbelt.heroku.com
-		 !    For API access, see: https://github.com/heroku/heroku.rb
-		Fetching: excon-0.20.1.gem (100%)
-		Successfully installed heroku-2.37.2
-		Successfully installed excon-0.20.1
-		2 gems installed
 
 heroku keys:add
 
@@ -41,168 +35,25 @@ heroku keys:add
 
 heroku create --stack cedar
 
-		Creating peaceful-mountain-6452... done, stack is cedar
-		http://peaceful-mountain-6452.herokuapp.com/ | git@heroku.com:peaceful-mountain-
-		6452.git
-		Git remote heroku added
-
 heroku rename cosmos-cr6
-
-		Renaming peaceful-mountain-6452 to cosmos-cr6... done
-		http://cosmos-cr6.herokuapp.com/ | git@heroku.com:cosmos-cr6.git
-		Git remote heroku updated
 
 g p heroku master
 
-       Installing sqlite3 (1.3.7)
-       Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native ex
-		tension.
-		       /usr/local/bin/ruby extconf.rb
-		       checking for sqlite3.h... no
-		       sqlite3.h is missing. Try 'port install sqlite3 +universal'
-		       or 'yum install sqlite-devel' and check your shared library search path (
-		the
-		       location where your sqlite3 shared library is located).
-		       *** extconf.rb failed ***
-		       Could not create Makefile due to some reason, probably lack of
-		       necessary libraries and/or headers.  Check the mkmf.log file for more
-		       details.  You may need configuration options.
-		       Provided configuration options:
-		       --with-opt-dir
-		       --without-opt-dir
-		       --with-opt-include
-		       --without-opt-include=${opt-dir}/include
-		       --with-opt-lib
-		       --without-opt-lib=${opt-dir}/lib
-		       --with-make-prog
-		       --without-make-prog
-		       --srcdir=.
-		       --curdir
-		       --ruby=/usr/local/bin/ruby
-		       --with-sqlite3-dir
-		       --without-sqlite3-dir
-		       --with-sqlite3-include
-		       --without-sqlite3-include=${sqlite3-dir}/include
-		       --with-sqlite3-lib
-		       --without-sqlite3-lib=${sqlite3-dir}/lib
-		       --enable-local
-		       --disable-local
-		       Gem files will remain installed in /tmp/build_3lbfpq1qc72t3/vendor/bundle
-		/ruby/1.9.1/gems/sqlite3-1.3.7 for inspection.
-		       Results logged to /tmp/build_3lbfpq1qc72t3/vendor/bundle/ruby/1.9.1/gems/
-		sqlite3-1.3.7/ext/sqlite3/gem_make.out
-		       An error occurred while installing sqlite3 (1.3.7), and Bundler cannot co
-		ntinue.
-		       Make sure that `gem install sqlite3 -v '1.3.7'` succeeds before bundling.
-		
-		 !
-		 !     Failed to install gems via Bundler.
-		 !
-		 !     Heroku push rejected, failed to compile Ruby/rails app
-		
-		To git@heroku.com:cosmos-cr6.git
-		 ! [remote rejected] master -> master (pre-receive hook declined)
-		error: failed to push some refs to 'git@heroku.com:cosmos-cr6.git'
-
 g p origin master && g p heroku master
 
-		Counting objects: 9, done.
-		Delta compression using up to 2 threads.
-		Compressing objects: 100% (5/5), done.
-		Writing objects: 100% (5/5), 1.97 KiB, done.
-		Total 5 (delta 4), reused 0 (delta 0)
-		To git@github.com:iwabuchiken/CR6_R.git
-		   ff4c287..df95c4f  master -> master
-		Counting objects: 70, done.
-		Delta compression using up to 2 threads.
-		Compressing objects: 100% (56/56), done.
-		Writing objects: 100% (70/70), 30.03 KiB, done.
-		Total 70 (delta 6), reused 0 (delta 0)
-		
-		-----> Ruby/Rails app detected
-		-----> WARNING: Removing `Gemfile.lock` because it was generated on Windows.
-		       Bundler will do a full resolve so native gems are handled properly.
-		       This may result in unexpected gem versions being used in your app.
-		-----> Installing dependencies using Bundler version 1.3.2
-		       Running: bundle install --without development:test --path vendor/bundle -
-		-binstubs vendor/bundle/bin
-		       Fetching gem metadata from http://rubygems.org/.........
-		       Fetching gem metadata from http://rubygems.org/..
-		       Resolving dependencies...
-		       Installing rake (10.0.4)
-		       Installing i18n (0.6.4)
-		       Installing multi_json (1.7.2)
-		       Installing activesupport (3.2.1)
-		       Installing builder (3.0.4)
-		       Installing activemodel (3.2.1)
-		       Installing erubis (2.7.0)
-		       Installing journey (1.0.4)
-		       Installing rack (1.4.5)
-		       Installing rack-cache (1.2)
-		       Installing rack-test (0.6.2)
-		       Installing hike (1.2.2)
-		       Installing tilt (1.3.7)
-		       Installing sprockets (2.1.3)
-		       Installing actionpack (3.2.1)
-		       Installing mime-types (1.22)
-		       Installing polyglot (0.3.3)
-		       Installing treetop (1.4.12)
-		       Installing mail (2.4.4)
-		       Installing actionmailer (3.2.1)
-		       Installing arel (3.0.2)
-		       Installing tzinfo (0.3.37)
-		       Installing activerecord (3.2.1)
-		       Installing activeresource (3.2.1)
-		       Using bundler (1.3.2)
-		       Installing coffee-script-source (1.6.2)
-		       Installing execjs (1.4.0)
-		       Installing coffee-script (2.2.0)
-		       Installing rack-ssl (1.3.3)
-		       Installing json (1.7.7)
-		       Installing rdoc (3.12.2)
-		       Installing thor (0.14.6)
-		       Installing railties (3.2.1)
-		       Installing coffee-rails (3.2.2)
-		       Installing jquery-rails (1.0.19)
-		       Installing nokogiri (1.5.9)
-		       Installing pg (0.12.2)
-		       Installing rails (3.2.1)
-		       Installing rails-i18n (0.7.3)
-		       Installing sass (3.2.7)
-		       Installing sass-rails (3.2.6)
-		       Installing uglifier (2.0.1)
-		       Your bundle is complete! It was installed into ./vendor/bundle
-		       Post-install message from rdoc:
-		       Depending on your version of ruby, you may need to install ruby rdoc/ri d
-		ata:
-		       <= 1.8.6 : unsupported
-		       = 1.8.7 : gem install rdoc-data; rdoc-data --install
-		       = 1.9.1 : gem install rdoc-data; rdoc-data --install
-		       >= 1.9.2 : nothing to do! Yay!
-		       Cleaning up the bundler cache.
-		-----> Writing config/database.yml to read from DATABASE_URL
-		-----> Preparing app for Rails asset pipeline
-		       Running: rake assets:precompile
-		       Asset precompilation completed (22.96s)
-		-----> Rails plugin injection
-		       Injecting rails_log_stdout
-		       Injecting rails3_serve_static_assets
-		-----> Discovering process types
-		       Procfile declares types      -> (none)
-		       Default types for Ruby/Rails -> console, rake, web, worker
-		
-		-----> Compiled slug size: 10.2MB
-		-----> Launching... done, v6
-		       http://cosmos-cr6.herokuapp.com deployed to Heroku
-		
-		To git@heroku.com:cosmos-cr6.git
-		 * [new branch]      master -> master
 #heroku open
 
-[B1 2013/04/20 15:19:15]----------------------------
-#rails generate scaffold Text text:text title:string word_ids:string url:string genre_id:integer subgenre_id:integer lang_id:integer memo:text dbId:integer
+[B1 2013/05/17 12:23:23]----------------------------
+#rails generate scaffold Image file_name:string file_path:string memos:text tags:string table_name:string last_viewed_at:integer created_at_mill:integer updated_at_mill:integer date_added:integer date_modified:integer loc_file_id:integer loc_created_at:integer loc_modified_at:integer
 
-#bundle exec rake db:migrate
+bundle exec rake db:migrate
+
+
+
+
+
+
+
 
 ### BROWSE
 

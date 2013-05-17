@@ -1,0 +1,47 @@
+<h1>Listing images</h1>
+
+<table>
+  <tr>
+    <th>File name</th>
+    <th>File path</th>
+    <th>Memos</th>
+    <th>Tags</th>
+    <th>Table name</th>
+    <th>Last viewed at</th>
+    <th>Created at mill</th>
+    <th>Updated at mill</th>
+    <th>Date added</th>
+    <th>Date modified</th>
+    <th>Loc file</th>
+    <th>Loc created at</th>
+    <th>Loc modified at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @images.each do |image| %>
+  <tr>
+    <td><%= image.file_name %></td>
+    <td><%= image.file_path %></td>
+    <td><%= image.memos %></td>
+    <td><%= image.tags %></td>
+    <td><%= image.table_name %></td>
+    <td><%= image.last_viewed_at %></td>
+    <td><%= image.created_at_mill %></td>
+    <td><%= image.updated_at_mill %></td>
+    <td><%= image.date_added %></td>
+    <td><%= image.date_modified %></td>
+    <td><%= image.loc_file_id %></td>
+    <td><%= image.loc_created_at %></td>
+    <td><%= image.loc_modified_at %></td>
+    <td><%= link_to 'Show', image %></td>
+    <td><%= link_to 'Edit', edit_image_path(image) %></td>
+    <td><%= link_to 'Destroy', image, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Image', new_image_path %>

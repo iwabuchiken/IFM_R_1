@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>File name:</b>
+  <%= @image.file_name %>
+</p>
+
+<p>
+  <b>File path:</b>
+  <%= @image.file_path %>
+</p>
+
+<p>
+  <b>Memos:</b>
+  <%= @image.memos %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @image.tags %>
+</p>
+
+<p>
+  <b>Table name:</b>
+  <%= @image.table_name %>
+</p>
+
+<p>
+  <b>Last viewed at:</b>
+  <%= @image.last_viewed_at %>
+</p>
+
+<p>
+  <b>Created at mill:</b>
+  <%= @image.created_at_mill %>
+</p>
+
+<p>
+  <b>Updated at mill:</b>
+  <%= @image.updated_at_mill %>
+</p>
+
+<p>
+  <b>Date added:</b>
+  <%= @image.date_added %>
+</p>
+
+<p>
+  <b>Date modified:</b>
+  <%= @image.date_modified %>
+</p>
+
+<p>
+  <b>Loc file:</b>
+  <%= @image.loc_file_id %>
+</p>
+
+<p>
+  <b>Loc created at:</b>
+  <%= @image.loc_created_at %>
+</p>
+
+<p>
+  <b>Loc modified at:</b>
+  <%= @image.loc_modified_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
