@@ -1,7 +1,13 @@
 IFMR1::Application.routes.draw do
+  
+  post "images/new"
+  
   resources :images
 
   root to: "images#index"
+  
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
