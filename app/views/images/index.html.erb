@@ -32,3 +32,28 @@
 <br />
 
 <%= link_to 'New Image', new_image_path %>
+
+<hr />
+<input type="button" value="Show log"   id="show_button" /> |
+<!--
+	REF disabled http://html.eweb-design.com/0903_btn.html
+-->
+<input type="button" value="Hide log"   class="hide_button" disabled/>
+
+<p>CLICK here</p>
+
+<!-- <div id="logs"> -->
+	
+<!-- REF display http://stackoverflow.com/questions/4474327/how-to-make-a-div-hidden-by-default-made-by-a-content-tag-for -->
+<div id="logs" style="display: none;">
+
+	<% for i in 0..@contentArray.length - 1 %>
+	
+		<%= @contentArray[i] %><br />
+	
+	<% end %>
+	
+	<input type="button" value="Hide log"   class="hide_button" disabled/>
+	
+</div>
+
