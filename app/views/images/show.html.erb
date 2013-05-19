@@ -5,6 +5,11 @@
   <%= @image.file_name %>
 </p>
 
+<hr />
+<img src="<%= $remote_url + '/' + @image.file_name %>" style="width: 50%; height: 50%" />
+
+<hr />
+
 <p>
   <b>File path:</b>
   <%= @image.file_path %>
@@ -26,43 +31,8 @@
 </p>
 
 <p>
-  <b>Last viewed at:</b>
-  <%= @image.last_viewed_at %>
-</p>
-
-<p>
-  <b>Created at mill:</b>
-  <%= @image.created_at_mill %>
-</p>
-
-<p>
-  <b>Updated at mill:</b>
-  <%= @image.updated_at_mill %>
-</p>
-
-<p>
-  <b>Date added:</b>
-  <%= @image.date_added %>
-</p>
-
-<p>
-  <b>Date modified:</b>
-  <%= @image.date_modified %>
-</p>
-
-<p>
   <b>Loc file:</b>
   <%= @image.loc_file_id %>
-</p>
-
-<p>
-  <b>Loc created at:</b>
-  <%= @image.loc_created_at %>
-</p>
-
-<p>
-  <b>Loc modified at:</b>
-  <%= @image.loc_modified_at %>
 </p>
 
 

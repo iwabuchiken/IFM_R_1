@@ -1,8 +1,13 @@
 class ImagesController < ApplicationController
+  
+  $remote_url = "http://benfranklin.chips.jp/images"
+  
   # GET /images
   # GET /images.json
   def index
     @images = Image.all
+
+    # $remote_url = "http://benfranklin.chips.jp/images";
 
     respond_to do |format|
       format.html # index.html.erb
