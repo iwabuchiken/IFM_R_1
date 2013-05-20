@@ -49,5 +49,20 @@ $(document).ready(function(){
   });
   
   // 
-  
+  $("#bt1").click(function(){
+  	//alert("bt1");
+    //$("#div1").load("./demo_test.txt");
+    //$("#div1").load("/demo_test.txt");
+    //$("#div1").load("demo_test.txt");
+    $("#div1").load("admin/demo_test.txt");
+  });
+/*  
+  $("#show_area").click(function(){
+  	alert("show_area");
+    //$("#div1").load("./demo_test.txt");
+    //$("#div1").load("/demo_test.txt");
+    //$("#div1").load("demo_test.txt");
+    //$("#div1").load("admin/demo_test.txt");
+  });
+  */
 });

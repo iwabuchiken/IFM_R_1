@@ -2,6 +2,11 @@
   <tr>
     
     <td><%= link_to text.id, text %></td>
+    <!-- <td><%#= link_to text.id, text, :remote => true %></td> --> <!-- <td><a href="/texts/1" data-remote="true">1</a></td> -->
+    <!-- <td><%#= link_to text.id, :controller => 'texts', :action => 'show', :remote => true %></td> -->
+    <!-- <td><%= link_to text.id, :controller => 'texts' %></td> -->
+    <!-- <td><%#= link_to text.id, :controller => 'texts', {:remote => true} %></td> -->	<!-- syntax error, unexpected ')', expecting tASSOC -->
+    
     <td class="text"><%= text.text %></td>
     <!-- <td><%#= text.text %></td> -->
     <td><%= text.title %></td>

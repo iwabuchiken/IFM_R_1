@@ -316,5 +316,11 @@ class AdminController < ApplicationController
   # end
   
   def sub2
+    
+      respond_to do |format|
+          format.html # show.html.erb
+          format.js
+          format.json { render json: @text }
+      end
   end
 end

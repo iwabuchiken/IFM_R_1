@@ -24,6 +24,27 @@
 
 <p>CLICK here</p>
 
+<hr />
+
+<div id="div1">
+	Ajax area
+</div>
+<button id="bt1">
+	Ajax experience
+</button>
+
+<hr />
+
+<!-- http://d.hatena.ne.jp/yuum3/20120903/1346653974 -->
+<%#= link_to 'Show', :controller => 'admin', :action => 'sub2', {:remote => true} %>
+<%#= link_to 'Admin/sub2', :controller => 'admin', :action => 'sub2'%> <!-- /admin/sub2 -->
+<%#= link_to 'Admin/sub2', :controller => 'admin', :action => 'sub2', {:remote => true}%> <!-- syntax error, unexpected ')' -->
+<%= link_to 'Admin/sub2', {:controller => 'admin', :action => 'sub2'}, :remote => true %>
+<div id="ajaxtest">Ajax test</div>
+<hr />
+
+
+
 <!-- <div id="logs"> -->
 	
 <!-- REF display http://stackoverflow.com/questions/4474327/how-to-make-a-div-hidden-by-default-made-by-a-content-tag-for -->
