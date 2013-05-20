@@ -142,8 +142,8 @@ class ImagesController < ApplicationController
           
           image = Image.new()
           
-          image.file_name = dev_file_name
-          image.table_name = dev_table_name
+          image.file_name = params['file_name']
+          image.table_name = params['table_name']
           
           respond_to do |format|
               if image.save
@@ -161,6 +161,8 @@ class ImagesController < ApplicationController
                 format.json { render json: image.errors, status: :unprocessable_entity }
                 
               end
+              
+              return
           end#respond_to do |format|
           
       else#if dev_file_name
