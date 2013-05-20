@@ -107,7 +107,8 @@ class ImagesController < ApplicationController
       end
 
 #           
-      logout(msg)
+      logout(msg, __FILE__, __LINE__)
+      # logout(msg)
   
       # Table name -------------------------------------
       if params['table_name']
@@ -120,7 +121,8 @@ class ImagesController < ApplicationController
 
       end      
       
-      logout(msg)
+      logout(msg, __FILE__, __LINE__)
+      # logout(msg)
       
       
             
