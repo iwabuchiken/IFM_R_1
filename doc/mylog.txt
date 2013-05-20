@@ -8,3 +8,11 @@ params['file_name'] => null
 params['file_name'] => null
 [C:/WORKS/WS/WS_Android/IFM_R_1/lib/basic.rb /17 2013-05-19 21:06:44 +0900]
 params['file_name'] => ddddd
+[C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb /117 2013-05-20 22:43:49 +0900]
+params['file_name'] => null
+[C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb /133 2013-05-20 22:43:49 +0900]
+params['table_name'] => null
+[C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb /117 2013-05-20 22:43:58 +0900]
+params['file_name'] => null
+[C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb /133 2013-05-20 22:43:58 +0900]
+params['table_name'] => null

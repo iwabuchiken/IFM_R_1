@@ -94,11 +94,18 @@ class ImagesController < ApplicationController
 #         
       # end
       
-      # File name -------------------------------------
-
+      #---------------------------------------------
+      # Post from  the device
+      #---------------------------------------------
+      dev_file_name = false
+      dev_table_name = false
+      
+      # File name ----------------------------------
       if params['file_name']
         
           msg = "params['file_name'] => " + params['file_name']
+          
+          dev_file_name = true
         
       else
       
@@ -114,6 +121,8 @@ class ImagesController < ApplicationController
       if params['table_name']
         
           msg = "params['table_name'] => " + params['table_name']
+          
+          dev_table_name = true
         
       else
       
@@ -123,6 +132,40 @@ class ImagesController < ApplicationController
       
       logout(msg, __FILE__, __LINE__)
       # logout(msg)
+      
+      # Save image
+      if dev_file_name
+          
+          msg = "dev_file_name => true"
+          logout(msg, __FILE__, __LINE__)
+
+          
+          image = Image.new()
+          
+          image.file_name = dev_file_name
+          image.table_name = dev_table_name
+          
+          respond_to do |format|
+              if image.save
+                  
+                  msg = "image.save => Done"
+                  logout(msg, __FILE__, __LINE__)
+                
+                  format.json { render json: image, status: :created, location: image }
+                  
+              else
+
+                msg = "image.save => Failed"
+                logout(msg, __FILE__, __LINE__)
+                
+                format.json { render json: image.errors, status: :unprocessable_entity }
+                
+              end
+          end#respond_to do |format|
+          
+      else#if dev_file_name
+        
+      end#if dev_file_name
       
       
             
