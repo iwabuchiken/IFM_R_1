@@ -1,6 +1,6 @@
 module Basic
   
-  def logout(label)
+  def logout(label, file_name, line_number)
   
     
     target = "doc/mylog.txt"
@@ -14,7 +14,7 @@ module Basic
     # content = "abcdefg"
     # File.open(target, "w+") do |f|
     File.open(target, "a") do |f|
-      f.write("[" + __FILE__ + " "  + "/" + __LINE__.to_s + " " + Time.now.to_s + "]" + "\n")
+      f.write("[" + file_name + " "  + "/" + line_number.to_s + " " + Time.now.to_s + "]" + "\n")
       # f.write(content)
       f.write(label)
       f.write("\n")
@@ -22,6 +22,28 @@ module Basic
 
   end#def logout(label)
 
+  # def logout(label)
+#   
+#     
+    # target = "doc/mylog.txt"
+#     
+    # if not File.exists?(target)
+#       
+      # FileUtils.touch(target)
+#       
+    # end
+#     
+    # # content = "abcdefg"
+    # # File.open(target, "w+") do |f|
+    # File.open(target, "a") do |f|
+      # f.write("[" + __FILE__ + " "  + "/" + __LINE__.to_s + " " + Time.now.to_s + "]" + "\n")
+      # # f.write(content)
+      # f.write(label)
+      # f.write("\n")
+    # end
+# 
+  # end#def logout(label)
+# 
   def is_numeric?(label)
     logout("label=" + label)
     
