@@ -75,21 +75,21 @@ class ImagesController < ApplicationController
   # GET /images/new.json
   def new
     	#REF get params: http://www.fraction.jp/log/archives/2007/05/1123
-      if params['image']
-          if params['image']['file_name']
+      if params['image_dev']
+          if params['image_dev']['file_name']
             
-              msg = "params['image']['file_name'] => "
-                        + params['image']['file_name']
+              msg = "params['image_dev']['file_name'] => "
+                        + params['image_dev']['file_name']
               
           else
             
-              msg = "params['image']['file_name'] => nil"
+              msg = "params['image_dev']['file_name'] => nil"
 
           end
         
       else
       
-          msg = "params['image'] => null"
+          msg = "params['image_dev'] => null"
 
         
       end
