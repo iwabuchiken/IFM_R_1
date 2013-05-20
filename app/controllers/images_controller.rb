@@ -74,18 +74,37 @@ class ImagesController < ApplicationController
   # GET /images/new
   # GET /images/new.json
   def new
-    
-      if params['file_name']
-        
-          msg = "params['file_name'] => " + params['file_name']
+    	#REF get params: http://www.fraction.jp/log/archives/2007/05/1123
+      if params['image']
+          if params['image']['file_name']
+            
+              msg = "params['image']['file_name'] => "
+                        + params['image']['file_name']
+              
+          else
+            
+              msg = "params['image']['file_name'] => nil"
+
+          end
         
       else
       
-          msg = "params['file_name'] => null"
+          msg = "params['image'] => null"
 
         
       end
           
+      # if params['file_name']
+#         
+          # msg = "params['file_name'] => " + params['file_name']
+#         
+      # else
+#       
+          # msg = "params['file_name'] => null"
+# 
+#         
+      # end
+#           
       logout(msg)
   
       
