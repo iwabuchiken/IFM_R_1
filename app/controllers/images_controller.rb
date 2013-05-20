@@ -75,39 +75,55 @@ class ImagesController < ApplicationController
   # GET /images/new.json
   def new
     	#REF get params: http://www.fraction.jp/log/archives/2007/05/1123
-      if params['image_dev']
-          if params['image_dev']['file_name']
-            
-              msg = "params['image_dev']['file_name'] => "
-                        + params['image_dev']['file_name']
-              
-          else
-            
-              msg = "params['image_dev']['file_name'] => nil"
-
-          end
-        
-      else
-      
-          msg = "params['image_dev'] => null"
-
-        
-      end
-          
-      # if params['file_name']
-#         
-          # msg = "params['file_name'] => " + params['file_name']
+      # if params['image_dev']
+          # if params['image_dev']['file_name']
+#             
+              # msg = "params['image_dev']['file_name'] => "
+                        # + params['image_dev']['file_name']
+#               
+          # else
+#             
+              # msg = "params['image_dev']['file_name'] => nil"
+# 
+          # end
 #         
       # else
 #       
-          # msg = "params['file_name'] => null"
+          # msg = "params['image_dev'] => null"
 # 
 #         
       # end
+      
+      # File name -------------------------------------
+
+      if params['file_name']
+        
+          msg = "params['file_name'] => " + params['file_name']
+        
+      else
+      
+          msg = "params['file_name'] => null"
+
+      end
+
 #           
       logout(msg)
   
+      # Table name -------------------------------------
+      if params['table_name']
+        
+          msg = "params['table_name'] => " + params['table_name']
+        
+      else
       
+          msg = "params['table_name'] => null"
+
+      end      
+      
+      logout(msg)
+      
+      
+            
       @image = Image.new
   
       respond_to do |format|
