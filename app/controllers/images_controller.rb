@@ -151,14 +151,16 @@ class ImagesController < ApplicationController
                   msg = "image.save => Done"
                   logout(msg, __FILE__, __LINE__)
                 
-                  format.json { render json: image, status: :created, location: image }
+                  format.json { render json: image}
+                  # format.json { render json: image, status: :created, location: image }
                   
               else
 
                 msg = "image.save => Failed"
                 logout(msg, __FILE__, __LINE__)
                 
-                format.json { render json: image.errors, status: :unprocessable_entity }
+                format.json { render json: image}
+                # format.json { render json: image.errors, status: :unprocessable_entity }
                 
               end
               
