@@ -1,3 +1,5 @@
+# require 'will_paginate'
+
 class Text < ActiveRecord::Base
   
   #####################################

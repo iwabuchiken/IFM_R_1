@@ -35,6 +35,8 @@ gem 'nokogiri'
 # i18n 20120707_135139
 gem 'rails-i18n'
 
+gem 'will_paginate'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

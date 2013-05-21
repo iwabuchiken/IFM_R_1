@@ -39,6 +39,8 @@
 <%#= link_to 'Show', :controller => 'admin', :action => 'sub2', {:remote => true} %>
 <%#= link_to 'Admin/sub2', :controller => 'admin', :action => 'sub2'%> <!-- /admin/sub2 -->
 <%#= link_to 'Admin/sub2', :controller => 'admin', :action => 'sub2', {:remote => true}%> <!-- syntax error, unexpected ')' -->
+
+<!-- http://stackoverflow.com/questions/6721259/ruby-on-rails-3-link-to-remote-true-treats-remote-as-a-url-parameter answered Jul 17 '11 at 1:01 -->
 <%= link_to 'Admin/sub2', {:controller => 'admin', :action => 'sub2'}, :remote => true %>
 <div id="ajaxtest">Ajax test</div>
 <hr />

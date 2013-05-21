@@ -334,6 +334,9 @@ g p origin master && g p heroku master
 # rails generate scaffold Link line:text url:string src:string news_time:string genre:string cat:string subcat:string tag:string memo:text
 heroku run rake db:migrate
 
+g p origin master && g p heroku master
+
+
 aa
 ============STORAGE============================
 [B1 v-2.0 20130331_074117]----------------------------

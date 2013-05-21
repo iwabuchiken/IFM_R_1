@@ -2,6 +2,8 @@
 require_dependency 'basic'
 include Basic
 
+# require 'will_paginate'
+
 class TextsController < ApplicationController
   
   # include Basic
@@ -78,7 +80,12 @@ class TextsController < ApplicationController
       if since == nil
 
         logout("since == nil")
-        texts = Text.all
+        # texts = Text.all
+        # texts = Text.pagenate(
+        texts = Text.paginate(
+                      :page => params[:page],
+                      :order => 'created_at desc',
+                      :per_page => 3)
         
         # => REF sort_by! http://ref.xaio.jp/ruby/classes/array/sort
         # => REF {...} http://stackoverflow.com/questions/5739158/rails-ruby-how-to-sort-an-array answered Apr 21 '11 at 3:36
