@@ -330,12 +330,17 @@ g co master && g merge B17_FIX-1_use_lang-id__Build-word-list
 g p origin master && g p heroku master
 
 [B24_Model_Link v-1.0 2013/05/05 18:46:17]----------------------------
+
 #rails generate scaffold Link title:string url:string memo:text created_at_mill:integer updated_at_mill:integer
 # rails generate scaffold Link line:text url:string src:string news_time:string genre:string cat:string subcat:string tag:string memo:text
 heroku run rake db:migrate
 
 g p origin master && g p heroku master
 
+[B27_login v-1.0 2013/05/05 18:46:17]----------------------------
+rails g scaffold Member name:string passwd:string
+
+bundle exec rake db:migrate
 
 aa
 ============STORAGE============================

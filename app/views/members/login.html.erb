@@ -1,0 +1,28 @@
+<% if flash['notice'] %>
+
+	<p id="notice"><%= flash['notice'] %></p>
+
+<% end %>
+
+<h1>Login</h1>
+
+<!-- REF form: http://d.hatena.ne.jp/masaki0303/20100829 -->
+
+<%#= form_for(@member) do |f| %>
+<%= form_tag do %>
+	<div class="field">
+		
+		Name: <%= text_field :member, :name %><br />
+	</div>
+
+	<div class="field">
+		
+		Password: <%= text_field :member, :passwd %><br />
+		
+	</div>
+	
+	<div class="field">	
+		<%= submit_tag "Log in" %><br />
+	</div>
+	
+<% end %><%#= form_tag do %>

@@ -1,4 +1,9 @@
 CR6R::Application.routes.draw do
+  resources :members
+  
+  get "members/login"
+  post "members/login"
+
   resources :links
 
   resources :langs
@@ -18,7 +23,8 @@ CR6R::Application.routes.draw do
   resources :words
   resources :texts
 
-  root to: "texts#index"
+  root to: "members#login"
+  # root to: "texts#index"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
