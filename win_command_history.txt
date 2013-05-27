@@ -338,9 +338,13 @@ heroku run rake db:migrate
 g p origin master && g p heroku master
 
 [B27_login v-1.0 2013/05/05 18:46:17]----------------------------
-rails g scaffold Member name:string passwd:string
+#rails g scaffold Member name:string passwd:string
 
-bundle exec rake db:migrate
+#bundle exec rake db:migrate
+
+g p origin master && g p heroku master && heroku run rake db:migrate
+
+
 
 aa
 ============STORAGE============================

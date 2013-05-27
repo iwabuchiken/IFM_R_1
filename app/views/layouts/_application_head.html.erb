@@ -1,0 +1,75 @@
+  <title>CR6R</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+  <%= stylesheet_link_tag    "/stylesheets/common" %>
+  
+  <meta name="viewport"
+           content="width=device-width,
+			user-scalable=yes,
+			initial-scale=2.0,
+                    maximum-scale=3.0" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  
+  	<% if params[:controller] != nil %>
+  	
+  		<!-- params[:controller] => <%= params[:controller] %> -->
+  	
+  	<% end %>
+  	
+  	<% if params[:controller] != nil && params[:controller] == "texts" %>
+  	<%# if params[:controller] != nil && params[:controller] = "texts" %>
+  
+  		<%= render :partial => "layouts/app_texts" %>
+  		
+	<% elsif params[:controller] != nil && params[:controller] == "langs" %>
+	<%# elsif params[:controller] != nil && params[:controller] = "langs" %>
+	
+		<!-- params[:controller] => <%= params[:controller] %>! -->
+		<%= render :partial => "layouts/app_langs" %>
+	
+	<% elsif params[:controller] != nil && params[:controller] == "admin" %>
+	<%# elsif params[:controller] != nil && params[:controller] = "langs" %>
+	
+		<!-- params[:controller] => <%= params[:controller] %>! -->
+		<%#= render :partial => "layouts/app_langs" %>
+		
+		<%= javascript_include_tag "/javascript/admin" %>
+	
+  	<% end %>
+  
+  <%# if @current_controller != nil && @current_controller = "words" %>
+  <% if params[:controller] != nil && params[:controller] = "words" \%>
+  		<% or params[:controller] != nil && params[:controller] = "langs" %>
+  <!-- Include js: words.js -->
+  <%#= javascript_include_tag "words" %>
+
+
+	<%#= render :partial => "layouts/app_common" %>
+		  <script type="text/javascript">
+	  
+		  $(document).ready(function() {
+		    // $('#choose').hover(
+		    $('.focus').hover(
+		    	
+		    	function() {
+		            // alert("Hover!");
+		            this.focus();
+		            this.select();
+		            //alert("<%= @current_controller %>");
+		        },
+		        
+		        function() {
+		        	// alert("Done");
+		        }
+		        
+		    );//$('#choose').hover(function() {
+
+		  });//$(document).ready(function() {
+		  	
+	  </script>
+  
+  <!-- REF http://stackoverflow.com/questions/15335780/rails-get-hoverover-popup-in-form -->
+  
+  <% end %>

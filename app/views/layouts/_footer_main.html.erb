@@ -12,4 +12,18 @@
 <%= link_to_unless_current 'Admin',
 				:controller => "admin", :action => "main", :class => 'link' %>&nbsp;|&nbsp;
 
+<%#= link_to 'Logout', :controller => "members", :action => "logout", confirm: 'Sure to logout?', :class => 'link' %>&nbsp;|&nbsp;
+<% if session['user_id'] %>
+		<%= link_to 'Logout',
+				"/members/logout",
+				confirm: 'Sure to logout?',
+				:class => 'link' %>&nbsp;|&nbsp;
+
+<% else %>
+		<%= link_to 'Login',
+				"/members/login",
+				
+				:class => 'link' %>&nbsp;|&nbsp;
+<% end %>
+
 <hr />

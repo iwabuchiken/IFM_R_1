@@ -94,6 +94,8 @@ class MembersController < ApplicationController
             
               flash['notice'] = "Member set: #{params['member']['name']}"
               
+              session['user_id'] = 1
+              
               # => REF redirect_to: http://maskana-soft.com/rails/pro/body/24
               redirect_to :controller => "texts", :action => "index"
               
@@ -119,6 +121,14 @@ class MembersController < ApplicationController
         format.json { render json: @member }
       end
   end#def login
+
+  def logout
+    
+      session['user_id'] = nil
+      
+      redirect_to "/"
+    
+  end#def logout
 
 private
   def validate_login(user_name, passwd)

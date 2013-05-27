@@ -1,8 +1,14 @@
 CR6R::Application.routes.draw do
-  resources :members
   
+  # get "members#login"
+  # post "members#login"
   get "members/login"
   post "members/login"
+  
+  get "members/logout"
+  post "members/logout"
+  
+  resources :members
 
   resources :links
 

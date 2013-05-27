@@ -2,10 +2,13 @@
 require_dependency 'basic'
 include Basic
 
+require 'utils'
+
 # require 'will_paginate'
 
 class TextsController < ApplicationController
   
+  # before_filter :validate_login
   # include Basic
   
   # GET /texts
@@ -24,7 +27,7 @@ class TextsController < ApplicationController
                 "lang_id.to_s=" + lang_id.to_s
         
       logout(msg)
-        
+
       
       # Sort ======================================
       #debug
@@ -516,6 +519,8 @@ class TextsController < ApplicationController
   end#def build_word_list
 
   private #==================================================
+  
+  
   def _build_word_list__1_build_list(text_id)
     #===========================
     #
@@ -879,6 +884,33 @@ class TextsController < ApplicationController
     
   end#def _add_span2(text, keyword, start_tag, end_tag)
 
+  def validate_login
+    
+      if session['user_id']
+          
+          msg = "session['user_id'] => Set"
+        
+          write_log(msg, __FILE__, __LINE__)
+
+          redirect_to :controller => "texts", :action => "index"
+          
+          # session[:return_to] ||= request.referer
+#           
+          # redirect_to session[:return_to]
+        
+      else
+          msg = "session['user_id'] => Not yet"
+        
+          write_log(msg, __FILE__, __LINE__)
+          
+          flash['notice'] = "Please login"
+          
+          # redirect_to :controller => "members", :action => "login"
+          redirect_to :root
+          
+      end
+    
+  end#def validate_login
   
 end#class TextsController < ApplicationController
 
