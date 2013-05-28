@@ -1,5 +1,11 @@
 IFMR1::Application.routes.draw do
   
+  get "admin/main"
+
+  get "admin/sub1"
+
+  get "admin/sub2"
+
   post "images/new"
   
   resources :images

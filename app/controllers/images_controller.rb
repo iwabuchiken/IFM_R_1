@@ -5,7 +5,8 @@ class ImagesController < ApplicationController
   
   # REF global http://doc.ruby-lang.org/ja/1.9.3/doc/spec=2fvariables.html#global
   $remote_url = "http://benfranklin.chips.jp/images"
-  $log_file_path = "doc/mylog.txt"
+  # $log_file_path = "doc/mylog.txt"
+  $log_file_path = "doc/mylog/log.log"
   
   # GET /images
   # GET /images.json
@@ -77,8 +78,12 @@ class ImagesController < ApplicationController
       
       res = _new__1_data_from_device()
       
+      logout("res=" + res.to_s, __FILE__, __LINE__)
+      
       if res == true
-        
+          
+          redirect_to :controller => 'images', :action => 'index'
+          
           return
         
       end
@@ -231,7 +236,9 @@ private
   #
   #===================================
   def _new__1_data_from_device
-    
+      
+      logout("Start: _new__1_data_from_device", __FILE__, __LINE__)
+      
       #---------------------------------------------
       # Post from  the device
       #---------------------------------------------
@@ -282,6 +289,7 @@ private
           
           image.file_name = params['file_name']
           image.table_name = params['table_name']
+          image.memos = params['memos']
           
           
           

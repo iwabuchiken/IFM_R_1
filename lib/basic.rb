@@ -14,7 +14,7 @@ module Basic
     
   end#def get_time_label_now()
   
-  def logout(label, file_name, line_number)
+  def logout(text, file_name, line_number)
   
         # max_line_num = 300
       max_line_num = 20000

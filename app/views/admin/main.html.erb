@@ -1,0 +1,27 @@
+<h1>Admin#main</h1>
+<p>Find me in app/views/admin/main.html.erb</p>
+
+<%= form_tag("/images/new") do %>
+	
+	<div class="field">	
+		<%#= hidden_field :file_name, nil, :value => "abcde" %><br />
+		<input id="file_name" name="file_name" type="hidden" value="abcde" /><br />
+	</div>
+	
+	<div class="field">	
+		
+		Table name: <input id="table_name" name="table_name" size="30" type="text" /><br/>
+		
+	</div>
+	
+	<div class="field">	
+		
+		Memos: <input id="memos" name="memos" size="30" type="text" /><br/>
+		
+	</div>
+	
+	<div class="field">	
+		<%= submit_tag "Send image" %><br />
+	</div>
+	
+<% end %><%#= form_tag do %>
