@@ -1,0 +1,25 @@
+<% @images.each do |image| %>
+  <tr>
+    <td><%= image.id %></td>
+    <td>
+    	<!-- REF using class: http://stackoverflow.com/questions/10185516/how-to-style-an-image-tag-in-ruby-on-rails answered Apr 17 '12 at 5:22 -->
+    	<%= link_to\
+    			image_tag(
+    				$remote_url + '/' + image.file_name,
+    				{:alt => $remote_url + '/' + image.file_name,
+    					:class => "index_image_tag"}),
+    			image %>
+    </td>
+    
+    <td>
+    	<%= link_to image.file_name, image %>
+    </td>
+    
+    <td><%= image.file_path %></td>
+    <td><%= image.memos %></td>
+    <td><%= image.tags %></td>
+    <td><%= image.table_name %></td>
+    <td><%= image.loc_file_id %></td>
+    <td><%= link_to 'Destroy', image, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>

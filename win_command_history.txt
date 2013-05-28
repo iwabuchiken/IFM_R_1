@@ -1,12 +1,14 @@
 a
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && rails s --port 3001
+
 pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
 
 pushd C:\WORKS\WS\WS_Android\IFM_R_1
 gitk
 
 C:\WORKS\PROGRAMS\FreeMind\Freemind.exe C:\WORKS\WORKSPACES_ANDROID\FM\NewsReader3_R\NewsReader3.mm
-
-a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && rails s --port 3001
 
 pushd C:\WORKS\WS\WS_Android\IFM_R_1
 rails s --port 3001
@@ -53,8 +55,8 @@ bundle exec rake db:migrate
 
 g p origin master && g p heroku master
 
-#rails generate controller admin main sub1 sub2
-
+[Bv-2.1-e2 2013/05/28 16:39:26]----------------------------
+rails generate controller admin main sub1 sub2
 
 aa
 ============STORAGE============================

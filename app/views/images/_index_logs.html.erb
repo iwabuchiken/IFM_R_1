@@ -1,0 +1,12 @@
+<!-- REF display http://stackoverflow.com/questions/4474327/how-to-make-a-div-hidden-by-default-made-by-a-content-tag-for -->
+<div id="logs" style="display: none;">
+
+	<% for i in 0..@contentArray.length - 1 %>
+	
+		<%= @contentArray[i] %><br />
+	
+	<% end %>
+	
+	<input type="button" value="Hide log"   class="hide_button" disabled/>
+	
+</div>

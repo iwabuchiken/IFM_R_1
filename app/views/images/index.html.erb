@@ -1,32 +1,13 @@
 <h1>Listing images</h1>
+<a href="#bottom" style="margin: 0px 25px;" class="link">(To bottom)</a>
+<a name="top"></a>
 
 <table>
-  <tr>
-    <th>Id</th>
-    <th>File name</th>
-    <th>File path</th>
-    <th>Memos</th>
-    <th>Tags</th>
-    <th>Table name</th>
-    <th>Loc file</th>
-    <th></th>
-  </tr>
 
-<% @images.each do |image| %>
-  <tr>
-    <td><%= image.id %></td>
-    <td>
-    	<%= link_to image.file_name, image %>
-    </td>
-    
-    <td><%= image.file_path %></td>
-    <td><%= image.memos %></td>
-    <td><%= image.tags %></td>
-    <td><%= image.table_name %></td>
-    <td><%= image.loc_file_id %></td>
-    <td><%= link_to 'Destroy', image, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+	<%= render :partial => "index_table_header" %>
+	
+	<%= render :partial => "index_table_entries" %>
+		
 </table>
 
 <br />
@@ -43,17 +24,8 @@
 <p>CLICK here</p>
 
 <!-- <div id="logs"> -->
-	
-<!-- REF display http://stackoverflow.com/questions/4474327/how-to-make-a-div-hidden-by-default-made-by-a-content-tag-for -->
-<div id="logs" style="display: none;">
 
-	<% for i in 0..@contentArray.length - 1 %>
-	
-		<%= @contentArray[i] %><br />
-	
-	<% end %>
-	
-	<input type="button" value="Hide log"   class="hide_button" disabled/>
-	
-</div>
+<%= render :partial => "index_logs" %>
 
+<a href="#top" style="margin: 0px 25px;", class="link">(To top)</a>
+<a name="bottom"></a>

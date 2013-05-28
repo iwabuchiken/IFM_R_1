@@ -74,26 +74,164 @@ class ImagesController < ApplicationController
   # GET /images/new
   # GET /images/new.json
   def new
-    	#REF get params: http://www.fraction.jp/log/archives/2007/05/1123
-      # if params['image_dev']
-          # if params['image_dev']['file_name']
-#             
-              # msg = "params['image_dev']['file_name'] => "
-                        # + params['image_dev']['file_name']
-#               
-          # else
-#             
-              # msg = "params['image_dev']['file_name'] => nil"
-# 
-          # end
+      
+      res = _new__1_data_from_device()
+      
+      if res == true
+        
+          return
+        
+      end
+      
+      # #---------------------------------------------
+      # # Post from  the device
+      # #---------------------------------------------
+      # dev_file_name = false
+      # dev_table_name = false
+#       
+      # # File name ----------------------------------
+      # if params['file_name']
+#         
+          # msg = "params['file_name'] => " + params['file_name']
+#           
+          # dev_file_name = true
 #         
       # else
 #       
-          # msg = "params['image_dev'] => null"
+          # msg = "params['file_name'] => null"
 # 
-#         
       # end
+# 
+# #           
+      # logout(msg, __FILE__, __LINE__)
+      # # logout(msg)
+#   
+      # # Table name -------------------------------------
+      # if params['table_name']
+#         
+          # msg = "params['table_name'] => " + params['table_name']
+#           
+          # dev_table_name = true
+#         
+      # else
+#       
+          # msg = "params['table_name'] => null"
+# 
+      # end      
+#       
+      # logout(msg, __FILE__, __LINE__)
+      # # logout(msg)
+#       
+      # # Save image
+      # if dev_file_name
+#           
+          # msg = "dev_file_name => true"
+          # logout(msg, __FILE__, __LINE__)
+# 
+#           
+          # image = Image.new()
+#           
+          # image.file_name = params['file_name']
+          # image.table_name = params['table_name']
+#           
+#           
+#           
+          # respond_to do |format|
+              # if image.save
+#                   
+                  # msg = "image.save => Done"
+                  # logout(msg, __FILE__, __LINE__)
+#                 
+                  # format.json { render json: image}
+                  # # format.json { render json: image, status: :created, location: image }
+#                   
+              # else
+# 
+                # msg = "image.save => Failed"
+                # logout(msg, __FILE__, __LINE__)
+#                 
+                # format.json { render json: image}
+                # # format.json { render json: image.errors, status: :unprocessable_entity }
+#                 
+              # end
+#               
+              # return
+          # end#respond_to do |format|
+#           
+      # else#if dev_file_name
+#         
+      # end#if dev_file_name
       
+      
+            
+      @image = Image.new
+  
+      respond_to do |format|
+          format.html # new.html.erb
+          format.json { render json: @image }
+      end
+  end
+
+
+  # GET /images/1/edit
+  def edit
+    @image = Image.find(params[:id])
+  end
+
+  # POST /images
+  # POST /images.json
+  def create
+    @image = Image.new(params[:image])
+
+    respond_to do |format|
+      if @image.save
+        format.html { redirect_to @image, notice: 'Image was successfully created.' }
+        format.json { render json: @image, status: :created, location: @image }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @image.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /images/1
+  # PUT /images/1.json
+  def update
+    @image = Image.find(params[:id])
+
+    respond_to do |format|
+      if @image.update_attributes(params[:image])
+        format.html { redirect_to @image, notice: 'Image was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @image.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /images/1
+  # DELETE /images/1.json
+  def destroy
+    @image = Image.find(params[:id])
+    @image.destroy
+
+    respond_to do |format|
+      format.html { redirect_to images_url }
+      format.json { head :no_content }
+    end
+  end
+  
+private
+  #===================================
+  # return true => Data posted from the device. Hence,
+  #                 the method 'new' terminates
+  #        false => Data _not_ posted from the device. Hence,
+  #                 the method 'new' continues
+  #
+  #===================================
+  def _new__1_data_from_device
+    
       #---------------------------------------------
       # Post from  the device
       #---------------------------------------------
@@ -145,6 +283,8 @@ class ImagesController < ApplicationController
           image.file_name = params['file_name']
           image.table_name = params['table_name']
           
+          
+          
           respond_to do |format|
               if image.save
                   
@@ -164,69 +304,13 @@ class ImagesController < ApplicationController
                 
               end
               
-              return
+              return true
           end#respond_to do |format|
           
       else#if dev_file_name
         
+          return false
+        
       end#if dev_file_name
-      
-      
-            
-      @image = Image.new
-  
-      respond_to do |format|
-          format.html # new.html.erb
-          format.json { render json: @image }
-      end
-  end
-
-  # GET /images/1/edit
-  def edit
-    @image = Image.find(params[:id])
-  end
-
-  # POST /images
-  # POST /images.json
-  def create
-    @image = Image.new(params[:image])
-
-    respond_to do |format|
-      if @image.save
-        format.html { redirect_to @image, notice: 'Image was successfully created.' }
-        format.json { render json: @image, status: :created, location: @image }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @image.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PUT /images/1
-  # PUT /images/1.json
-  def update
-    @image = Image.find(params[:id])
-
-    respond_to do |format|
-      if @image.update_attributes(params[:image])
-        format.html { redirect_to @image, notice: 'Image was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @image.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /images/1
-  # DELETE /images/1.json
-  def destroy
-    @image = Image.find(params[:id])
-    @image.destroy
-
-    respond_to do |format|
-      format.html { redirect_to images_url }
-      format.json { head :no_content }
-    end
-  end
+  end#def _new__1_data_from_device
 end
