@@ -53,6 +53,7 @@ bundle exec rake db:migrate
 
 g p origin master && g p heroku master
 
+#rails generate controller admin main sub1 sub2
 
 
 aa
