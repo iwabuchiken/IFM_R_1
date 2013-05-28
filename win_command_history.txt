@@ -55,7 +55,8 @@ bundle exec rake db:migrate
 
 g p origin master && g p heroku master
 
-
+[Bv-2.1-e2 2013/05/28 16:39:26]----------------------------
+rails generate controller admin main sub1 sub2
 
 aa
 ============STORAGE============================
