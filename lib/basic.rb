@@ -1,4 +1,18 @@
 module Basic
+
+  def get_time_label_now()
+  
+    return Time.now.strftime("%Y/%m/%d %H:%M:%S")
+    # return Time.now.strftime("%Y%m%d_%H%M%S")
+    
+  end#def get_time_label_now()
+  
+  def get_time_label_now_2()
+    
+    return Time.now.strftime("%Y%m%d_%H%M%S")
+    # return Time.now.strftime("%Y%m%d_%H%M%S")
+    
+  end#def get_time_label_now()
   
   def logout(label, file_name, line_number)
   
