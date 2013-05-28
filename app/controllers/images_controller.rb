@@ -1,3 +1,5 @@
+$KCODE='u'
+
 require_dependency 'basic'
 include Basic
 
