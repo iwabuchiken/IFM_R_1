@@ -1,4 +1,6 @@
 a
+pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+
 a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
 
 a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && rails s --port 3001
