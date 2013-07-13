@@ -1,0 +1,88 @@
+<%= form_for(@word) do |f| %>
+  <% if @word.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@word.errors.count, "error") %> prohibited this word from being saved:</h2>
+
+      <ul>
+      <% @word.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :w1 %><br />
+    <div id="choose">
+	    <%= f.text_field :w1, :class => "focus" %>
+	    <%#= f.text_field :w1, :class => "focus", :onmouseover => "this.focus(); this.select();" %>
+	    <%#= f.text_field :w1, {onmouseover => "alert(hi)"} %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :w2 %><br />
+    <%= f.text_field :w2, :class => "focus" %>
+  </div>
+  <div class="field">
+    <%= f.label :w3 %><br />
+    <%= f.text_field :w3, :class => "focus" %>
+  </div>
+  
+  <div class="field">
+    
+    <%#= f.label_tag(:text_ids, :value => @word.text_ids.join(" ")) %>
+    <%#= f.label(:text_ids, :value => @word.text_ids.join(" ")) %>
+    <%#= f.label :text_ids, :value => @word.text_ids.join(" ") %>
+    
+    <!-- <%#= f.label :text_ids %><br /> -->
+    <%= f.label :text_ids %>: 
+    <%= f.label :text_ids, @word.text_ids.join(" ") %><br />
+    
+    <%#= f.text_field :text_ids %>
+    <%#= f.text_field :text_ids, :value => "abc" %>
+    <%#= f.text_field :text_ids, :value => @text_ids %>
+    
+  </div>
+  
+  <div class="field">
+    <%= f.label :text_id %><br />
+    <%= f.number_field :text_id, :class => "focus" %>
+  </div>
+  <div class="field">
+    <%= f.label :lang_id %><br />
+    <%#= f.number_field :lang_id, :class => "focus" %>
+    
+    <% if Lang.all.size > 0 %>
+    	<!-- <%#= select(
+    				"keyword",
+    				"category_id",
+    				Category.all.collect {|g| [g.name, g.id]}) %> -->
+    	<% if @word.lang_id != nil %>
+    	
+    		<% selectd_lang_id = @word.lang_id %>
+    		
+		<% end %>
+		
+		<!-- REF selected http://stackoverflow.com/questions/623458/rails-select-helper-default-selected-value-how -->
+    	<%= select(
+    				"word",
+    				"lang_id",
+    				Lang.all.collect {|lang| [lang.name, lang.id]},
+    				:selected => selectd_lang_id
+    				) %>
+    <% else %>
+    
+    	<b>No data</b>
+    	
+    <% end %>
+
+    
+  </div>
+  <div class="field">
+    <%= f.label :dbId %><br />
+    <%= f.number_field :dbId %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

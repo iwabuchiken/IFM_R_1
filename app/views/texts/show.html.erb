@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @text.id %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <!-- REF raw http://stackoverflow.com/questions/4251284/raw-vs-html-safe-vs-h-to-unescape-html asked Nov 22 '10 at 23:27 -->
+  <%= raw @text.text %>
+  <%#= @text.text %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @text.title %>
+</p>
+
+<p>
+  <b>Word ids:</b>
+  <%= @text.word_ids %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%#= @text.url %>
+  <%= link_to @text.url, @text.url, :target => "_blank" %>
+  
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @text.genre_id %>
+</p>
+
+<p>
+  <b>Subgenre:</b>
+  <%= @text.subgenre_id %>
+</p>
+
+<p>
+  <b>Lang:</b>
+  <%= @text.lang_id %>
+</p>
+
+<p>
+  <b>Memo:</b>
+  <%= @text.memo %>
+</p>
+
+<p>
+  <b>Dbid:</b>
+  <%= @text.dbId %>
+</p>
+
+
+<%= link_to 'Edit', edit_text_path(@text) %> |
+<%= link_to 'Back', texts_path %> |
+<%= link_to 'New Text', new_text_path %> |
+<!--
+	REF parameter http://yoshifumisato.jeez.jp/wordpress/post/rails/723
+-->
+<%= link_to 'New Word',
+			:controller =>"words",:action =>"new",
+			:text_id => @text.id, :lang_id => @text.lang_id
+			 %>
+
+<hr />
+<%= link_to 'Build word list',
+			:controller =>"texts",
+			:action =>"build_word_list",
+			:text_id => @text.id %>

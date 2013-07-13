@@ -1,0 +1,22 @@
+<% @words.each do |word| %>
+  <tr>
+    <td><%= link_to word.id, word %></td>
+    <td><%= word.w1 %></td>
+    <td><%= word.w2 %></td>
+    <td><%= word.w3 %></td>
+    <td><%= word.text_ids %></td>
+    <td><%= word.text_id %></td>
+    
+    <td>
+    	<% if word.lang != nil %>
+    		<%= word.lang.name %>
+		<% else %>
+			No data
+		<% end %>
+    </td>
+    
+    <td><%= word.dbId %></td>
+    <td><%= word.created_at_mill %></td>
+    <td><%= link_to 'Destroy', word, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>

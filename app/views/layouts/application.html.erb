@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	  <title>IFMR1</title>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
@@ -15,5 +16,23 @@
 
 <%= yield %>
 
+=======
+
+	<%= render :partial => "layouts/application_head" %>
+
+</head>
+<body>
+
+<a name="top"><hr /></a>
+<%= render :partial => "layouts/footer_main" %>
+<hr />
+
+<%= yield %>
+
+<hr />
+<%= render :partial => "layouts/footer_main" %>
+<hr />
+
+>>>>>>> 5551c2bb235a26b663d1ae417554751b3d474c7c
 </body>
 </html>

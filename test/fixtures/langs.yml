@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  created_at_mill: 1
+  updated_at_mill: 1
+
+two:
+  name: MyString
+  created_at_mill: 1
+  updated_at_mill: 1
