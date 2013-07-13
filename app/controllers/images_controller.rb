@@ -6,7 +6,8 @@ include Basic
 class ImagesController < ApplicationController
   
   # REF global http://doc.ruby-lang.org/ja/1.9.3/doc/spec=2fvariables.html#global
-  $remote_url = "http://benfranklin.chips.jp/images"
+  # $remote_url = "http://benfranklin.chips.jp/images"
+  $remote_url = "http://benfranklin.chips.jp/image_thumbnails"
   # $log_file_path = "doc/mylog.txt"
   $log_file_path = "doc/mylog/log.log"
   
