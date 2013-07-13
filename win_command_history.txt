@@ -1,18 +1,18 @@
 a
-pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && gitk
 
-a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+a p && pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && gitk
 
-a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && rails s --port 3001
+a p && pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && rails s --port 3001
 
-pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
+pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && gitk
 
-pushd C:\WORKS\WS\WS_Android\IFM_R_1
+pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1
 gitk
 
 C:\WORKS\PROGRAMS\FreeMind\Freemind.exe C:\WORKS\WORKSPACES_ANDROID\FM\NewsReader3_R\NewsReader3.mm
 
-pushd C:\WORKS\WS\WS_Android\IFM_R_1
+pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1
 rails s --port 3001
 
 
