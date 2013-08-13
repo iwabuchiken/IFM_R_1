@@ -1,103 +1,33 @@
-<<<<<<< HEAD
+<% require 'json' %>
+
 <h1>Admin#main</h1>
 <p>Find me in app/views/admin/main.html.erb</p>
 
-<%#= form_tag("/images/new") do %>
-<% url = "http://cosmos-ifm-1.herokuapp.com/images/new" %>
-
-Post: <%= url %>
-
-<%#= form_tag("http://cosmos-ifm-1.herokuapp.com/images/new") do %>
-<%= form_tag(url) do %>
-	
-	<div class="field">	
-		<%#= hidden_field :file_name, nil, :value => "abcde" %><br />
-		<input id="file_name" name="file_name" type="hidden" value="abcde" /><br />
-	</div>
-	
-	<div class="field">	
-		
-		Table name: <input id="table_name" name="table_name" size="30" type="text" /><br/>
-		
-	</div>
-	
-	<div class="field">	
-		
-		Memos: <input id="memos" name="memos" size="30" type="text" /><br/>
-		
-	</div>
-	
-	<div class="field">	
-		<%= submit_tag "Send image" %><br />
-	</div>
-	
-<% end %><%#= form_tag do %>
-=======
-<p id="notice"><%= notice %></p>
-
-<h1>
-	<a name="top">Admin#main</a>
-</h1>
-
-<a href="#bottom" style="margin: 0px 25px;">(To bottom)</a>
-
-<p>Find me in app/views/admin/main.html.erb</p>
-<hr />
-
-@contentArray = <%= @contentArray.class %><br />
-@contentArray.length = <%= @contentArray.length %><br />
-<hr />
-
-	<%= render :partial => "main_menu" %>
-
-<!-- <div id="admin_show_log">Show log</div><br /> -->
-<input type="button" value="Show log"   id="show_button" /> |
-<!--
-	REF disabled http://html.eweb-design.com/0903_btn.html
--->
-<input type="button" value="Hide log"   class="hide_button" disabled/>
-
-<p>CLICK here</p>
-
-<hr />
-
-<div id="div1">
-	Ajax area
+<div>
+	@json=<%= @json.class.to_s %>
 </div>
-<button id="bt1">
-	Ajax experience
-</button>
 
-<hr />
+<div>
+	@json[0]=<%= @json[0].class.to_s %>
+</div>
 
-<!-- http://d.hatena.ne.jp/yuum3/20120903/1346653974 -->
-<%#= link_to 'Show', :controller => 'admin', :action => 'sub2', {:remote => true} %>
-<%#= link_to 'Admin/sub2', :controller => 'admin', :action => 'sub2'%> <!-- /admin/sub2 -->
-<%#= link_to 'Admin/sub2', :controller => 'admin', :action => 'sub2', {:remote => true}%> <!-- syntax error, unexpected ')' -->
+<br/>
 
-<!-- http://stackoverflow.com/questions/6721259/ruby-on-rails-3-link-to-remote-true-treats-remote-as-a-url-parameter answered Jul 17 '11 at 1:01 -->
-<%= link_to 'Admin/sub2', {:controller => 'admin', :action => 'sub2'}, :remote => true %>
-<div id="ajaxtest">Ajax test</div>
-<hr />
+<div>
+	@fnames=<%= p @fnames %>
+</div>
 
+<div>
+	@fnames=<%= p JSON.generate(@fnames) %>
+</div>
 
+<hr>
 
-<!-- <div id="logs"> -->
+<!-- http://d.hatena.ne.jp/maeharin/20120811/p1 -->
+<div>
+	<%= form_tag("http://benfranklin.chips.jp/show_image.php") do %>
 	
-<!-- REF display http://stackoverflow.com/questions/4474327/how-to-make-a-div-hidden-by-default-made-by-a-content-tag-for -->
-<div id="logs" style="display: none;">
-
-	<% for i in 0..@contentArray.length - 1 %>
-	
-		<%= @contentArray[i] %><br />
+		Hi.
 	
 	<% end %>
-	
-	<input type="button" value="Hide log"   class="hide_button" disabled/>
-	
 </div>
-
-<hr />
-<a href="#top" style="margin: 0px 25px;">(To top)</a>
-<a name="bottom"></a>
->>>>>>> 5551c2bb235a26b663d1ae417554751b3d474c7c

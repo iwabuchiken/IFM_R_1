@@ -10,15 +10,10 @@ pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && gitk
 pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1
 gitk
 
-C:\WORKS\PROGRAMS\FreeMind\Freemind.exe C:\WORKS\WORKSPACES_ANDROID\FM\NewsReader3_R\NewsReader3.mm
+ruby C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1\lib\ruby\array_to_JSON.rb
 
 pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1
 rails s --port 3001
-
-
-pushd C:\WORKS\WORKSPACES_APTANA\NewsReader3
-
-
 
 [Git]
 git init && g a . && gitk

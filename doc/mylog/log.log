@@ -203,3 +203,43 @@ File size=7988------------------------=[end]
 session['user_id'] => Set
 File size=8193------------------------=[end]
 
+[begin]------------------------=
+[2013/08/13 14:13:16] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 243]
+Start: _new__1_data_from_device
+File size=8398------------------------=[end]
+
+[begin]------------------------=
+[2013/08/13 14:13:16] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 265]
+params['file_name'] => null
+File size=8627------------------------=[end]
+
+[begin]------------------------=
+[2013/08/13 14:13:16] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 281]
+params['table_name'] => null
+File size=8852------------------------=[end]
+
+[begin]------------------------=
+[2013/08/13 14:13:16] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 84]
+res=false
+File size=9078------------------------=[end]
+
+[begin]------------------------=
+[2013/08/13 14:14:51] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 243]
+Start: _new__1_data_from_device
+File size=9284------------------------=[end]
+
+[begin]------------------------=
+[2013/08/13 14:14:51] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 265]
+params['file_name'] => null
+File size=9513------------------------=[end]
+
+[begin]------------------------=
+[2013/08/13 14:14:51] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 281]
+params['table_name'] => null
+File size=9738------------------------=[end]
+
+[begin]------------------------=
+[2013/08/13 14:14:51] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 84]
+res=false
+File size=9964------------------------=[end]
+
