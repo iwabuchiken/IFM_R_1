@@ -515,6 +515,6 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 
 [B4_paginate	25/08/2013 15:13:00]-------------------------------
 bundle install
-
+heroku open
 
 ============EOF============
