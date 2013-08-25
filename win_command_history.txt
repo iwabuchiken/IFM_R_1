@@ -513,5 +513,8 @@ bundle exec rake db:migrate
 [B8 v-1.0	2013/04/16 12:43:39]-------------------------------
 g p origin master && g p heroku master && heroku run rake db:migrate
 
+[B4_paginate	25/08/2013 15:13:00]-------------------------------
+bundle install
+
 
 ============EOF============

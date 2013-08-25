@@ -10,6 +10,10 @@
 		
 </table>
 
+<hr />
+	<%= will_paginate @images, :prev_label=>'«Previous', :next_label=>'Next»' %>
+<hr />
+
 <br />
 
 <%= link_to 'New Image', new_image_path %>

@@ -14,7 +14,14 @@ class ImagesController < ApplicationController
   # GET /images
   # GET /images.json
   def index
-      @images = Image.all
+  
+      per_page = 10
+  
+      #@images = Image.all
+      @images = Image.paginate(
+                            :page => params[:page],
+                            :order => 'created_at asc',
+                            :per_page => per_page)
   
       # $remote_url = "http://benfranklin.chips.jp/images";
   
