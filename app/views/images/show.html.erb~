@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>File name:</b>
+  <%= @image.file_name %>
+</p>
+
+<hr />
+<img src="<%= $remote_url + '/' + @image.file_name %>" style="width: 50%; height: 50%" />
+
+<hr />
+
+<p>
+  <b>File path:</b>
+  <%= @image.file_path %>
+</p>
+
+<p>
+  <b>Memos:</b>
+  <%= @image.memos %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @image.tags %>
+</p>
+
+<p>
+  <b>Table name:</b>
+  <%= @image.table_name %>
+</p>
+
+<p>
+  <b>Loc file:</b>
+  <%= @image.loc_file_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

@@ -1,40 +1,82 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>File name:</b>
-  <%= @image.file_name %>
-</p>
+<div>
+	<%= @image.file_name %> (<a href="#file_info">File info</a>)
+</div>
 
 <hr />
+
 <img src="<%= $remote_url + '/' + @image.file_name %>" style="width: 50%; height: 50%" />
 
+<br />
 <hr />
 
-<p>
-  <b>File path:</b>
-  <%= @image.file_path %>
-</p>
+<div id="file_info">
+	
+	
+	<table>
+		
+		<tr>
+			<td>
+				<b>File name</b>
+			</td>
+			<td>
+				<%= @image.file_name %>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				File path
+			</td>
+			<td>
+				<%= @image.file_path %>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<b>Memos</b>
+			</td>
+			<td>
+				<%= @image.memos %>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<b>Tags</b>
+			</td>
+			<td>
+				<%= @image.tags %>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<b>Table name</b>
+			</td>
+			<td>
+				<%= @image.table_name %>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<b>Loc file</b>
+			</td>
+			<td>
+				<%= @image.loc_file_id %>
+			</td>
+		</tr>
+		
+	</table>
+</div>
 
-<p>
-  <b>Memos:</b>
-  <%= @image.memos %>
-</p>
+<div>
+	<a href="#top">Top</a>
+</div>
 
-<p>
-  <b>Tags:</b>
-  <%= @image.tags %>
-</p>
-
-<p>
-  <b>Table name:</b>
-  <%= @image.table_name %>
-</p>
-
-<p>
-  <b>Loc file:</b>
-  <%= @image.loc_file_id %>
-</p>
-
-
+<br />
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>
