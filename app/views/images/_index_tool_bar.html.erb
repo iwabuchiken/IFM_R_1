@@ -1,0 +1,8 @@
+<!-- http://railsdoc.com/references/form_for -->
+<%= form_tag('/images') do %>
+
+	Search word (in 'Memo' column): <%= text_field :search, :text, :size => 20 %>
+	
+	<%= submit_tag "Go" %>
+
+<% end %>

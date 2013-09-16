@@ -14,14 +14,46 @@ class ImagesController < ApplicationController
   # GET /images
   # GET /images.json
   def index
-  
-      per_page = 10
-  
-      #@images = Image.all
-      @images = Image.paginate(
-                            :page => params[:page],
-                            :order => 'created_at asc',
-                            :per_page => per_page)
+
+        per_page = 10
+=begin
+        # Params => Search
+        if params['search'] and params['search']['text']
+        
+            search_word = params['genre']['text']
+            
+            @images = Image.paginate(
+                          :page => params[:page],
+                          :order => 'created_at asc',
+                          :per_page => per_page,
+                          :conditions => ['memos', search_word])
+        
+        else
+            
+            #@images = Image.all
+            @images = Image.paginate(
+                                  :page => params[:page],
+                                  :order => 'created_at asc',
+                                  :per_page => per_page)
+                                  
+        end
+=end
+
+            #@images = Image.all
+            @images = Image.paginate(
+                                  :page => params[:page],
+                                  :order => 'created_at asc',
+                                  :per_page => per_page)
+                                  
+            # Debug
+            logout(@images.class.to_s, __FILE__, __LINE__)
+            
+            
+#      @images = Image.paginate(
+ #                           :page => params[:page],
+  #                          :order => 'created_at asc',
+   #                         :per_page => per_page,
+    #                        :conditions => ['file_name', "2012-08-17_18-56-31_479.jpg"])
   
       # $remote_url = "http://benfranklin.chips.jp/images";
   
