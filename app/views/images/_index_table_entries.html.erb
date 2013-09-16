@@ -11,12 +11,20 @@
    <tr>
     <td colspan="4">
     	<!-- REF using class: http://stackoverflow.com/questions/10185516/how-to-style-an-image-tag-in-ruby-on-rails answered Apr 17 '12 at 5:22 -->
-    	<%= link_to\
-    			image_tag(
-    				$remote_url + '/' + image.file_name,
-    				{:alt => $remote_url + '/' + image.file_name,
-    					:class => "index_image_tag"}),
-    			image %>
+    	<% if image.file_name != nil %>
+	    	<%= link_to\
+	    			image_tag(
+	    				$remote_url + '/' + image.file_name,
+	    				{:alt => $remote_url + '/' + image.file_name,
+	    					:class => "index_image_tag"}),
+	    			image %>
+	    <% else %>
+	    
+	    	No data: <%= image.class.to_s %>
+	    
+	    
+	    <% end %>
+	    
     </td>
     
     

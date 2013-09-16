@@ -16,17 +16,22 @@ class ImagesController < ApplicationController
   def index
 
         per_page = 10
-=begin
+        
         # Params => Search
         if params['search'] and params['search']['text']
         
-            search_word = params['genre']['text']
+            search_word = params['search']['text']
             
             @images = Image.paginate(
                           :page => params[:page],
                           :order => 'created_at asc',
                           :per_page => per_page,
-                          :conditions => ['memos', search_word])
+                          :conditions => ['memos LIKE ?', "%#{search_word}%"])
+#            @images = Image.paginate(
+ #                         :page => params[:page],
+  #                        :order => 'created_at asc',
+   #                       :per_page => per_page,
+    #                      :conditions => ['memos', search_word])
         
         else
             
@@ -37,8 +42,7 @@ class ImagesController < ApplicationController
                                   :per_page => per_page)
                                   
         end
-=end
-
+=begin
             #@images = Image.all
             @images = Image.paginate(
                                   :page => params[:page],
@@ -47,8 +51,9 @@ class ImagesController < ApplicationController
                                   
             # Debug
             logout(@images.class.to_s, __FILE__, __LINE__)
-            
-            
+
+=end            
+
 #      @images = Image.paginate(
  #                           :page => params[:page],
   #                          :order => 'created_at asc',
