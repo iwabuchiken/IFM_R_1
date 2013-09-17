@@ -517,4 +517,7 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 bundle install
 heroku open
 
+[B6_search-images 16/09/2013 11:40:00]-------------------------------
+g p origin master && g p heroku master
+
 ============EOF============
