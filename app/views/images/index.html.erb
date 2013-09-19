@@ -1,11 +1,15 @@
 <a name="top"></a>
 
-<h1>Listing images</h1>
+<h1>Listing images (Total=<%= @total_num_of_images %>)</h1>
 <a href="#bottom" style="margin: 0px 25px;" class="link">(To bottom)</a>
 
 <hr />
 	
 	<%= render :partial => "index_tool_bar" %>
+	
+<hr />
+
+	<%= will_paginate @images, :prev_label=>'«Previous', :next_label=>'Next»' %>
 	
 <hr />
 
@@ -21,15 +25,22 @@
 	<%= will_paginate @images, :prev_label=>'«Previous', :next_label=>'Next»' %>
 <hr />
 
+
 <br />
 
 <%= link_to 'New Image', new_image_path %>
 
 <hr />
 
-<%= link_to "Heroku site", "http://cosmos-ifm-1.herokuapp.com/", :target => "_blank" %> |
-<%= link_to "Local site", "http://localhost:3001/images", :target => "_blank" %>
+<% if @server_info.start_with?("localhost") %>
 
+	<%= link_to "Heroku site", "http://cosmos-ifm-1.herokuapp.com/", :target => "_blank" %> |
+	
+<% else %>
+
+	<%= link_to "Local site", "http://localhost:3001/", :target => "_blank" %>
+	
+<% end %>
 
 <hr />
 <input type="button" value="Show log"   id="show_button" /> |

@@ -17,6 +17,11 @@ class ImagesController < ApplicationController
 
         per_page = 10
         
+        # Total number of images
+        @total_num_of_images = Image.all.length
+        
+        @server_info = request.host_with_port
+        
         # Params => Search
         if params['search'] and params['search']['text']
         

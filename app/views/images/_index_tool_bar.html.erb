@@ -1,9 +1,14 @@
+<!-- REF float http://www.htmq.com/style/float.shtml -->
 <div style="float: left;">
 	<!-- http://railsdoc.com/references/form_for -->
 	<%#= form_tag('/images/index') do %>
 	<%= form_tag('/images', {:method => "get"}) do %>
 	
-		Search word (in 'Memo' column): <%= text_field :search, :text, :size => 20 %>
+		Search word (in 'Memo' column):
+			<%= text_field\
+						:search,
+						:text,
+						{:size => 20, :style => "background: Aquamarine"} %>
 		
 		<%= submit_tag "Go" %>
 	

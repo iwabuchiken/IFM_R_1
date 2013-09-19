@@ -1,7 +1,20 @@
+<% i = 1 %>
+
 <% @images.each do |image| %>
+	<% if i % 4 == 0 %>
+		
+		<tr>
+			<td colspan="5">
+				<a href="#top" style="margin: 0px 25px;", class="link">(To top)</a> | 
+				<a href="#bottom" style="margin: 0px 25px;" class="link">(To bottom)</a>
+			</td>
+		</tr>
+		
+	<% end %>
+	
   <tr>
     <td><%= image.id %></td>
-    <td colspan="2">
+    <td colspan="2" style="background: Khaki; color: Black;">
     	<%= link_to image.file_name, image %>
     </td>
 
@@ -41,4 +54,7 @@
 
     <%= link_to 'Destroy', image, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
+  
+  <% i = i + 1 %>
+  
 <% end %>
