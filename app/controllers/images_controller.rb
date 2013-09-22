@@ -23,49 +23,7 @@ class ImagesController < ApplicationController
         @server_info = request.host_with_port
         
         # Params => Search
-        if params['search'] and params['search']['text']
-        
-            search_word = params['search']['text']
-            
-            @images = Image.paginate(
-                          :page => params[:page],
-                          :order => 'created_at asc',
-                          :per_page => per_page,
-                          :conditions => ['memos LIKE ?', "%#{search_word}%"])
-#            @images = Image.paginate(
- #                         :page => params[:page],
-  #                        :order => 'created_at asc',
-   #                       :per_page => per_page,
-    #                      :conditions => ['memos', search_word])
-        
-        else
-            
-            #@images = Image.all
-            @images = Image.paginate(
-                                  :page => params[:page],
-                                  :order => 'created_at asc',
-                                  :per_page => per_page)
-                                  
-        end
-=begin
-            #@images = Image.all
-            @images = Image.paginate(
-                                  :page => params[:page],
-                                  :order => 'created_at asc',
-                                  :per_page => per_page)
-                                  
-            # Debug
-            logout(@images.class.to_s, __FILE__, __LINE__)
-
-=end            
-
-#      @images = Image.paginate(
- #                           :page => params[:page],
-  #                          :order => 'created_at asc',
-   #                         :per_page => per_page,
-    #                        :conditions => ['file_name', "2012-08-17_18-56-31_479.jpg"])
-  
-      # $remote_url = "http://benfranklin.chips.jp/images";
+        @images = _index_1_search_text(per_page)
   
       @contentArray = _index_get_log()
   
@@ -76,6 +34,53 @@ class ImagesController < ApplicationController
       end
   end
 
+    def _index_1_search_text(per_page)
+        if params['search'] and params['search']['text']
+        
+            search_word = params['search']['text']
+
+            # Logic option
+            # # if params ['search']['option_logic']
+            # if params ['search']['option_logic'] == "search_logic_all"
+            if params['search']['option_logic']
+                
+                # if params ['search']['option_logic'] == "search_logic_all"
+                if params['search']['option_logic'] == "search_logic_all"
+                    
+                    return Image.paginate(
+                          :page => params[:page],
+                          :order => 'created_at asc',
+                          :per_page => per_page,
+                          :conditions => ['memos LIKE ?', "%#{search_word}%"])
+
+                else
+                    
+                    return Image.paginate(
+                          :page => params[:page],
+                          :order => 'created_at asc',
+                          :per_page => per_page)                    
+                end
+                
+            end#if params ['search']['option_logic']
+            
+            return Image.paginate(
+                          :page => params[:page],
+                          :order => 'created_at asc',
+                          :per_page => per_page,
+                          :conditions => ['memos LIKE ?', "%#{search_word}%"])
+
+        
+        else
+            
+            return Image.paginate(
+                                  :page => params[:page],
+                                  :order => 'created_at asc',
+                                  :per_page => per_page)
+                                  
+        end
+        
+    end#def _index_1_search_text
+    
   def _index_get_log()
       
       if File.exists?($log_file_path)

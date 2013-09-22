@@ -10,6 +10,34 @@
 						:text,
 						{:size => 20, :style => "background: Aquamarine"} %>
 		
+		<!-- Radio buttons -->
+		<!-- REF http://railsdoc.com/form#%E3%83%A9%E3%82%B8%E3%82%AA%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9(radio_button) -->
+		<%= radio_button\
+				'search',
+				"option_logic",
+				'search_logic_all',
+				:id => "search_logic_all",
+				:checked => true %>
+				
+		<!-- REF label http://d.hatena.ne.jp/kaorumori/20101028/1289874655 -->
+		<%= label 'search_logic_all', "All" %>
+		
+		<%= radio_button\
+				'search',
+				"option_logic",
+				'search_logic_and',
+				:id => "search_logic_and"
+				%>
+		<%= label 'search_logic_and', "And" %>
+				
+		<%= radio_button\
+				'search',
+				"option_logic",
+				'search_logic_or',
+				:id => "search_logic_or"
+				%>
+		<%= label 'search_logic_or', "Or" %>
+				
 		<%= submit_tag "Go" %>
 	
 	<% end %>

@@ -298,3 +298,38 @@ File size=12150------------------------=[end]
 ActiveRecord::Relation
 File size=12370------------------------=[end]
 
+[begin]------------------------=
+[2013/09/22 10:15:42] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 50]
+x => Array
+File size=12590------------------------=[end]
+
+[begin]------------------------=
+[2013/09/22 10:16:13] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 50]
+x => ActiveSupport::HashWithIndifferentAccess
+File size=12798------------------------=[end]
+
+[begin]------------------------=
+[2013/09/22 10:16:35] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 50]
+x => String
+File size=13041------------------------=[end]
+
+[begin]------------------------=
+[2013/09/22 10:17:11] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 50]
+x => String(search_logic_and)
+File size=13250------------------------=[end]
+
+[begin]------------------------=
+[2013/09/22 10:18:57] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 58]
+option_logic => Not All
+File size=13477------------------------=[end]
+
+[begin]------------------------=
+[2013/09/22 10:19:15] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 58]
+option_logic => Not All
+File size=13698------------------------=[end]
+
+[begin]------------------------=
+[2013/09/22 10:19:30] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 51]
+option_logic => All
+File size=13919------------------------=[end]
+
