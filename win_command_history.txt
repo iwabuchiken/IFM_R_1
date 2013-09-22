@@ -15,6 +15,9 @@ ruby C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1\lib\ruby\array_to_JSON.rb
 pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1
 rails s --port 3001
 
+http://localhost:3001/
+
+
 [Git]
 git init && g a . && gitk
 g a . && gitk
