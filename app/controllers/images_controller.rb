@@ -57,6 +57,10 @@ class ImagesController < ApplicationController
                     
                     return _index_1_search_text_1_and(per_page)
                           
+                elsif params['search']['option_logic'] == "search_logic_or"
+                    
+                    return _index_1_search_text_2_or(per_page)
+                          
                 else
                     
                     return Image.paginate(
@@ -103,6 +107,44 @@ class ImagesController < ApplicationController
         end#a.length.times do
         
         q = q.join(" and ")
+        
+        condition.push(q)
+
+        a.length.times do |i|
+            
+            token = "%#{a[i]}%"
+            
+            condition.push(token)
+            
+        end
+        
+        #logout("condition=" + condition.to_s, __FILE__, __LINE__)
+        
+        return Image.paginate(
+                  :page => params[:page],
+                  :order => 'created_at asc',
+                  :per_page => per_page,
+                  :conditions => condition)
+                  
+    end#_index_1_search_text_1_and(per_page)
+    
+    def _index_1_search_text_2_or(per_page)
+        
+        search_words = params['search']['text']
+        
+        a = search_words.split(" ")
+        
+        q = []
+        
+        condition = []
+        
+        a.length.times do
+        
+            q.push("memos like ?")
+            
+        end#a.length.times do
+        
+        q = q.join(" or ")
         
         condition.push(q)
 
