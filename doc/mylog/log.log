@@ -333,3 +333,28 @@ File size=13698------------------------=[end]
 option_logic => All
 File size=13919------------------------=[end]
 
+[begin]------------------------=
+[2013/09/26 16:45:22] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 109]
+condition=["memos like ? and memos like ?"]
+File size=14136------------------------=[end]
+
+[begin]------------------------=
+[2013/09/26 16:45:57] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 109]
+condition=["memos like ? and memos like ?"]
+File size=14378------------------------=[end]
+
+[begin]------------------------=
+[2013/09/26 16:46:24] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 109]
+condition=["memos like ? and memos like ? and memos like ?"]
+File size=14620------------------------=[end]
+
+[begin]------------------------=
+[2013/09/26 16:48:29] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 117]
+condition=["memos like ? and memos like ? and memos like ?", "%{a[i]}%", "%{a[i]}%", "%{a[i]}%"]
+File size=14879------------------------=[end]
+
+[begin]------------------------=
+[2013/09/26 16:49:15] [C:/WORKS/WS/WS_Android_20130619_090924/IFM_R_1/app/controllers/images_controller.rb: 117]
+condition=["memos like ? and memos like ? and memos like ?", "%rowspan%", "%colspan%", "%abc%"]
+File size=15174------------------------=[end]
+

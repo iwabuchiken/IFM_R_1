@@ -53,13 +53,18 @@ class ImagesController < ApplicationController
                           :per_page => per_page,
                           :conditions => ['memos LIKE ?', "%#{search_word}%"])
 
+                elsif params['search']['option_logic'] == "search_logic_and"
+                    
+                    return _index_1_search_text_1_and(per_page)
+                          
                 else
                     
                     return Image.paginate(
                           :page => params[:page],
                           :order => 'created_at asc',
                           :per_page => per_page)                    
-                end
+                          
+                end#if params['search']['option_logic'] == "search_logic_all"
                 
             end#if params ['search']['option_logic']
             
@@ -77,9 +82,47 @@ class ImagesController < ApplicationController
                                   :order => 'created_at asc',
                                   :per_page => per_page)
                                   
-        end
+        end#if params['search'] and params['search']['text']
         
     end#def _index_1_search_text
+    
+    def _index_1_search_text_1_and(per_page)
+        
+        search_words = params['search']['text']
+        
+        a = search_words.split(" ")
+        
+        q = []
+        
+        condition = []
+        
+        a.length.times do
+        
+            q.push("memos like ?")
+            
+        end#a.length.times do
+        
+        q = q.join(" and ")
+        
+        condition.push(q)
+
+        a.length.times do |i|
+            
+            token = "%#{a[i]}%"
+            
+            condition.push(token)
+            
+        end
+        
+        #logout("condition=" + condition.to_s, __FILE__, __LINE__)
+        
+        return Image.paginate(
+                  :page => params[:page],
+                  :order => 'created_at asc',
+                  :per_page => per_page,
+                  :conditions => condition)
+                  
+    end#_index_1_search_text_1_and(per_page)
     
   def _index_get_log()
       
