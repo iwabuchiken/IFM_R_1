@@ -523,4 +523,9 @@ heroku open
 [B6_search-images 16/09/2013 11:40:00]-------------------------------
 g p origin master && g p heroku master
 
+[B8_MODEL_Admin 28/09/2013 09:04:38]-------------------------------
+rails generate scaffold Admin files_per_page:integer
+
+
+
 ============EOF============

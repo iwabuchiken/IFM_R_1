@@ -1,5 +1,7 @@
 IFMR1::Application.routes.draw do
   
+  resources :admins
+
   get "admin/main"
 
   get "admin/sub1"
