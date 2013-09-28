@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130928000618) do
+ActiveRecord::Schema.define(:version => 20130928010430) do
 
   create_table "admins", :force => true do |t|
     t.integer  "files_per_page"
@@ -60,6 +60,12 @@ ActiveRecord::Schema.define(:version => 20130928000618) do
     t.string   "passwd"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "settings", :force => true do |t|
+    t.integer  "files_per_page"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "texts", :force => true do |t|

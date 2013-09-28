@@ -1,6 +1,8 @@
 IFMR1::Application.routes.draw do
   
-  resources :admins
+  resources :settings
+
+  #resources :admins
 
   get "admin/main"
 

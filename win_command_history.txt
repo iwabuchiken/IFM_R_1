@@ -524,8 +524,51 @@ heroku open
 g p origin master && g p heroku master
 
 [B8_MODEL_Admin 28/09/2013 09:04:38]-------------------------------
-rails generate scaffold Admin files_per_page:integer
+#rails generate scaffold Admin files_per_page:integer
+#bundle exec rake db:migrate
 
+g p origin master && g p heroku master && heroku run rake db:migrate
 
+rails destroy controller texts
+
+bundle exec rails destroy controller texts
+bundle exec rails destroy controller words
+bundle exec rails destroy controller word_lists
+bundle exec rails destroy controller langs
+bundle exec rails destroy controller links
+
+#heroku run rails destroy controller words word_lists #=> Doesn't work
+heroku run rails destroy controller texts
+heroku run rails destroy controller words
+heroku run rails destroy controller word_lists
+heroku run rails destroy controller langs
+heroku run rails destroy controller links
+
+bundle exec rails destroy model texts
+bundle exec rails destroy model words
+bundle exec rails destroy model word_lists
+bundle exec rails destroy model langs
+bundle exec rails destroy model links
+
+bundle exec rails destroy model text
+bundle exec rails destroy model word
+bundle exec rails destroy model word_list
+bundle exec rails destroy model lang
+bundle exec rails destroy model link
+
+##heroku run rails destroy controller words word_lists #=> Doesn't work
+#heroku run rails destroy model text
+#heroku run rails destroy model word
+#heroku run rails destroy model word_list
+#heroku run rails destroy model lang
+#heroku run rails destroy model link
+
+#bundle exec rails destroy controller admins
+#heroku run rails destroy controller admins
+
+rails generate scaffold Setting files_per_page:integer
+bundle exec rake db:migrate
+
+g p origin master && g p heroku master && heroku run rake db:migrate
 
 ============EOF============
