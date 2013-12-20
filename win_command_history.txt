@@ -1,18 +1,19 @@
-a
-pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && gitk
+# Server + gitk
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk && rails s --port 3001
 
-a p && pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && gitk
+# gitk
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
 
-a p && pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && rails s --port 3001
+pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
 
-pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1 && gitk
+pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
 
-pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1
+pushd C:\WORKS\WS\WS_Android\IFM_R_1
 gitk
 
-ruby C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1\lib\ruby\array_to_JSON.rb
+ruby C:\WORKS\WS\WS_Android\IFM_R_1\lib\ruby\array_to_JSON.rb
 
-pushd C:\WORKS\WS\WS_Android_20130619_090924\IFM_R_1
+pushd C:\WORKS\WS\WS_Android\IFM_R_1
 rails s --port 3001
 
 http://localhost:3001/
