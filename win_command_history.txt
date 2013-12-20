@@ -18,6 +18,10 @@ rails s --port 3001
 
 http://localhost:3001/
 
+[heroku]
+g p origin master && g p heroku master && heroku run rake db:migrate
+g p origin master && g p heroku master
+
 
 [Git]
 git init && g a . && gitk
