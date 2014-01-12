@@ -1,6 +1,49 @@
 <a name="top"></a>
 
 <h1>Listing images (Total=<%= @total_num_of_images %>)</h1>
+
+ABC
+
+<script type="text/javascript">
+
+
+	// REF function http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_getelementbyid
+	function rotate_image() {
+		
+		// alert("rotate");
+		var angle = 0, img = document.getElementById('container');
+		
+		angle = (angle+90)%360;
+		
+		img.className = "rotate"+angle;
+		
+		
+	}
+	// var angle = 0, img = document.getElementById('container');
+// 	
+	// // alert("container");
+// 	
+	// document.getElementById('button').onclick = function() {
+// 		
+		// alert("button");
+	    // // angle = (angle+90)%360;
+	    // // img.className = "rotate"+angle;
+	// }
+</script>
+
+<button id="button" onclick="rotate_image();">Click me!</button>
+<!-- <button id="button">Click me!</button> -->
+
+<div id="container">
+	<img
+		src="http://benfranklin.chips.jp/images/2012-04-14_08-07-07_188.jpg"
+		id="image"
+		 width="300" height="300"/>
+</div>
+Rotate image
+<hr />
+
+
 <a href="#bottom" style="margin: 0px 25px;" class="link">(To bottom)</a>
 
 <hr />

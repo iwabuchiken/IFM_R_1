@@ -1,6 +1,12 @@
 # Server + gitk
 a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk && rails s --port 3001
 
+# Server / no git
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && rails s --port 3001
+
+# Pushd / no git
+a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1
+
 # gitk
 a p && pushd C:\WORKS\WS\WS_Android\IFM_R_1 && gitk
 
@@ -575,5 +581,12 @@ rails generate scaffold Setting files_per_page:integer
 bundle exec rake db:migrate
 
 g p origin master && g p heroku master && heroku run rake db:migrate
+
+[11/01/2014 21:18:57]-------------------------------
+bundle exec rake assets:clean
+
+bundle exec rake assets:precompile
+
+
 
 ============EOF============
