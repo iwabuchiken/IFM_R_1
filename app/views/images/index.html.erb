@@ -8,6 +8,18 @@ ABC
 
 
 	// REF function http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_getelementbyid
+	function rotate_image2(deg) {
+		
+		// alert("rotate");
+		var angle = 0, img = document.getElementById('container');
+		
+		angle = (angle+deg)%360;
+		//angle = (angle+90)%360;
+		
+		img.className = "rotate"+angle;
+		
+		
+	}
 	function rotate_image() {
 		
 		// alert("rotate");
@@ -31,6 +43,12 @@ ABC
 	// }
 </script>
 
+<button id="button" onclick="rotate_image2(90);">Click +90!</button>
+<button id="button" onclick="rotate_image2(-90);">Click -90!</button>
+<button id="button" onclick="rotate_image2(-180);">Click -180!</button>
+<button id="button" onclick="rotate_image2(-270);">Click -270!</button>
+<button id="button" onclick="rotate_image2(+180);">Click +180!</button>
+<button id="button" onclick="rotate_image2(+270);">Click +270!</button>
 <button id="button" onclick="rotate_image();">Click me!</button>
 <!-- <button id="button">Click me!</button> -->
 
