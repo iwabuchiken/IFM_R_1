@@ -587,8 +587,10 @@ g p origin master && g p heroku master && heroku run rake db:migrate
 [11/01/2014 21:18:57]-------------------------------
 bundle exec rake assets:clean
 
-bundle exec rake assets:precompile
+bundle exec rake assets:precompile --trace
 
+bundle exec rake assets:clean && bundle exec rake assets:precompile --trace
 
+bundle update
 
 ============EOF============

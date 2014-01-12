@@ -2,18 +2,84 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#container {
+.link {
 	
-	width:420px;
-	/*width:820px;*/
-	height:100px;
-	overflow:hidden;
+	/* REF underline http://www.openspc2.org/HTML/tag/u/faq/001/*/
+	text-decoration:underline;
+	color: blue;
+	/*backgroun-color: yellow;*/
+	/*background-color: #00ff00;*/
 	
 }
 
-button#button {
+table, th, td {
+	border: 2px solid blue;
+}
+
+.table_id {
+	text-align: center;
+}
+
+.index_image_tag {
+	width: 90%;
+	/*height: 90%;*/
 	
-	background-color: yellow;
+}
+
+.index_header_thumbnail {
+	width: 60px;
+}
+
+/*Rotate image*/
+#container {
 	
-	color: blue;
+	/*width:300px;*/
+	/*width:420px;*/
+	/*width:820px;*/
+	/*height:100px;*/
+	
+	/*REF http://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow*/
+	/*overflow:scroll;*/
+	overflow:hidden;
+	
+	/*REF http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_image_gallery*/
+	box-shadow:2px 2px 3px #aaaaaa;
+
+	
+}
+
+#container.rotate90,#container.rotate270 {
+	
+	/*width:100px;*/
+	/*height:300px*/
+	/*height:820px*/
+	
+}
+
+#image {
+    transform-origin: top left; /* IE 10+, Firefox, etc. */
+    -webkit-transform-origin: top left; /* Chrome */
+    -ms-transform-origin: top left; /* IE 9 */
+}
+
+#container.rotate90 #image {
+    transform: rotate(90deg) translateY(-100%);
+    -webkit-transform: rotate(90deg) translateY(-100%);
+    -ms-transform: rotate(90deg) translateY(-100%);
+}
+#container.rotate180 #image {
+    transform: rotate(180deg) translate(-100%,-100%);
+    -webkit-transform: rotate(180deg) translate(-100%,-100%);
+    -ms-transform: rotate(180deg) translateX(-100%,-100%);
+}
+#container.rotate270 #image {
+    transform: rotate(270deg) translateX(-100%);
+    -webkit-transform: rotate(270deg) translateX(-100%);
+    -ms-transform: rotate(270deg) translateX(-100%);
+}
+
+button#rotate_back {
+	
+	background-color:#FFFF00;
+	color: blue;	
 }
