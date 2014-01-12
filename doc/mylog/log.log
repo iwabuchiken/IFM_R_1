@@ -358,3 +358,43 @@ File size=14879------------------------=[end]
 condition=["memos like ? and memos like ? and memos like ?", "%rowspan%", "%colspan%", "%abc%"]
 File size=15174------------------------=[end]
 
+[begin]------------------------=
+[2014/01/12 10:31:30] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 382]
+Start: _new__1_data_from_device
+File size=15468------------------------=[end]
+
+[begin]------------------------=
+[2014/01/12 10:31:30] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 404]
+params['file_name'] => null
+File size=15682------------------------=[end]
+
+[begin]------------------------=
+[2014/01/12 10:31:30] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 420]
+params['table_name'] => null
+File size=15892------------------------=[end]
+
+[begin]------------------------=
+[2014/01/12 10:31:30] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 223]
+res=false
+File size=16103------------------------=[end]
+
+[begin]------------------------=
+[2014/01/12 10:33:35] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 382]
+Start: _new__1_data_from_device
+File size=16295------------------------=[end]
+
+[begin]------------------------=
+[2014/01/12 10:33:35] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 404]
+params['file_name'] => null
+File size=16509------------------------=[end]
+
+[begin]------------------------=
+[2014/01/12 10:33:35] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 420]
+params['table_name'] => null
+File size=16719------------------------=[end]
+
+[begin]------------------------=
+[2014/01/12 10:33:35] [C:/WORKS/WS/WS_Android/IFM_R_1/app/controllers/images_controller.rb: 223]
+res=false
+File size=16930------------------------=[end]
+
