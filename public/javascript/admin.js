@@ -4,6 +4,20 @@ function showMessage(msg) {
    // alert(msg);
 };
 
+function rotate_image2(deg) {
+	
+	// alert("rotate");
+	var angle = 0, img = document.getElementById('container');
+	
+	angle = (angle+deg)%360;
+	//angle = (angle+90)%360;
+	
+	img.className = "rotate"+angle;
+	
+	
+}
+
+
 $(document).ready(function(){
   $("p").click(function(){
     // $(this).hide();

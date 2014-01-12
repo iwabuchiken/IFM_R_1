@@ -29,10 +29,10 @@ table, th, td {
 /*Rotate image*/
 #container {
 	
-	width:300px;
+	/*width:300px;*/
 	/*width:420px;*/
 	/*width:820px;*/
-	height:100px;
+	/*height:100px;*/
 	
 	/*REF http://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow*/
 	/*overflow:scroll;*/
@@ -46,8 +46,8 @@ table, th, td {
 
 #container.rotate90,#container.rotate270 {
 	
-	width:100px;
-	height:300px
+	/*width:100px;*/
+	/*height:300px*/
 	/*height:820px*/
 	
 }
@@ -72,4 +72,10 @@ table, th, td {
     transform: rotate(270deg) translateX(-100%);
     -webkit-transform: rotate(270deg) translateX(-100%);
     -ms-transform: rotate(270deg) translateX(-100%);
+}
+
+button#rotate_back {
+	
+	background-color:#FFFF00;
+	color: blue;	
 }
